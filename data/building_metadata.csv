@@ -1,0 +1,1248 @@
+campus_id,building_id,institute,city,latitude,longitude,primary_use,assigned_name,square_feet,year_built,floor_count
+0,0,Malaviya National Institute of Technology  Jaipur,Jaipur,26.8648,75.8106,Parking,Parking-2,487433,2007,
+0,1,Malaviya National Institute of Technology  Jaipur,Jaipur,26.8648,75.8106,Parking,Parking-1,387638,2014,
+0,2,Malaviya National Institute of Technology  Jaipur,Jaipur,26.8648,75.8106,Parking,Parking-3,387638,2000,
+0,3,Malaviya National Institute of Technology  Jaipur,Jaipur,26.8648,75.8106,Parking,Parking-4,387638,2007,
+0,4,Malaviya National Institute of Technology  Jaipur,Jaipur,26.8648,75.8106,Parking,Parking-5,387638,1998,
+0,5,Malaviya National Institute of Technology  Jaipur,Jaipur,26.8648,75.8106,Parking,Parking-6,387638,2002,
+0,6,Malaviya National Institute of Technology  Jaipur,Jaipur,26.8648,75.8106,Parking,Parking-7,387638,2008,
+0,7,Malaviya National Institute of Technology  Jaipur,Jaipur,26.8648,75.8106,Parking,Parking-8,387638,1997,
+0,8,Malaviya National Institute of Technology  Jaipur,Jaipur,26.8648,75.8106,Public Assembly,Open Air Theatre (OAT),370773,1991,
+0,9,Malaviya National Institute of Technology  Jaipur,Jaipur,26.8648,75.8106,Other,Other,226506,1968,
+0,10,Malaviya National Institute of Technology  Jaipur,Jaipur,26.8648,75.8106,Lodging/residential,Hostel 1,200933,2006,
+0,11,Malaviya National Institute of Technology  Jaipur,Jaipur,26.8648,75.8106,Lodging/residential,Hostel 2,200933,2006,
+0,12,Malaviya National Institute of Technology  Jaipur,Jaipur,26.8648,75.8106,Lodging/residential,Hostel 3,200933,2007,
+0,13,Malaviya National Institute of Technology  Jaipur,Jaipur,26.8648,75.8106,Lodging/residential,Hostel 4,187647,2007,
+0,14,Malaviya National Institute of Technology  Jaipur,Jaipur,26.8648,75.8106,Office,Administrative Block,156111,2001,
+0,15,Malaviya National Institute of Technology  Jaipur,Jaipur,26.8648,75.8106,Education,Lecture Complex - 1,130885,1985,
+0,16,Malaviya National Institute of Technology  Jaipur,Jaipur,26.8648,75.8106,Education,Lecture Complex - 2,128887,2009,
+0,17,Malaviya National Institute of Technology  Jaipur,Jaipur,26.8648,75.8106,Education,Computer Center,121074,1989,
+0,18,Malaviya National Institute of Technology  Jaipur,Jaipur,26.8648,75.8106,Education,Library,116607,1975,
+0,19,Malaviya National Institute of Technology  Jaipur,Jaipur,26.8648,75.8106,Education,Startup Incubation Center,113866,2006,
+0,20,Malaviya National Institute of Technology  Jaipur,Jaipur,26.8648,75.8106,Education,Materials Research Centre,111891,1996,
+0,21,Malaviya National Institute of Technology  Jaipur,Jaipur,26.8648,75.8106,Education,Seismology Centre,110272,1977,
+0,22,Malaviya National Institute of Technology  Jaipur,Jaipur,26.8648,75.8106,Education,Lab-1 CSE,106523,1970,
+0,23,Malaviya National Institute of Technology  Jaipur,Jaipur,26.8648,75.8106,Education,Lab-2 ECE,105545,2001,
+0,24,Malaviya National Institute of Technology  Jaipur,Jaipur,26.8648,75.8106,Office,Public Works Department Office,103286,1969,
+0,25,Malaviya National Institute of Technology  Jaipur,Jaipur,26.8648,75.8106,Education,Lab-3 EE,99380,2000,
+0,26,Malaviya National Institute of Technology  Jaipur,Jaipur,26.8648,75.8106,Education,Lab-4 ME,93897,1999,
+0,27,Malaviya National Institute of Technology  Jaipur,Jaipur,26.8648,75.8106,Office,Hostel Office,93860,1968,
+0,28,Malaviya National Institute of Technology  Jaipur,Jaipur,26.8648,75.8106,Office,Sports Office,87742,1971,
+0,29,Malaviya National Institute of Technology  Jaipur,Jaipur,26.8648,75.8106,Education,Lab-5 CE,86250,2013,
+0,30,Malaviya National Institute of Technology  Jaipur,Jaipur,26.8648,75.8106,Office,Security Office,83957,1974,
+0,31,Malaviya National Institute of Technology  Jaipur,Jaipur,26.8648,75.8106,Lodging/residential,Hostel 5,83379,2013,
+0,32,Malaviya National Institute of Technology  Jaipur,Jaipur,26.8648,75.8106,Education,Lab-6 CHE,81576,1997,
+0,33,Malaviya National Institute of Technology  Jaipur,Jaipur,26.8648,75.8106,Public Assembly,Auditorium,81337,2005,
+0,34,Malaviya National Institute of Technology  Jaipur,Jaipur,26.8648,75.8106,Education,Lab-7 PHY,80942,2010,
+0,35,Malaviya National Institute of Technology  Jaipur,Jaipur,26.8648,75.8106,Public Assembly,Sports Complex,76527,2007,
+0,36,Malaviya National Institute of Technology  Jaipur,Jaipur,26.8648,75.8106,Education,Lab-8 CHEM,76257,2007,
+0,37,Malaviya National Institute of Technology  Jaipur,Jaipur,26.8648,75.8106,Education,Lab-9 MAT,68094,2003,
+0,38,Malaviya National Institute of Technology  Jaipur,Jaipur,26.8648,75.8106,Lodging/residential,Hostel 6,65359,2013,
+0,39,Malaviya National Institute of Technology  Jaipur,Jaipur,26.8648,75.8106,Office,Computer Science and Engineering Department,64619,1969,
+0,40,Malaviya National Institute of Technology  Jaipur,Jaipur,26.8648,75.8106,Education,Lab-10 BIO,61904,2001,
+0,41,Malaviya National Institute of Technology  Jaipur,Jaipur,26.8648,75.8106,Education,Lab-11 DS,60809,2003,
+0,42,Malaviya National Institute of Technology  Jaipur,Jaipur,26.8648,75.8106,Lodging/residential,Hostel 7,60088,2013,
+0,43,Malaviya National Institute of Technology  Jaipur,Jaipur,26.8648,75.8106,Lodging/residential,Hostel 8,59200,1999,
+0,44,Malaviya National Institute of Technology  Jaipur,Jaipur,26.8648,75.8106,Lodging/residential,Hostel 9,59200,1999,
+0,45,Malaviya National Institute of Technology  Jaipur,Jaipur,26.8648,75.8106,Education,Lab-12 AI,54644,1996,
+0,46,Malaviya National Institute of Technology  Jaipur,Jaipur,26.8648,75.8106,Lodging/residential,Hostel 10,53130,2002,
+0,47,Malaviya National Institute of Technology  Jaipur,Jaipur,26.8648,75.8106,Lodging/residential,Hostel 11,53130,2002,
+0,48,Malaviya National Institute of Technology  Jaipur,Jaipur,26.8648,75.8106,Lodging/residential,Hostel 12,53130,2001,
+0,49,Malaviya National Institute of Technology  Jaipur,Jaipur,26.8648,75.8106,Lodging/residential,Hostel 13,53130,2001,
+0,50,Malaviya National Institute of Technology  Jaipur,Jaipur,26.8648,75.8106,Office,Electrical Engineering Department,52957,2016,
+0,51,Malaviya National Institute of Technology  Jaipur,Jaipur,26.8648,75.8106,Education,Lab-13 HSS,49073,1968,
+0,52,Malaviya National Institute of Technology  Jaipur,Jaipur,26.8648,75.8106,Office,Electronics and Communication Engineering Department,48392,2005,
+0,53,Malaviya National Institute of Technology  Jaipur,Jaipur,26.8648,75.8106,Office,Civil Engineering Department,45330,2003,
+0,54,Malaviya National Institute of Technology  Jaipur,Jaipur,26.8648,75.8106,Lodging/residential,Hostel 14,42731,2002,
+0,55,Malaviya National Institute of Technology  Jaipur,Jaipur,26.8648,75.8106,Lodging/residential,Hostel 15,42731,2001,
+0,56,Malaviya National Institute of Technology  Jaipur,Jaipur,26.8648,75.8106,Lodging/residential,Staff Quarter 1,41617,2002,
+0,57,Malaviya National Institute of Technology  Jaipur,Jaipur,26.8648,75.8106,Lodging/residential,Staff Quarter 2,41617,2001,
+0,58,Malaviya National Institute of Technology  Jaipur,Jaipur,26.8648,75.8106,Lodging/residential,Staff Quarter 3,38686,2002,
+0,59,Malaviya National Institute of Technology  Jaipur,Jaipur,26.8648,75.8106,Lodging/residential,Staff Quarter 4,38686,2001,
+0,60,Malaviya National Institute of Technology  Jaipur,Jaipur,26.8648,75.8106,Lodging/residential,Staff Quarter 5,37241,1981,
+0,61,Malaviya National Institute of Technology  Jaipur,Jaipur,26.8648,75.8106,Lodging/residential,Staff Quarter 6,37241,1981,
+0,62,Malaviya National Institute of Technology  Jaipur,Jaipur,26.8648,75.8106,Lodging/residential,Staff Quarter 7,37100,1999,
+0,63,Malaviya National Institute of Technology  Jaipur,Jaipur,26.8648,75.8106,Office,Mechanical Engineering Department,36240,2010,
+0,64,Malaviya National Institute of Technology  Jaipur,Jaipur,26.8648,75.8106,Office,Chemical Engineering Department,33370,1982,
+0,65,Malaviya National Institute of Technology  Jaipur,Jaipur,26.8648,75.8106,Education,Lab-14 ARCH,29469,1968,
+0,66,Malaviya National Institute of Technology  Jaipur,Jaipur,26.8648,75.8106,Lodging/residential,Staff Quarter 8,27926,1981,
+0,67,Malaviya National Institute of Technology  Jaipur,Jaipur,26.8648,75.8106,Office,Metallurgical and Materials Engineering Department,27000,2010,
+0,68,Malaviya National Institute of Technology  Jaipur,Jaipur,26.8648,75.8106,Office,Aerospace Engineering Department,26953,2005,
+0,69,Malaviya National Institute of Technology  Jaipur,Jaipur,26.8648,75.8106,Public Assembly,Football Ground,26944,2001,
+0,70,Malaviya National Institute of Technology  Jaipur,Jaipur,26.8648,75.8106,Lodging/residential,Staff Quarter 9,24456,1968,
+0,71,Malaviya National Institute of Technology  Jaipur,Jaipur,26.8648,75.8106,Lodging/residential,Staff Quarter 10,24456,1968,
+0,72,Malaviya National Institute of Technology  Jaipur,Jaipur,26.8648,75.8106,Lodging/residential,Staff Quarter 11,24456,1968,
+0,73,Malaviya National Institute of Technology  Jaipur,Jaipur,26.8648,75.8106,Lodging/residential,Staff Quarter 12,24456,1968,
+0,74,Malaviya National Institute of Technology  Jaipur,Jaipur,26.8648,75.8106,Education,Lab-15 CSE,23685,2002,
+0,75,Malaviya National Institute of Technology  Jaipur,Jaipur,26.8648,75.8106,Education,Lab-16 ECE,21657,2016,
+0,76,Malaviya National Institute of Technology  Jaipur,Jaipur,26.8648,75.8106,Office,Biotechnology Department,18860,1986,
+0,77,Malaviya National Institute of Technology  Jaipur,Jaipur,26.8648,75.8106,Office,Mathematics Department,18717,2004,
+0,78,Malaviya National Institute of Technology  Jaipur,Jaipur,26.8648,75.8106,Office,Physics Department,16726,2011,
+0,79,Malaviya National Institute of Technology  Jaipur,Jaipur,26.8648,75.8106,Office,Chemistry Department,15876,1983,
+0,80,Malaviya National Institute of Technology  Jaipur,Jaipur,26.8648,75.8106,Office,Humanities and Social Sciences Department,15250,1980,
+0,81,Malaviya National Institute of Technology  Jaipur,Jaipur,26.8648,75.8106,Office,Architecture and Planning Department,12769,2013,
+0,82,Malaviya National Institute of Technology  Jaipur,Jaipur,26.8648,75.8106,Education,Lab-17 EE,10932,1986,
+0,83,Malaviya National Institute of Technology  Jaipur,Jaipur,26.8648,75.8106,Office,Earthquake Engineering Department,10779,1970,
+0,84,Malaviya National Institute of Technology  Jaipur,Jaipur,26.8648,75.8106,Office,Environmental Engineering Department,10743,1974,
+0,85,Malaviya National Institute of Technology  Jaipur,Jaipur,26.8648,75.8106,Other,Other,9569,1989,
+0,86,Malaviya National Institute of Technology  Jaipur,Jaipur,26.8648,75.8106,Retail,Fruit Shop,9045,2016,
+0,87,Malaviya National Institute of Technology  Jaipur,Jaipur,26.8648,75.8106,Education,Lab-18 ME,8000,2000,
+0,88,Malaviya National Institute of Technology  Jaipur,Jaipur,26.8648,75.8106,Education,Lab-19 CE,7867,2011,
+0,89,Malaviya National Institute of Technology  Jaipur,Jaipur,26.8648,75.8106,Education,Lab-20 CHE,7432,2008,
+0,90,Malaviya National Institute of Technology  Jaipur,Jaipur,26.8648,75.8106,Office,Industrial Engineering and Management Department,7043,1990,
+0,91,Malaviya National Institute of Technology  Jaipur,Jaipur,26.8648,75.8106,Public Assembly,Tennis Lawn,6412,2006,
+0,92,Malaviya National Institute of Technology  Jaipur,Jaipur,26.8648,75.8106,Education,Lab-21 PHY,5376,1991,
+0,93,Malaviya National Institute of Technology  Jaipur,Jaipur,26.8648,75.8106,Other,Other,4698,1981,
+0,94,Malaviya National Institute of Technology  Jaipur,Jaipur,26.8648,75.8106,Office,Data Science and AI Department,4038,1986,
+0,95,Malaviya National Institute of Technology  Jaipur,Jaipur,26.8648,75.8106,Education,Lab-22 CHEM,3569,1996,
+0,96,Malaviya National Institute of Technology  Jaipur,Jaipur,26.8648,75.8106,Other,Other,3025,1979,
+0,97,Malaviya National Institute of Technology  Jaipur,Jaipur,26.8648,75.8106,Education,Lab-23 MAT,2720,2004,
+0,98,Malaviya National Institute of Technology  Jaipur,Jaipur,26.8648,75.8106,Office,Mechatronics Department,2260,2016,
+0,99,Malaviya National Institute of Technology  Jaipur,Jaipur,26.8648,75.8106,Other,Other,2070,1996,
+0,100,Malaviya National Institute of Technology  Jaipur,Jaipur,26.8648,75.8106,Retail,Stationery Shop,283,1985,
+1,101,Indian Institute of Technology Delhi,New Delhi,28.545,77.1926,Office,Administrative Block,174601,1960,12
+1,102,Indian Institute of Technology Delhi,New Delhi,28.545,77.1926,Education,Lecture Complex - 1,150318,1906,9
+1,103,Indian Institute of Technology Delhi,New Delhi,28.545,77.1926,Education,Lecture Complex - 2,139683,1958,13
+1,104,Indian Institute of Technology Delhi,New Delhi,28.545,77.1926,Education,Computer Center,138316,1960,8
+1,105,Indian Institute of Technology Delhi,New Delhi,28.545,77.1926,Education,Library,129716,1968,6
+1,106,Indian Institute of Technology Delhi,New Delhi,28.545,77.1926,Education,Startup Incubation Center,118338,1909,7
+1,107,Indian Institute of Technology Delhi,New Delhi,28.545,77.1926,Public services,Public services-1,118231,,6
+1,108,Indian Institute of Technology Delhi,New Delhi,28.545,77.1926,Lodging/residential,Hostel 1,102957,1968,7
+1,109,Indian Institute of Technology Delhi,New Delhi,28.545,77.1926,Lodging/residential,Hostel 2,102774,1956,7
+1,110,Indian Institute of Technology Delhi,New Delhi,28.545,77.1926,Education,Materials Research Centre,100481,1958,9
+1,111,Indian Institute of Technology Delhi,New Delhi,28.545,77.1926,Education,Seismology Centre,97532,2005,10
+1,112,Indian Institute of Technology Delhi,New Delhi,28.545,77.1926,Education,Lab-1 CSE,91149,2007,7
+1,113,Indian Institute of Technology Delhi,New Delhi,28.545,77.1926,Lodging/residential,Hostel 3,83108,1995,8
+1,114,Indian Institute of Technology Delhi,New Delhi,28.545,77.1926,Education,Lab-2 ECE,83043,1991,6
+1,115,Indian Institute of Technology Delhi,New Delhi,28.545,77.1926,Office,Public Works Department Office,82548,1977,7
+1,116,Indian Institute of Technology Delhi,New Delhi,28.545,77.1926,Office,Hostel Office,81881,1960,8
+1,117,Indian Institute of Technology Delhi,New Delhi,28.545,77.1926,Education,Lab-3 EE,81580,1913,5
+1,118,Indian Institute of Technology Delhi,New Delhi,28.545,77.1926,Education,Lab-4 ME,68211,1976,7
+1,119,Indian Institute of Technology Delhi,New Delhi,28.545,77.1926,Lodging/residential,Hostel 4,66661,1930,7
+1,120,Indian Institute of Technology Delhi,New Delhi,28.545,77.1926,Lodging/residential,Hostel 5,66532,1967,10
+1,121,Indian Institute of Technology Delhi,New Delhi,28.545,77.1926,Office,Sports Office,65657,1955,8
+1,122,Indian Institute of Technology Delhi,New Delhi,28.545,77.1926,Lodging/residential,Hostel 6,64723,1960,8
+1,123,Indian Institute of Technology Delhi,New Delhi,28.545,77.1926,Public Assembly,Open Air Theatre (OAT),64024,1967,6
+1,124,Indian Institute of Technology Delhi,New Delhi,28.545,77.1926,Lodging/residential,Hostel 7,62893,1960,16
+1,125,Indian Institute of Technology Delhi,New Delhi,28.545,77.1926,Education,Lab-5 CE,61204,1989,6
+1,126,Indian Institute of Technology Delhi,New Delhi,28.545,77.1926,Office,Security Office,57673,,5
+1,127,Indian Institute of Technology Delhi,New Delhi,28.545,77.1926,Education,Lab-6 CHE,56995,1953,6
+1,128,Indian Institute of Technology Delhi,New Delhi,28.545,77.1926,Public services,Public services-2,56629,1900,6
+1,129,Indian Institute of Technology Delhi,New Delhi,28.545,77.1926,Lodging/residential,Hostel 8,56467,1960,9
+1,130,Indian Institute of Technology Delhi,New Delhi,28.545,77.1926,Office,Computer Science and Engineering Department,51688,1930,8
+1,131,Indian Institute of Technology Delhi,New Delhi,28.545,77.1926,Education,Lab-7 PHY,50623,,5
+1,132,Indian Institute of Technology Delhi,New Delhi,28.545,77.1926,Office,Electrical Engineering Department,50020,,11
+1,133,Indian Institute of Technology Delhi,New Delhi,28.545,77.1926,Lodging/residential,Hostel 9,49589,1998,8
+1,134,Indian Institute of Technology Delhi,New Delhi,28.545,77.1926,Office,Electronics and Communication Engineering Department,45348,,4
+1,135,Indian Institute of Technology Delhi,New Delhi,28.545,77.1926,Office,Civil Engineering Department,44789,1919,5
+1,136,Indian Institute of Technology Delhi,New Delhi,28.545,77.1926,Office,Mechanical Engineering Department,40085,,4
+1,137,Indian Institute of Technology Delhi,New Delhi,28.545,77.1926,Education,Lab-8 CHEM,38319,1900,6
+1,138,Indian Institute of Technology Delhi,New Delhi,28.545,77.1926,Education,Lab-9 MAT,37265,,5
+1,139,Indian Institute of Technology Delhi,New Delhi,28.545,77.1926,Office,Chemical Engineering Department,34455,1907,8
+1,140,Indian Institute of Technology Delhi,New Delhi,28.545,77.1926,Education,Lab-10 BIO,32206,,6
+1,141,Indian Institute of Technology Delhi,New Delhi,28.545,77.1926,Office,Metallurgical and Materials Engineering Department,31614,1956,8
+1,142,Indian Institute of Technology Delhi,New Delhi,28.545,77.1926,Office,Aerospace Engineering Department,30495,1997,8
+1,143,Indian Institute of Technology Delhi,New Delhi,28.545,77.1926,Education,Lab-11 DS,27814,2006,8
+1,144,Indian Institute of Technology Delhi,New Delhi,28.545,77.1926,Lodging/residential,Hostel 10,27071,,6
+1,145,Indian Institute of Technology Delhi,New Delhi,28.545,77.1926,Education,Lab-12 AI,21539,2004,5
+1,146,Indian Institute of Technology Delhi,New Delhi,28.545,77.1926,Education,Lab-13 HSS,16802,1995,6
+1,147,Indian Institute of Technology Delhi,New Delhi,28.545,77.1926,Office,Biotechnology Department,16092,1965,3
+1,148,Indian Institute of Technology Delhi,New Delhi,28.545,77.1926,Education,Lab-14 ARCH,15489,2004,4
+1,149,Indian Institute of Technology Delhi,New Delhi,28.545,77.1926,Office,Mathematics Department,14219,,4
+1,150,Indian Institute of Technology Delhi,New Delhi,28.545,77.1926,Office,Physics Department,10301,1970,2
+1,151,Indian Institute of Technology Delhi,New Delhi,28.545,77.1926,Education,Lab-15 CSE,5374,,4
+2,152,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Public Assembly,Open Air Theatre (OAT),809530,1958,
+2,153,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Parking,Parking-3,557217,2004,
+2,154,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Lodging/residential,Hostel 1,553210,2009,
+2,155,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Parking,Parking-1,405083,2004,
+2,156,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Public services,Public services-3,345837,1966,
+2,157,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Education,Lecture Complex - 1,327256,2012,
+2,158,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Education,Lecture Complex - 2,282946,2003,
+2,159,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Education,Computer Center,272278,1955,
+2,160,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Education,Library,261188,,
+2,161,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Public Assembly,Auditorium,254766,1989,
+2,162,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Public Assembly,Sports Complex,230259,1975,
+2,163,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Education,Startup Incubation Center,219608,1992,
+2,164,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Lodging/residential,Hostel 2,216526,1967,
+2,165,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Education,Materials Research Centre,204349,1993,
+2,166,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Office,Administrative Block,202435,1967,
+2,167,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Education,Seismology Centre,193294,2006,
+2,168,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Education,Lab-1 CSE,183460,2005,
+2,169,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Education,Lab-2 ECE,179559,2006,
+2,170,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Public Assembly,Football Ground,179449,1976,
+2,171,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Education,Lab-3 EE,179167,1971,
+2,172,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Public Assembly,Tennis Lawn,167066,1989,
+2,173,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Office,Public Works Department Office,163959,2004,
+2,174,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Parking,Parking-2,157113,1987,
+2,175,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Office,Hostel Office,155682,,
+2,176,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Education,Lab-4 ME,151637,1983,
+2,177,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Education,Lab-5 CE,148829,2014,
+2,178,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Office,Sports Office,148101,,
+2,179,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Public Assembly,Cricket Ground,144086,1989,
+2,180,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Public Assembly,Indoor Sports Complex,143093,1964,
+2,181,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Office,Security Office,140345,,
+2,182,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Education,Lab-6 CHE,140092,,
+2,183,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Education,Lab-7 PHY,137065,1964,
+2,184,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Education,Lab-8 CHEM,137040,1957,
+2,185,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Education,Lab-9 MAT,132518,1992,
+2,186,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Office,Computer Science and Engineering Department,131797,1968,
+2,187,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Education,Lab-10 BIO,131710,1991,
+2,188,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Education,Lab-11 DS,126985,1979,
+2,189,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Education,Lab-12 AI,122592,1971,
+2,190,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Office,Electrical Engineering Department,121440,1983,
+2,191,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Office,Electronics and Communication Engineering Department,118966,1988,
+2,192,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Education,Lab-13 HSS,111635,1989,
+2,193,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Lodging/residential,Hostel 3,111304,1964,
+2,194,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Lodging/residential,Hostel 4,106440,1963,
+2,195,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Public Assembly,Swimming Pool Complex,105505,2008,
+2,196,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Public services,Public services-2,102856,,
+2,197,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Public services,Public services-6,101262,1982,
+2,198,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Public services,Public services-4,99700,,
+2,199,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Education,Lab-14 ARCH,98829,1968,
+2,200,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Education,Lab-15 CSE,96124,1959,
+2,201,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Education,Lab-16 ECE,95717,,
+2,202,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Education,Lab-17 EE,91273,1951,
+2,203,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Education,Lab-18 ME,90903,,
+2,204,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Education,Lab-19 CE,90900,,
+2,205,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Education,Lab-20 CHE,89770,,
+2,206,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Education,Lab-21 PHY,88486,,
+2,207,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Education,Lab-22 CHEM,87673,1960,
+2,208,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Lodging/residential,Hostel 5,86323,1956,
+2,209,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Education,Lab-23 MAT,84300,,
+2,210,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Office,Civil Engineering Department,83660,1973,
+2,211,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Education,Lab-24 BIO,78268,1964,
+2,212,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Public Assembly,Gym,77844,,
+2,213,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Education,Lab-25 DS,77469,,
+2,214,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Education,Lab-26 AI,75650,,
+2,215,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Lodging/residential,Hostel 6,74682,2006,
+2,216,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Office,Mechanical Engineering Department,74180,1930,
+2,217,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Public Assembly,Public Assembly-9,72193,2013,
+2,218,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Education,Lab-27 HSS,72102,1970,
+2,219,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Education,Lab-28 ARCH,71421,,
+2,220,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Education,Lab-29 CSE,71248,2004,
+2,221,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Education,Lab-30 ECE,71224,,
+2,222,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Office,Chemical Engineering Department,70837,2014,
+2,223,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Office,Metallurgical and Materials Engineering Department,70832,2014,
+2,224,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Education,Lab-31 EE,65907,1964,
+2,225,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Education,Lab-32 ME,64560,1965,
+2,226,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Lodging/residential,Hostel 7,63348,2007,
+2,227,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Education,Lab-33 CE,62238,1970,
+2,228,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Lodging/residential,Hostel 8,60086,2001,
+2,229,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Public Assembly,Public Assembly-7,51999,1974,
+2,230,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Public Assembly,Public Assembly-10,51920,,
+2,231,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Office,Aerospace Engineering Department,51732,1966,
+2,232,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Education,Lab-34 CHE,49662,1964,
+2,233,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Education,Lab-35 PHY,49384,1967,
+2,234,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Lodging/residential,Hostel 9,49108,1951,
+2,235,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Education,Lab-36 CHEM,49078,1914,
+2,236,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Education,Lab-37 MAT,48411,,
+2,237,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Office,Biotechnology Department,45017,,
+2,238,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Education,Lab-38 BIO,44203,1950,
+2,239,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Public services,Public services-1,43681,2007,
+2,240,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Office,Mathematics Department,42214,1985,
+2,241,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Public Assembly,Public Assembly-3,40531,,
+2,242,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Healthcare,Dispensary,36904,1934,
+2,243,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Lodging/residential,Hostel 10,36406,1940,
+2,244,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Education,Lab-39 DS,34171,,
+2,245,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Education,Lab-40 AI,33739,1939,
+2,246,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Office,Physics Department,33713,1956,
+2,247,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Lodging/residential,Hostel 11,32841,1935,
+2,248,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Lodging/residential,Hostel 12,30949,1951,
+2,249,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Education,Lab-41 HSS,30543,,
+2,250,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Office,Chemistry Department,29778,,
+2,251,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Food sales and service,Food sales and service-2,28862,,
+2,252,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Office,Humanities and Social Sciences Department,28750,,
+2,253,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Education,Lab-42 ARCH,25139,1970,
+2,254,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Food sales and service,Food sales and service-1,24867,2012,
+2,255,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Education,Lab-43 CSE,24643,1982,
+2,256,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Education,Lab-44 ECE,24586,,
+2,257,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Public Assembly,Public Assembly-6,24345,1981,
+2,258,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Office,Architecture and Planning Department,23549,1941,
+2,259,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Office,Earthquake Engineering Department,23392,,
+2,260,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Utility,Utility-1,21958,,
+2,261,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Public Assembly,Public Assembly-8,20804,1999,
+2,262,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Public Assembly,Public Assembly-5,17132,1918,
+2,263,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Education,Lab-45 EE,16744,,
+2,264,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Public services,Public services-5,16411,,
+2,265,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Public Assembly,Public Assembly-1,15786,,
+2,266,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Warehouse/storage,Warehouse/storage-1,12908,1979,
+2,267,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Education,Lab-46 ME,12773,,
+2,268,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Education,Lab-47 CE,12761,1909,
+2,269,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Public Assembly,Public Assembly-4,11935,1939,
+2,270,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Education,Lab-48 CHE,11329,,
+2,271,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Public Assembly,Public Assembly-11,10733,2005,
+2,272,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Education,Lab-49 PHY,10334,,
+2,273,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Office,Environmental Engineering Department,10135,,
+2,274,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Education,Lab-50 CHEM,9788,,
+2,275,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Office,Industrial Engineering and Management Department,9703,1940,
+2,276,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Public Assembly,Public Assembly-12,9666,2005,
+2,277,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Education,Lab-51 MAT,9309,1970,
+2,278,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Education,Lab-52 BIO,7481,1969,
+2,279,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Office,Data Science and AI Department,6203,1999,
+2,280,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Office,Mechatronics Department,5258,,
+2,281,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Education,Lab-53 DS,4583,,
+2,282,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Education,Lab-54 AI,4314,1907,
+2,283,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Warehouse/storage,Warehouse/storage-2,3877,1975,
+2,284,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Religious worship,Religious worship-1,1629,1948,
+2,285,Indian Institute of Technology Bombay,Mumbai,19.1334,72.9133,Public Assembly,Public Assembly-2,1022,,
+3,286,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Office,Administrative Block,850354,1989,
+3,287,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Office,Public Works Department Office,585955,1942,
+3,288,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public services,Public services-69,555243,1941,
+3,289,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Office,Hostel Office,474680,1986,
+3,290,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public services,Public services-70,461647,1976,
+3,291,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Office,Sports Office,408000,2010,
+3,292,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public services,Public services-81,400000,1971,
+3,293,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Education,Lecture Complex - 1,394000,2013,
+3,294,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Education,Lecture Complex - 2,376507,2011,
+3,295,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Education,Computer Center,356000,2014,
+3,296,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Lodging/residential,Hostel 1,350000,1949,
+3,297,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Office,Security Office,340000,2010,
+3,298,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Office,Computer Science and Engineering Department,328760,1904,
+3,299,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Education,Library,325217,2006,
+3,300,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Office,Electrical Engineering Department,295000,,
+3,301,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Education,Startup Incubation Center,288800,1923,
+3,302,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Education,Materials Research Centre,283000,2014,
+3,303,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Education,Seismology Centre,282200,1928,
+3,304,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Education,Lab-1 CSE,271300,1940,
+3,305,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Education,Lab-2 ECE,235000,2013,
+3,306,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Office,Electronics and Communication Engineering Department,229000,2010,
+3,307,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Education,Lab-3 EE,225000,,
+3,308,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Education,Lab-4 ME,207000,1935,
+3,309,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Warehouse/storage,Warehouse/storage-3,202829,1983,
+3,310,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public Assembly,Open Air Theatre (OAT),194300,1900,
+3,311,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Education,Lab-5 CE,193800,,
+3,312,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Education,Lab-6 CHE,182500,1970,
+3,313,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Education,Lab-7 PHY,180000,1939,
+3,314,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Education,Lab-8 CHEM,170000,1956,
+3,315,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Education,Lab-9 MAT,158000,1959,
+3,316,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Education,Lab-10 BIO,155100,1931,
+3,317,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Education,Lab-11 DS,144900,,
+3,318,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public services,Public services-78,144000,,
+3,319,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public services,Public services-72,134114,,
+3,320,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Education,Lab-12 AI,116872,1931,
+3,321,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Warehouse/storage,Warehouse/storage-4,112536,,
+3,322,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Other,Other,112283,,
+3,323,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public services,Public services-66,112283,,
+3,324,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public services,Public services-80,110800,1972,
+3,325,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Education,Lab-13 HSS,110000,,
+3,326,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Education,Lab-14 ARCH,109000,1940,
+3,327,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Education,Lab-15 CSE,105500,,
+3,328,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Office,Civil Engineering Department,105000,,
+3,329,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Education,Lab-16 ECE,104294,1976,
+3,330,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Education,Lab-17 EE,104200,2009,
+3,331,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Education,Lab-18 ME,103800,,
+3,332,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public services,Public services-37,103200,,
+3,333,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Education,Lab-19 CE,101400,1930,
+3,334,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Education,Lab-20 CHE,99975,1968,
+3,335,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Education,Lab-21 PHY,99700,1955,
+3,336,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Education,Lab-22 CHEM,99325,1927,
+3,337,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Education,Lab-23 MAT,98900,1961,
+3,338,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Education,Lab-24 BIO,95100,1927,
+3,339,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public services,Public services-1,90635,2011,
+3,340,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Education,Lab-25 DS,90400,,
+3,341,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Office,Mechanical Engineering Department,89315,,
+3,342,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public services,Public services-86,89315,,
+3,343,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Education,Lab-26 AI,88300,1909,
+3,344,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Education,Lab-27 HSS,87107,,
+3,345,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Education,Lab-28 ARCH,86375,1903,
+3,346,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public Assembly,Auditorium,86120,1926,
+3,347,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Education,Lab-29 CSE,85039,1925,
+3,348,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Education,Lab-30 ECE,83800,1944,
+3,349,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Education,Lab-31 EE,83800,,
+3,350,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Education,Lab-32 ME,83400,1942,
+3,351,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Education,Lab-33 CE,82200,1916,
+3,352,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public services,Public services-31,81397,2004,
+3,353,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Education,Lab-34 CHE,79700,1932,
+3,354,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public services,Public services-8,78550,,
+3,355,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Education,Lab-35 PHY,77700,,
+3,356,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Education,Lab-36 CHEM,77500,1942,
+3,357,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Education,Lab-37 MAT,77500,,
+3,358,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Education,Lab-38 BIO,75900,1974,
+3,359,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Education,Lab-39 DS,73200,1959,
+3,360,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Education,Lab-40 AI,72800,1959,
+3,361,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Education,Lab-41 HSS,71100,,
+3,362,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Education,Lab-42 ARCH,70800,1964,
+3,363,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Education,Lab-43 CSE,69600,1949,
+3,364,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Education,Lab-44 ECE,69600,1978,
+3,365,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Education,Lab-45 EE,69600,1908,
+3,366,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Education,Lab-46 ME,69400,1959,
+3,367,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Education,Lab-47 CE,69400,1911,
+3,368,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Education,Lab-48 CHE,69300,2017,
+3,369,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public services,Public services-79,68203,,
+3,370,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Education,Lab-49 PHY,66900,1969,
+3,371,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Education,Lab-50 CHEM,66600,1959,
+3,372,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Education,Lab-51 MAT,66600,1970,
+3,373,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Education,Lab-52 BIO,66404,,
+3,374,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Education,Lab-53 DS,66200,1950,
+3,375,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Education,Lab-54 AI,65000,,
+3,376,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Education,Lab-55 HSS,64113,1924,
+3,377,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Education,Lab-56 ARCH,63900,1921,
+3,378,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Education,Lab-57 CSE,62800,2014,
+3,379,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Office,Chemical Engineering Department,62205,,
+3,380,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Education,Lab-58 ECE,62200,,
+3,381,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Education,Lab-59 EE,61151,,
+3,382,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Education,Lab-60 ME,59900,1962,
+3,383,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Education,Lab-61 CE,59400,1900,
+3,384,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Education,Lab-62 CHE,59200,1959,
+3,385,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Education,Lab-63 PHY,58908,1910,
+3,386,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Education,Lab-64 CHEM,57165,2014,
+3,387,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Education,Lab-65 MAT,57100,2015,
+3,388,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Education,Lab-66 BIO,57100,1960,
+3,389,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public services,Public services-26,54061,2006,
+3,390,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Education,Lab-67 DS,53000,1912,
+3,391,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Warehouse/storage,Warehouse/storage-5,51622,1975,
+3,392,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Education,Lab-68 AI,51500,1931,
+3,393,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public services,Public services-4,51176,,
+3,394,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Education,Lab-69 HSS,50000,1928,
+3,395,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Education,Lab-70 ARCH,49500,1962,
+3,396,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Education,Lab-71 CSE,49100,1911,
+3,397,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Education,Lab-72 ECE,48994,2015,
+3,398,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Education,Lab-73 EE,47984,2002,
+3,399,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Education,Lab-74 ME,47500,1968,
+3,400,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public services,Public services-52,47439,,
+3,401,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Education,Lab-75 CE,47200,1935,
+3,402,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Education,Lab-76 CHE,46484,1932,
+3,403,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public services,Public services-55,46007,1950,
+3,404,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public Assembly,Sports Complex,45548,,
+3,405,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public services,Public services-13,45098,,
+3,406,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public services,Public services-42,43992,,
+3,407,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public services,Public services-58,43955,1978,
+3,408,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Education,Lab-77 PHY,43000,1923,
+3,409,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Education,Lab-78 CHEM,41329,,
+3,410,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Education,Lab-79 MAT,40950,1910,
+3,411,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Office,Metallurgical and Materials Engineering Department,40000,,
+3,412,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public Assembly,Football Ground,39541,,
+3,413,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Education,Lab-80 BIO,39500,,
+3,414,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Education,Lab-81 DS,38500,2016,
+3,415,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Education,Lab-82 AI,37800,,
+3,416,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Education,Lab-83 HSS,37083,1908,
+3,417,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public Assembly,Tennis Lawn,36744,2004,
+3,418,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public services,Public services-38,36562,,
+3,419,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public Assembly,Cricket Ground,36387,,
+3,420,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public services,Public services-21,35241,1978,
+3,421,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public services,Public services-39,35033,1962,
+3,422,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Office,Aerospace Engineering Department,34400,,
+3,423,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Other,Other,34400,,
+3,424,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public services,Public services-2,33743,,
+3,425,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public services,Public services-33,32527,,
+3,426,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Office,Biotechnology Department,31346,,
+3,427,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Lodging/residential,Hostel 2,31283,1935,
+3,428,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public services,Public services-23,30810,,
+3,429,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Office,Mathematics Department,30525,,
+3,430,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Office,Physics Department,30000,,
+3,431,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Office,Chemistry Department,29916,2002,
+3,432,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Office,Humanities and Social Sciences Department,27600,,
+3,433,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Warehouse/storage,Warehouse/storage-1,27318,,
+3,434,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public Assembly,Indoor Sports Complex,26187,,
+3,435,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public services,Public services-49,25000,,
+3,436,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public services,Public services-44,24875,1984,
+3,437,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public services,Public services-54,24618,,
+3,438,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public services,Public services-36,23918,,
+3,439,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public Assembly,Swimming Pool Complex,23803,1969,
+3,440,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public Assembly,Gym,23055,,
+3,441,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public services,Public services-51,22500,,
+3,442,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Education,Lab-84 ARCH,22400,,
+3,443,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public Assembly,Public Assembly-8,22334,1977,
+3,444,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public services,Public services-3,22000,,
+3,445,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public services,Public services-7,22000,,
+3,446,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public services,Public services-11,22000,,
+3,447,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public services,Public services-60,22000,2007,
+3,448,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Education,Lab-85 CSE,21903,1931,
+3,449,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public services,Public services-57,21600,,
+3,450,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public services,Public services-43,21472,2011,
+3,451,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public services,Public services-17,21368,,
+3,452,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public Assembly,Public Assembly-5,20644,,
+3,453,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public Assembly,Public Assembly-11,20584,,
+3,454,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public services,Public services-84,20110,1936,
+3,455,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public services,Public services-27,19315,,
+3,456,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public services,Public services-85,19000,,
+3,457,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public services,Public services-22,18432,1973,
+3,458,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Lodging/residential,Hostel 3,18340,1900,
+3,459,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public services,Public services-59,18000,,
+3,460,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public services,Public services-47,17927,,
+3,461,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public Assembly,Public Assembly-10,17709,,
+3,462,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public Assembly,Public Assembly-16,17262,2003,
+3,463,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public services,Public services-25,16768,1980,
+3,464,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public services,Public services-45,16576,1932,
+3,465,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public services,Public services-61,16200,,
+3,466,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Office,Architecture and Planning Department,16098,,
+3,467,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public Assembly,Public Assembly-20,16098,1929,
+3,468,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public services,Public services-83,16000,2014,
+3,469,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public Assembly,Public Assembly-12,15960,2005,
+3,470,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public Assembly,Public Assembly-2,15950,,
+3,471,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public services,Public services-10,15913,,
+3,472,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Lodging/residential,Hostel 4,15574,,
+3,473,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Lodging/residential,Hostel 5,15420,,
+3,474,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public Assembly,Public Assembly-1,14913,,
+3,475,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public Assembly,Public Assembly-29,14842,,
+3,476,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Warehouse/storage,Warehouse/storage-2,14839,2005,
+3,477,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public services,Public services-77,14519,1908,
+3,478,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public services,Public services-34,14269,,
+3,479,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public services,Public services-46,14125,,
+3,480,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Office,Earthquake Engineering Department,13728,,
+3,481,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public services,Public services-16,13224,1965,
+3,482,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public services,Public services-9,13100,1929,
+3,483,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public services,Public services-53,13044,1913,
+3,484,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public services,Public services-41,12945,1960,
+3,485,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public services,Public services-82,12754,1968,
+3,486,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public services,Public services-67,12750,,
+3,487,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public Assembly,Public Assembly-18,12660,,
+3,488,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public services,Public services-20,12506,,
+3,489,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public services,Public services-65,12316,,
+3,490,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public services,Public services-71,12000,,
+3,491,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public services,Public services-35,11934,1930,
+3,492,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public Assembly,Public Assembly-6,11910,,
+3,493,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Lodging/residential,Hostel 6,11900,,
+3,494,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public Assembly,Public Assembly-25,11651,,
+3,495,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public Assembly,Public Assembly-22,11274,,
+3,496,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public services,Public services-76,11143,,
+3,497,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public services,Public services-5,10873,,
+3,498,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Other,Other,10762,,
+3,499,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Other,Other,10578,,
+3,500,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public services,Public services-12,10577,1969,
+3,501,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public services,Public services-56,10151,1966,
+3,502,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Religious worship,Religious worship-1,10000,2010,
+3,503,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public services,Public services-18,9941,1963,
+3,504,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public services,Public services-50,9816,,
+3,505,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Healthcare,Dispensary,9813,2010,
+3,506,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public Assembly,Public Assembly-30,9726,,
+3,507,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public services,Public services-75,9392,,
+3,508,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public services,Public services-48,9226,,
+3,509,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public services,Public services-73,9062,,
+3,510,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public services,Public services-68,9000,,
+3,511,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public services,Public services-24,8925,1912,
+3,512,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public services,Public services-32,8726,,
+3,513,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Office,Environmental Engineering Department,8637,,
+3,514,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Office,Industrial Engineering and Management Department,8000,,
+3,515,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public services,Public services-62,7732,,
+3,516,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public Assembly,Public Assembly-14,7675,,
+3,517,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public services,Public services-74,7636,,
+3,518,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Lodging/residential,Hostel 7,7250,,
+3,519,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public Assembly,Public Assembly-31,7133,,
+3,520,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public services,Public services-30,7079,,
+3,521,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public Assembly,Public Assembly-4,6625,,
+3,522,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public services,Public services-19,6431,,
+3,523,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Office,Data Science and AI Department,6400,,
+3,524,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public Assembly,Public Assembly-21,6139,,
+3,525,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public services,Public services-63,6010,,
+3,526,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public services,Public services-29,5783,,
+3,527,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public Assembly,Public Assembly-13,5554,,
+3,528,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public services,Public services-6,5033,,
+3,529,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public Assembly,Public Assembly-26,5013,,
+3,530,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Lodging/residential,Hostel 8,5000,2010,
+3,531,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public services,Public services-15,4925,,
+3,532,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public Assembly,Public Assembly-27,4589,,
+3,533,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public services,Public services-64,4581,,
+3,534,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public services,Public services-14,4336,,
+3,535,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public Assembly,Public Assembly-17,3545,2000,
+3,536,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public services,Public services-40,3267,,
+3,537,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public Assembly,Public Assembly-7,3133,,
+3,538,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public services,Public services-28,2818,,
+3,539,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Lodging/residential,Hostel 9,2582,,
+3,540,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public Assembly,Public Assembly-19,2347,,
+3,541,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Lodging/residential,Hostel 10,2210,,
+3,542,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public Assembly,Public Assembly-3,2067,,
+3,543,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Lodging/residential,Hostel 11,2000,,
+3,544,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public Assembly,Public Assembly-33,1962,,
+3,545,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public Assembly,Public Assembly-15,1858,,
+3,546,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public Assembly,Public Assembly-9,1843,,
+3,547,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Parking,Parking-1,1760,,
+3,548,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public Assembly,Public Assembly-34,1473,,
+3,549,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public Assembly,Public Assembly-24,1396,,
+3,550,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public Assembly,Public Assembly-28,1102,,
+3,551,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public Assembly,Public Assembly-23,969,,
+3,552,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public Assembly,Public Assembly-32,898,,
+3,553,Indian Institute of Technology Madras,Chennai,12.9916,80.233,Public Assembly,Public Assembly-35,801,,
+4,554,Indian Institute of Technology Kanpur,Kanpur,26.5123,80.2329,Education,Lecture Complex - 1,420885,1930,8
+4,555,Indian Institute of Technology Kanpur,Kanpur,26.5123,80.2329,Parking,Parking-3,306140,2007,5
+4,556,Indian Institute of Technology Kanpur,Kanpur,26.5123,80.2329,Education,Lecture Complex - 2,305268,1952,8
+4,557,Indian Institute of Technology Kanpur,Kanpur,26.5123,80.2329,Education,Computer Center,304333,2006,12
+4,558,Indian Institute of Technology Kanpur,Kanpur,26.5123,80.2329,Education,Library,270413,1971,14
+4,559,Indian Institute of Technology Kanpur,Kanpur,26.5123,80.2329,Public Assembly,Open Air Theatre (OAT),261091,1923,3
+4,560,Indian Institute of Technology Kanpur,Kanpur,26.5123,80.2329,Public Assembly,Auditorium,238065,1933,6
+4,561,Indian Institute of Technology Kanpur,Kanpur,26.5123,80.2329,Education,Startup Incubation Center,222434,1964,11
+4,562,Indian Institute of Technology Kanpur,Kanpur,26.5123,80.2329,Education,Materials Research Centre,220703,2011,9
+4,563,Indian Institute of Technology Kanpur,Kanpur,26.5123,80.2329,Education,Seismology Centre,206054,1950,9
+4,564,Indian Institute of Technology Kanpur,Kanpur,26.5123,80.2329,Education,Lab-1 CSE,193202,1964,10
+4,565,Indian Institute of Technology Kanpur,Kanpur,26.5123,80.2329,Public services,Public services-3,189425,1994,4
+4,566,Indian Institute of Technology Kanpur,Kanpur,26.5123,80.2329,Lodging/residential,Hostel 1,185200,1930,8
+4,567,Indian Institute of Technology Kanpur,Kanpur,26.5123,80.2329,Education,Lab-2 ECE,182943,1963,11
+4,568,Indian Institute of Technology Kanpur,Kanpur,26.5123,80.2329,Education,Lab-3 EE,177281,1964,7
+4,569,Indian Institute of Technology Kanpur,Kanpur,26.5123,80.2329,Public services,Public services-2,166514,1917,5
+4,570,Indian Institute of Technology Kanpur,Kanpur,26.5123,80.2329,Education,Lab-4 ME,154706,2009,11
+4,571,Indian Institute of Technology Kanpur,Kanpur,26.5123,80.2329,Education,Lab-5 CE,153700,1990,7
+4,572,Indian Institute of Technology Kanpur,Kanpur,26.5123,80.2329,Education,Lab-6 CHE,150887,1959,9
+4,573,Indian Institute of Technology Kanpur,Kanpur,26.5123,80.2329,Education,Lab-7 PHY,148032,1924,5
+4,574,Indian Institute of Technology Kanpur,Kanpur,26.5123,80.2329,Education,Lab-8 CHEM,141461,1907,6
+4,575,Indian Institute of Technology Kanpur,Kanpur,26.5123,80.2329,Education,Lab-9 MAT,137806,1967,8
+4,576,Indian Institute of Technology Kanpur,Kanpur,26.5123,80.2329,Public services,Public services-1,132394,1949,7
+4,577,Indian Institute of Technology Kanpur,Kanpur,26.5123,80.2329,Public services,Public services-6,130581,1970,5
+4,578,Indian Institute of Technology Kanpur,Kanpur,26.5123,80.2329,Education,Lab-10 BIO,128126,1966,7
+4,579,Indian Institute of Technology Kanpur,Kanpur,26.5123,80.2329,Public Assembly,Sports Complex,124197,1927,3
+4,580,Indian Institute of Technology Kanpur,Kanpur,26.5123,80.2329,Education,Lab-11 DS,123612,1961,7
+4,581,Indian Institute of Technology Kanpur,Kanpur,26.5123,80.2329,Education,Lab-12 AI,120694,2012,7
+4,582,Indian Institute of Technology Kanpur,Kanpur,26.5123,80.2329,Education,Lab-13 HSS,117814,1959,6
+4,583,Indian Institute of Technology Kanpur,Kanpur,26.5123,80.2329,Education,Lab-14 ARCH,116121,1996,10
+4,584,Indian Institute of Technology Kanpur,Kanpur,26.5123,80.2329,Education,Lab-15 CSE,113589,1958,3
+4,585,Indian Institute of Technology Kanpur,Kanpur,26.5123,80.2329,Education,Lab-16 ECE,110919,1941,6
+4,586,Indian Institute of Technology Kanpur,Kanpur,26.5123,80.2329,Education,Lab-17 EE,109588,1994,8
+4,587,Indian Institute of Technology Kanpur,Kanpur,26.5123,80.2329,Education,Lab-18 ME,104016,1960,4
+4,588,Indian Institute of Technology Kanpur,Kanpur,26.5123,80.2329,Parking,Parking-2,98539,1989,2
+4,589,Indian Institute of Technology Kanpur,Kanpur,26.5123,80.2329,Education,Lab-19 CE,94175,1964,9
+4,590,Indian Institute of Technology Kanpur,Kanpur,26.5123,80.2329,Education,Lab-20 CHE,93420,1948,5
+4,591,Indian Institute of Technology Kanpur,Kanpur,26.5123,80.2329,Lodging/residential,Hostel 2,86959,1942,5
+4,592,Indian Institute of Technology Kanpur,Kanpur,26.5123,80.2329,Education,Lab-21 PHY,86465,2014,7
+4,593,Indian Institute of Technology Kanpur,Kanpur,26.5123,80.2329,Education,Lab-22 CHEM,86091,1964,8
+4,594,Indian Institute of Technology Kanpur,Kanpur,26.5123,80.2329,Public Assembly,Football Ground,82670,2016,4
+4,595,Indian Institute of Technology Kanpur,Kanpur,26.5123,80.2329,Education,Lab-23 MAT,77055,1917,4
+4,596,Indian Institute of Technology Kanpur,Kanpur,26.5123,80.2329,Education,Lab-24 BIO,75228,1993,4
+4,597,Indian Institute of Technology Kanpur,Kanpur,26.5123,80.2329,Lodging/residential,Hostel 3,71994,2004,4
+4,598,Indian Institute of Technology Kanpur,Kanpur,26.5123,80.2329,Public services,Public services-4,68701,1930,4
+4,599,Indian Institute of Technology Kanpur,Kanpur,26.5123,80.2329,Education,Lab-25 DS,68146,1948,6
+4,600,Indian Institute of Technology Kanpur,Kanpur,26.5123,80.2329,Education,Lab-26 AI,66203,2015,6
+4,601,Indian Institute of Technology Kanpur,Kanpur,26.5123,80.2329,Public Assembly,Tennis Lawn,59326,1932,1
+4,602,Indian Institute of Technology Kanpur,Kanpur,26.5123,80.2329,Education,Lab-27 HSS,58733,1923,6
+4,603,Indian Institute of Technology Kanpur,Kanpur,26.5123,80.2329,Education,Lab-28 ARCH,56637,1953,5
+4,604,Indian Institute of Technology Kanpur,Kanpur,26.5123,80.2329,Education,Lab-29 CSE,56343,1905,4
+4,605,Indian Institute of Technology Kanpur,Kanpur,26.5123,80.2329,Education,Lab-30 ECE,55516,1978,5
+4,606,Indian Institute of Technology Kanpur,Kanpur,26.5123,80.2329,Technology/science,Technology/science-2,53234,1942,5
+4,607,Indian Institute of Technology Kanpur,Kanpur,26.5123,80.2329,Education,Lab-31 EE,51020,1924,5
+4,608,Indian Institute of Technology Kanpur,Kanpur,26.5123,80.2329,Education,Lab-32 ME,49388,1931,6
+4,609,Indian Institute of Technology Kanpur,Kanpur,26.5123,80.2329,Education,Lab-33 CE,47954,1980,3
+4,610,Indian Institute of Technology Kanpur,Kanpur,26.5123,80.2329,Education,Lab-34 CHE,46204,1941,5
+4,611,Indian Institute of Technology Kanpur,Kanpur,26.5123,80.2329,Education,Lab-35 PHY,44182,1917,5
+4,612,Indian Institute of Technology Kanpur,Kanpur,26.5123,80.2329,Education,Lab-36 CHEM,43910,1912,5
+4,613,Indian Institute of Technology Kanpur,Kanpur,26.5123,80.2329,Education,Lab-37 MAT,41297,1959,6
+4,614,Indian Institute of Technology Kanpur,Kanpur,26.5123,80.2329,Education,Lab-38 BIO,40835,1931,6
+4,615,Indian Institute of Technology Kanpur,Kanpur,26.5123,80.2329,Education,Lab-39 DS,40706,1958,3
+4,616,Indian Institute of Technology Kanpur,Kanpur,26.5123,80.2329,Public Assembly,Cricket Ground,36180,1966,9
+4,617,Indian Institute of Technology Kanpur,Kanpur,26.5123,80.2329,Education,Lab-40 AI,34825,1999,2
+4,618,Indian Institute of Technology Kanpur,Kanpur,26.5123,80.2329,Technology/science,Technology/science-1,33167,1963,4
+4,619,Indian Institute of Technology Kanpur,Kanpur,26.5123,80.2329,Education,Lab-41 HSS,30401,,4
+4,620,Indian Institute of Technology Kanpur,Kanpur,26.5123,80.2329,Public Assembly,Indoor Sports Complex,30160,1958,4
+4,621,Indian Institute of Technology Kanpur,Kanpur,26.5123,80.2329,Public services,Public services-5,29063,2004,3
+4,622,Indian Institute of Technology Kanpur,Kanpur,26.5123,80.2329,Education,Lab-42 ARCH,25996,1954,4
+4,623,Indian Institute of Technology Kanpur,Kanpur,26.5123,80.2329,Education,Lab-43 CSE,23815,1914,4
+4,624,Indian Institute of Technology Kanpur,Kanpur,26.5123,80.2329,Education,Lab-44 ECE,23533,1906,3
+4,625,Indian Institute of Technology Kanpur,Kanpur,26.5123,80.2329,Utility,Utility-1,23432,1999,2
+4,626,Indian Institute of Technology Kanpur,Kanpur,26.5123,80.2329,Lodging/residential,Hostel 4,23012,1930,3
+4,627,Indian Institute of Technology Kanpur,Kanpur,26.5123,80.2329,Education,Lab-45 EE,21866,1911,4
+4,628,Indian Institute of Technology Kanpur,Kanpur,26.5123,80.2329,Education,Lab-46 ME,18474,1923,4
+4,629,Indian Institute of Technology Kanpur,Kanpur,26.5123,80.2329,Education,Lab-47 CE,15326,1954,2
+4,630,Indian Institute of Technology Kanpur,Kanpur,26.5123,80.2329,Education,Lab-48 CHE,14542,1920,4
+4,631,Indian Institute of Technology Kanpur,Kanpur,26.5123,80.2329,Education,Lab-49 PHY,14524,1964,2
+4,632,Indian Institute of Technology Kanpur,Kanpur,26.5123,80.2329,Education,Lab-50 CHEM,14150,1974,2
+4,633,Indian Institute of Technology Kanpur,Kanpur,26.5123,80.2329,Public Assembly,Swimming Pool Complex,11910,1903,2
+4,634,Indian Institute of Technology Kanpur,Kanpur,26.5123,80.2329,Education,Lab-51 MAT,8516,1920,2
+4,635,Indian Institute of Technology Kanpur,Kanpur,26.5123,80.2329,Education,Lab-52 BIO,8463,,3
+4,636,Indian Institute of Technology Kanpur,Kanpur,26.5123,80.2329,Education,Lab-53 DS,7900,1923,4
+4,637,Indian Institute of Technology Kanpur,Kanpur,26.5123,80.2329,Education,Lab-54 AI,7781,1910,4
+4,638,Indian Institute of Technology Kanpur,Kanpur,26.5123,80.2329,Education,Lab-55 HSS,7122,1909,3
+4,639,Indian Institute of Technology Kanpur,Kanpur,26.5123,80.2329,Education,Lab-56 ARCH,6564,1909,3
+4,640,Indian Institute of Technology Kanpur,Kanpur,26.5123,80.2329,Education,Lab-57 CSE,4189,1929,3
+4,641,Indian Institute of Technology Kanpur,Kanpur,26.5123,80.2329,Education,Lab-58 ECE,4000,1910,4
+4,642,Indian Institute of Technology Kanpur,Kanpur,26.5123,80.2329,Education,Lab-59 EE,2010,1957,1
+4,643,Indian Institute of Technology Kanpur,Kanpur,26.5123,80.2329,Public Assembly,Gym,1305,1995,1
+4,644,Indian Institute of Technology Kanpur,Kanpur,26.5123,80.2329,Parking,Parking-1,387,1955,1
+5,645,Indian Institute of Technology Kharagpur,Kharagpur,22.3149,87.3105,Office,Administrative Block,270034,1976,5
+5,646,Indian Institute of Technology Kharagpur,Kharagpur,22.3149,87.3105,Education,Lecture Complex - 1,160038,1966,4
+5,647,Indian Institute of Technology Kharagpur,Kharagpur,22.3149,87.3105,Education,Lecture Complex - 2,155807,2013,2
+5,648,Indian Institute of Technology Kharagpur,Kharagpur,22.3149,87.3105,Office,Public Works Department Office,152471,1919,3
+5,649,Indian Institute of Technology Kharagpur,Kharagpur,22.3149,87.3105,Public Assembly,Open Air Theatre (OAT),149704,1976,8
+5,650,Indian Institute of Technology Kharagpur,Kharagpur,22.3149,87.3105,Education,Computer Center,139113,1976,3
+5,651,Indian Institute of Technology Kharagpur,Kharagpur,22.3149,87.3105,Education,Library,137046,1966,2
+5,652,Indian Institute of Technology Kharagpur,Kharagpur,22.3149,87.3105,Education,Startup Incubation Center,128682,1966,4
+5,653,Indian Institute of Technology Kharagpur,Kharagpur,22.3149,87.3105,Education,Materials Research Centre,126045,1966,4
+5,654,Indian Institute of Technology Kharagpur,Kharagpur,22.3149,87.3105,Education,Seismology Centre,121471,1966,3
+5,655,Indian Institute of Technology Kharagpur,Kharagpur,22.3149,87.3105,Education,Lab-1 CSE,121062,1976,3
+5,656,Indian Institute of Technology Kharagpur,Kharagpur,22.3149,87.3105,Education,Lab-2 ECE,120566,1945,2
+5,657,Indian Institute of Technology Kharagpur,Kharagpur,22.3149,87.3105,Education,Lab-3 EE,109071,1966,3
+5,658,Indian Institute of Technology Kharagpur,Kharagpur,22.3149,87.3105,Education,Lab-4 ME,102429,1945,4
+5,659,Indian Institute of Technology Kharagpur,Kharagpur,22.3149,87.3105,Education,Lab-5 CE,96929,1966,3
+5,660,Indian Institute of Technology Kharagpur,Kharagpur,22.3149,87.3105,Education,Lab-6 CHE,95433,1966,4
+5,661,Indian Institute of Technology Kharagpur,Kharagpur,22.3149,87.3105,Education,Lab-7 PHY,94658,1976,3
+5,662,Indian Institute of Technology Kharagpur,Kharagpur,22.3149,87.3105,Education,Lab-8 CHEM,93764,1945,3
+5,663,Indian Institute of Technology Kharagpur,Kharagpur,22.3149,87.3105,Education,Lab-9 MAT,88856,1976,2
+5,664,Indian Institute of Technology Kharagpur,Kharagpur,22.3149,87.3105,Education,Lab-10 BIO,66187,1976,1
+5,665,Indian Institute of Technology Kharagpur,Kharagpur,22.3149,87.3105,Public Assembly,Auditorium,64153,,5
+5,666,Indian Institute of Technology Kharagpur,Kharagpur,22.3149,87.3105,Public services,Public services-2,60977,1976,6
+5,667,Indian Institute of Technology Kharagpur,Kharagpur,22.3149,87.3105,Office,Hostel Office,57436,1976,3
+5,668,Indian Institute of Technology Kharagpur,Kharagpur,22.3149,87.3105,Public Assembly,Sports Complex,57189,1976,2
+5,669,Indian Institute of Technology Kharagpur,Kharagpur,22.3149,87.3105,Office,Sports Office,52302,1966,2
+5,670,Indian Institute of Technology Kharagpur,Kharagpur,22.3149,87.3105,Public Assembly,Football Ground,49492,1976,2
+5,671,Indian Institute of Technology Kharagpur,Kharagpur,22.3149,87.3105,Public Assembly,Tennis Lawn,48642,1919,5
+5,672,Indian Institute of Technology Kharagpur,Kharagpur,22.3149,87.3105,Public Assembly,Cricket Ground,47275,1976,2
+5,673,Indian Institute of Technology Kharagpur,Kharagpur,22.3149,87.3105,Public services,Public services-3,43400,1976,3
+5,674,Indian Institute of Technology Kharagpur,Kharagpur,22.3149,87.3105,Office,Security Office,42647,1976,1
+5,675,Indian Institute of Technology Kharagpur,Kharagpur,22.3149,87.3105,Public services,Public services-5,41861,1919,3
+5,676,Indian Institute of Technology Kharagpur,Kharagpur,22.3149,87.3105,Education,Lab-11 DS,37975,1976,1
+5,677,Indian Institute of Technology Kharagpur,Kharagpur,22.3149,87.3105,Education,Lab-12 AI,37265,1919,3
+5,678,Indian Institute of Technology Kharagpur,Kharagpur,22.3149,87.3105,Public Assembly,Indoor Sports Complex,36307,1976,2
+5,679,Indian Institute of Technology Kharagpur,Kharagpur,22.3149,87.3105,Office,Computer Science and Engineering Department,36221,1976,4
+5,680,Indian Institute of Technology Kharagpur,Kharagpur,22.3149,87.3105,Education,Lab-13 HSS,34563,1966,1
+5,681,Indian Institute of Technology Kharagpur,Kharagpur,22.3149,87.3105,Public Assembly,Swimming Pool Complex,31829,1976,2
+5,682,Indian Institute of Technology Kharagpur,Kharagpur,22.3149,87.3105,Education,Lab-14 ARCH,31635,1966,3
+5,683,Indian Institute of Technology Kharagpur,Kharagpur,22.3149,87.3105,Public Assembly,Gym,31075,1976,2
+5,684,Indian Institute of Technology Kharagpur,Kharagpur,22.3149,87.3105,Education,Lab-15 CSE,30613,1976,4
+5,685,Indian Institute of Technology Kharagpur,Kharagpur,22.3149,87.3105,Education,Lab-16 ECE,30300,1966,2
+5,686,Indian Institute of Technology Kharagpur,Kharagpur,22.3149,87.3105,Education,Lab-17 EE,29149,1919,2
+5,687,Indian Institute of Technology Kharagpur,Kharagpur,22.3149,87.3105,Education,Lab-18 ME,28826,1976,2
+5,688,Indian Institute of Technology Kharagpur,Kharagpur,22.3149,87.3105,Education,Lab-19 CE,28363,1919,2
+5,689,Indian Institute of Technology Kharagpur,Kharagpur,22.3149,87.3105,Education,Lab-20 CHE,28191,1919,1
+5,690,Indian Institute of Technology Kharagpur,Kharagpur,22.3149,87.3105,Education,Lab-21 PHY,27685,1919,2
+5,691,Indian Institute of Technology Kharagpur,Kharagpur,22.3149,87.3105,Education,Lab-22 CHEM,25866,1919,2
+5,692,Indian Institute of Technology Kharagpur,Kharagpur,22.3149,87.3105,Education,Lab-23 MAT,24251,1966,2
+5,693,Indian Institute of Technology Kharagpur,Kharagpur,22.3149,87.3105,Education,Lab-24 BIO,23605,1976,1
+5,694,Indian Institute of Technology Kharagpur,Kharagpur,22.3149,87.3105,Education,Lab-25 DS,23153,1976,2
+5,695,Indian Institute of Technology Kharagpur,Kharagpur,22.3149,87.3105,Education,Lab-26 AI,23067,1976,2
+5,696,Indian Institute of Technology Kharagpur,Kharagpur,22.3149,87.3105,Education,Lab-27 HSS,22949,1976,1
+5,697,Indian Institute of Technology Kharagpur,Kharagpur,22.3149,87.3105,Office,Electrical Engineering Department,19429,1945,2
+5,698,Indian Institute of Technology Kharagpur,Kharagpur,22.3149,87.3105,Education,Lab-28 ARCH,19041,1976,2
+5,699,Indian Institute of Technology Kharagpur,Kharagpur,22.3149,87.3105,Education,Lab-29 CSE,18697,1919,2
+5,700,Indian Institute of Technology Kharagpur,Kharagpur,22.3149,87.3105,Healthcare,Dispensary,18471,1966,1
+5,701,Indian Institute of Technology Kharagpur,Kharagpur,22.3149,87.3105,Education,Lab-30 ECE,18202,1919,2
+5,702,Indian Institute of Technology Kharagpur,Kharagpur,22.3149,87.3105,Education,Lab-31 EE,17190,1919,2
+5,703,Indian Institute of Technology Kharagpur,Kharagpur,22.3149,87.3105,Education,Lab-32 ME,17050,1966,1
+5,704,Indian Institute of Technology Kharagpur,Kharagpur,22.3149,87.3105,Public Assembly,Public Assembly-7,15715,1966,2
+5,705,Indian Institute of Technology Kharagpur,Kharagpur,22.3149,87.3105,Education,Lab-33 CE,15414,1976,1
+5,706,Indian Institute of Technology Kharagpur,Kharagpur,22.3149,87.3105,Public Assembly,Public Assembly-1,15306,1976,2
+5,707,Indian Institute of Technology Kharagpur,Kharagpur,22.3149,87.3105,Education,Lab-34 CHE,14973,1976,2
+5,708,Indian Institute of Technology Kharagpur,Kharagpur,22.3149,87.3105,Education,Lab-35 PHY,14790,1976,1
+5,709,Indian Institute of Technology Kharagpur,Kharagpur,22.3149,87.3105,Education,Lab-36 CHEM,14025,1966,1
+5,710,Indian Institute of Technology Kharagpur,Kharagpur,22.3149,87.3105,Education,Lab-37 MAT,13939,1976,1
+5,711,Indian Institute of Technology Kharagpur,Kharagpur,22.3149,87.3105,Education,Lab-38 BIO,13789,1919,1
+5,712,Indian Institute of Technology Kharagpur,Kharagpur,22.3149,87.3105,Public Assembly,Public Assembly-4,12777,1976,2
+5,713,Indian Institute of Technology Kharagpur,Kharagpur,22.3149,87.3105,Office,Electronics and Communication Engineering Department,12206,1976,2
+5,714,Indian Institute of Technology Kharagpur,Kharagpur,22.3149,87.3105,Public Assembly,Public Assembly-9,12185,1976,2
+5,715,Indian Institute of Technology Kharagpur,Kharagpur,22.3149,87.3105,Education,Lab-39 DS,12088,1919,4
+5,716,Indian Institute of Technology Kharagpur,Kharagpur,22.3149,87.3105,Public Assembly,Public Assembly-6,12045,1976,1
+5,717,Indian Institute of Technology Kharagpur,Kharagpur,22.3149,87.3105,Education,Lab-40 AI,11464,1976,1
+5,718,Indian Institute of Technology Kharagpur,Kharagpur,22.3149,87.3105,Office,Civil Engineering Department,11442,1976,1
+5,719,Indian Institute of Technology Kharagpur,Kharagpur,22.3149,87.3105,Education,Lab-41 HSS,11270,1976,1
+5,720,Indian Institute of Technology Kharagpur,Kharagpur,22.3149,87.3105,Public services,Public services-4,9849,1976,2
+5,721,Indian Institute of Technology Kharagpur,Kharagpur,22.3149,87.3105,Public Assembly,Public Assembly-5,8773,1966,1
+5,722,Indian Institute of Technology Kharagpur,Kharagpur,22.3149,87.3105,Education,Lab-42 ARCH,8730,1976,1
+5,723,Indian Institute of Technology Kharagpur,Kharagpur,22.3149,87.3105,Lodging/residential,Hostel 1,7589,1976,3
+5,724,Indian Institute of Technology Kharagpur,Kharagpur,22.3149,87.3105,Public Assembly,Public Assembly-3,7427,1976,2
+5,725,Indian Institute of Technology Kharagpur,Kharagpur,22.3149,87.3105,Office,Mechanical Engineering Department,7416,1976,2
+5,726,Indian Institute of Technology Kharagpur,Kharagpur,22.3149,87.3105,Public services,Public services-1,7072,1919,2
+5,727,Indian Institute of Technology Kharagpur,Kharagpur,22.3149,87.3105,Other,Other,5769,1976,1
+5,728,Indian Institute of Technology Kharagpur,Kharagpur,22.3149,87.3105,Public Assembly,Public Assembly-2,5447,1976,1
+5,729,Indian Institute of Technology Kharagpur,Kharagpur,22.3149,87.3105,Public Assembly,Public Assembly-8,4768,1976,1
+5,730,Indian Institute of Technology Kharagpur,Kharagpur,22.3149,87.3105,Office,Chemical Engineering Department,4650,1976,2
+7,775,Indian Institute of Science Bangalore,Bangalore,13.0214,77.567,Education,Lecture Complex - 1,764237,1979,13
+7,776,Indian Institute of Science Bangalore,Bangalore,13.0214,77.567,Education,Lecture Complex - 2,731945,1969,11
+7,777,Indian Institute of Science Bangalore,Bangalore,13.0214,77.567,Education,Computer Center,527431,1976,26
+7,778,Indian Institute of Science Bangalore,Bangalore,13.0214,77.567,Education,Library,484376,1952,5
+7,779,Indian Institute of Science Bangalore,Bangalore,13.0214,77.567,Education,Startup Incubation Center,409028,1970,21
+7,780,Indian Institute of Science Bangalore,Bangalore,13.0214,77.567,Education,Materials Research Centre,387500,1960,6
+7,781,Indian Institute of Science Bangalore,Bangalore,13.0214,77.567,Education,Seismology Centre,333681,1938,3
+7,782,Indian Institute of Science Bangalore,Bangalore,13.0214,77.567,Education,Lab-1 CSE,290625,1995,19
+7,783,Indian Institute of Science Bangalore,Bangalore,13.0214,77.567,Education,Lab-2 ECE,226042,1965,2
+7,784,Indian Institute of Science Bangalore,Bangalore,13.0214,77.567,Education,Lab-3 EE,182986,1962,3
+7,785,Indian Institute of Science Bangalore,Bangalore,13.0214,77.567,Education,Lab-4 ME,150695,,5
+7,786,Indian Institute of Science Bangalore,Bangalore,13.0214,77.567,Education,Lab-5 CE,150695,1964,6
+7,787,Indian Institute of Science Bangalore,Bangalore,13.0214,77.567,Education,Lab-6 CHE,86111,1911,8
+7,788,Indian Institute of Science Bangalore,Bangalore,13.0214,77.567,Education,Lab-7 PHY,64583,1923,1
+7,789,Indian Institute of Science Bangalore,Bangalore,13.0214,77.567,Education,Lab-8 CHEM,64583,1955,2
+8,790,National Institute of Technology Tiruchirappalli,Tiruchirappalli,10.759,78.813,Public Assembly,Open Air Theatre (OAT),875000,,1
+8,791,National Institute of Technology Tiruchirappalli,Tiruchirappalli,10.759,78.813,Office,Administrative Block,175618,,1
+8,792,National Institute of Technology Tiruchirappalli,Tiruchirappalli,10.759,78.813,Other,Other,102994,,1
+8,793,National Institute of Technology Tiruchirappalli,Tiruchirappalli,10.759,78.813,Public Assembly,Auditorium,92288,,1
+8,794,National Institute of Technology Tiruchirappalli,Tiruchirappalli,10.759,78.813,Public services,Public services-26,65913,,1
+8,795,National Institute of Technology Tiruchirappalli,Tiruchirappalli,10.759,78.813,Public services,Public services-27,60000,,1
+8,796,National Institute of Technology Tiruchirappalli,Tiruchirappalli,10.759,78.813,Office,Public Works Department Office,48300,,1
+8,797,National Institute of Technology Tiruchirappalli,Tiruchirappalli,10.759,78.813,Other,Other,41861,,1
+8,798,National Institute of Technology Tiruchirappalli,Tiruchirappalli,10.759,78.813,Office,Hostel Office,40142,,1
+8,799,National Institute of Technology Tiruchirappalli,Tiruchirappalli,10.759,78.813,Public services,Public services-6,35253,,1
+8,800,National Institute of Technology Tiruchirappalli,Tiruchirappalli,10.759,78.813,Public services,Public services-14,33246,,1
+8,801,National Institute of Technology Tiruchirappalli,Tiruchirappalli,10.759,78.813,Other,Other,28693,,2
+8,802,National Institute of Technology Tiruchirappalli,Tiruchirappalli,10.759,78.813,Public services,Public services-18,28590,,1
+8,803,National Institute of Technology Tiruchirappalli,Tiruchirappalli,10.759,78.813,Other,Other,27640,,1
+8,804,National Institute of Technology Tiruchirappalli,Tiruchirappalli,10.759,78.813,Public services,Public services-10,26507,,1
+8,805,National Institute of Technology Tiruchirappalli,Tiruchirappalli,10.759,78.813,Public Assembly,Sports Complex,26495,,1
+8,806,National Institute of Technology Tiruchirappalli,Tiruchirappalli,10.759,78.813,Public services,Public services-22,19823,,1
+8,807,National Institute of Technology Tiruchirappalli,Tiruchirappalli,10.759,78.813,Public services,Public services-9,19446,,1
+8,808,National Institute of Technology Tiruchirappalli,Tiruchirappalli,10.759,78.813,Public services,Public services-15,18414,,1
+8,809,National Institute of Technology Tiruchirappalli,Tiruchirappalli,10.759,78.813,Public Assembly,Football Ground,17220,,1
+8,810,National Institute of Technology Tiruchirappalli,Tiruchirappalli,10.759,78.813,Public services,Public services-19,16682,,1
+8,811,National Institute of Technology Tiruchirappalli,Tiruchirappalli,10.759,78.813,Public services,Public services-23,16584,,1
+8,812,National Institute of Technology Tiruchirappalli,Tiruchirappalli,10.759,78.813,Warehouse/storage,Warehouse/storage-1,15879,,1
+8,813,National Institute of Technology Tiruchirappalli,Tiruchirappalli,10.759,78.813,Warehouse/storage,Warehouse/storage-2,15120,,1
+8,814,National Institute of Technology Tiruchirappalli,Tiruchirappalli,10.759,78.813,Office,Sports Office,14150,,1
+8,815,National Institute of Technology Tiruchirappalli,Tiruchirappalli,10.759,78.813,Other,Other,12259,,1
+8,816,National Institute of Technology Tiruchirappalli,Tiruchirappalli,10.759,78.813,Public services,Public services-20,10800,,1
+8,817,National Institute of Technology Tiruchirappalli,Tiruchirappalli,10.759,78.813,Public services,Public services-24,10174,,1
+8,818,National Institute of Technology Tiruchirappalli,Tiruchirappalli,10.759,78.813,Public services,Public services-25,10174,,1
+8,819,National Institute of Technology Tiruchirappalli,Tiruchirappalli,10.759,78.813,Public Assembly,Tennis Lawn,9894,,1
+8,820,National Institute of Technology Tiruchirappalli,Tiruchirappalli,10.759,78.813,Other,Other,9357,,1
+8,821,National Institute of Technology Tiruchirappalli,Tiruchirappalli,10.759,78.813,Public Assembly,Cricket Ground,9303,,1
+8,822,National Institute of Technology Tiruchirappalli,Tiruchirappalli,10.759,78.813,Office,Security Office,8552,,1
+8,823,National Institute of Technology Tiruchirappalli,Tiruchirappalli,10.759,78.813,Public services,Public services-13,8168,,1
+8,824,National Institute of Technology Tiruchirappalli,Tiruchirappalli,10.759,78.813,Public services,Public services-7,7820,,1
+8,825,National Institute of Technology Tiruchirappalli,Tiruchirappalli,10.759,78.813,Public services,Public services-16,7292,,1
+8,826,National Institute of Technology Tiruchirappalli,Tiruchirappalli,10.759,78.813,Public Assembly,Indoor Sports Complex,6944,,1
+8,827,National Institute of Technology Tiruchirappalli,Tiruchirappalli,10.759,78.813,Public services,Public services-17,6448,,1
+8,828,National Institute of Technology Tiruchirappalli,Tiruchirappalli,10.759,78.813,Public services,Public services-11,6392,,1
+8,829,National Institute of Technology Tiruchirappalli,Tiruchirappalli,10.759,78.813,Public services,Public services-5,6351,,1
+8,830,National Institute of Technology Tiruchirappalli,Tiruchirappalli,10.759,78.813,Office,Computer Science and Engineering Department,5839,,1
+8,831,National Institute of Technology Tiruchirappalli,Tiruchirappalli,10.759,78.813,Office,Electrical Engineering Department,5680,,1
+8,832,National Institute of Technology Tiruchirappalli,Tiruchirappalli,10.759,78.813,Public services,Public services-2,5630,,1
+8,833,National Institute of Technology Tiruchirappalli,Tiruchirappalli,10.759,78.813,Public Assembly,Swimming Pool Complex,5380,,1
+8,834,National Institute of Technology Tiruchirappalli,Tiruchirappalli,10.759,78.813,Public services,Public services-12,4934,,1
+8,835,National Institute of Technology Tiruchirappalli,Tiruchirappalli,10.759,78.813,Public services,Public services-1,4848,,1
+8,836,National Institute of Technology Tiruchirappalli,Tiruchirappalli,10.759,78.813,Public services,Public services-3,4371,,1
+8,837,National Institute of Technology Tiruchirappalli,Tiruchirappalli,10.759,78.813,Other,Other,4276,,1
+8,838,National Institute of Technology Tiruchirappalli,Tiruchirappalli,10.759,78.813,Public Assembly,Gym,4065,,1
+8,839,National Institute of Technology Tiruchirappalli,Tiruchirappalli,10.759,78.813,Public Assembly,Public Assembly-13,4000,,1
+8,840,National Institute of Technology Tiruchirappalli,Tiruchirappalli,10.759,78.813,Public services,Public services-21,4000,,1
+8,841,National Institute of Technology Tiruchirappalli,Tiruchirappalli,10.759,78.813,Public Assembly,Public Assembly-4,3729,,1
+8,842,National Institute of Technology Tiruchirappalli,Tiruchirappalli,10.759,78.813,Public services,Public services-4,3648,,1
+8,843,National Institute of Technology Tiruchirappalli,Tiruchirappalli,10.759,78.813,Public services,Public services-28,3627,,1
+8,844,National Institute of Technology Tiruchirappalli,Tiruchirappalli,10.759,78.813,Public services,Public services-8,3592,,1
+8,845,National Institute of Technology Tiruchirappalli,Tiruchirappalli,10.759,78.813,Public Assembly,Public Assembly-1,3200,,1
+8,846,National Institute of Technology Tiruchirappalli,Tiruchirappalli,10.759,78.813,Public Assembly,Public Assembly-2,3000,,1
+8,847,National Institute of Technology Tiruchirappalli,Tiruchirappalli,10.759,78.813,Public Assembly,Public Assembly-12,2956,,1
+8,848,National Institute of Technology Tiruchirappalli,Tiruchirappalli,10.759,78.813,Other,Other,2555,,1
+8,849,National Institute of Technology Tiruchirappalli,Tiruchirappalli,10.759,78.813,Other,Other,1566,,1
+8,850,National Institute of Technology Tiruchirappalli,Tiruchirappalli,10.759,78.813,Public Assembly,Public Assembly-15,1536,,1
+8,851,National Institute of Technology Tiruchirappalli,Tiruchirappalli,10.759,78.813,Public Assembly,Public Assembly-7,984,,1
+8,852,National Institute of Technology Tiruchirappalli,Tiruchirappalli,10.759,78.813,Public Assembly,Public Assembly-10,860,,1
+8,853,National Institute of Technology Tiruchirappalli,Tiruchirappalli,10.759,78.813,Public Assembly,Public Assembly-14,755,,1
+8,854,National Institute of Technology Tiruchirappalli,Tiruchirappalli,10.759,78.813,Public Assembly,Public Assembly-5,666,,1
+8,855,National Institute of Technology Tiruchirappalli,Tiruchirappalli,10.759,78.813,Public Assembly,Public Assembly-8,648,,1
+8,856,National Institute of Technology Tiruchirappalli,Tiruchirappalli,10.759,78.813,Public Assembly,Public Assembly-3,520,,1
+8,857,National Institute of Technology Tiruchirappalli,Tiruchirappalli,10.759,78.813,Public Assembly,Public Assembly-11,481,,1
+8,858,National Institute of Technology Tiruchirappalli,Tiruchirappalli,10.759,78.813,Public Assembly,Public Assembly-9,366,,1
+8,859,National Institute of Technology Tiruchirappalli,Tiruchirappalli,10.759,78.813,Public Assembly,Public Assembly-6,356,,1
+9,860,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Lodging/residential,Hostel 1,745671,,
+9,861,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Public Assembly,Open Air Theatre (OAT),563782,,
+9,862,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Public Assembly,Auditorium,503634,,
+9,863,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Public services,Public services-2,492898,,
+9,864,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Services,Services-1,481999,,
+9,865,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Education,Lecture Complex - 1,428647,,
+9,866,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Public Assembly,Sports Complex,426472,,
+9,867,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Education,Lecture Complex - 2,399331,,
+9,868,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Education,Computer Center,393530,,
+9,869,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Services,Services-2,389641,,
+9,870,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Services,Services-4,373416,,
+9,871,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Services,Services-3,346056,,
+9,872,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Public Assembly,Football Ground,344798,,
+9,873,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Office,Administrative Block,332447,,
+9,874,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Education,Library,305224,,
+9,875,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Lodging/residential,Hostel 2,301307,,
+9,876,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Education,Startup Incubation Center,282152,,
+9,877,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Education,Materials Research Centre,275793,,
+9,878,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Public Assembly,Tennis Lawn,262162,,
+9,879,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Education,Seismology Centre,258491,,
+9,880,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Public Assembly,Cricket Ground,252268,,
+9,881,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Education,Lab-1 CSE,245637,,
+9,882,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Education,Lab-2 ECE,239638,,
+9,883,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Education,Lab-3 EE,237702,,
+9,884,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Public Assembly,Indoor Sports Complex,234819,,
+9,885,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Lodging/residential,Hostel 3,233937,,
+9,886,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Education,Lab-4 ME,229973,,
+9,887,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Education,Lab-5 CE,225014,,
+9,888,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Education,Lab-6 CHE,218024,,
+9,889,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Education,Lab-7 PHY,216050,,
+9,890,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Services,Services-5,214252,,
+9,891,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Education,Lab-8 CHEM,205141,,
+9,892,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Education,Lab-9 MAT,202937,,
+9,893,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Education,Lab-10 BIO,199628,,
+9,894,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Education,Lab-11 DS,198488,,
+9,895,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Office,Public Works Department Office,193960,,
+9,896,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Education,Lab-12 AI,193723,,
+9,897,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Education,Lab-13 HSS,186572,,
+9,898,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Office,Hostel Office,181805,,
+9,899,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Education,Lab-14 ARCH,179115,,
+9,900,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Lodging/residential,Hostel 4,177708,,
+9,901,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Education,Lab-15 CSE,177216,,
+9,902,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Public Assembly,Swimming Pool Complex,170607,,
+9,903,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Education,Lab-16 ECE,168696,,
+9,904,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Education,Lab-17 EE,167055,,
+9,905,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Education,Lab-18 ME,166395,,
+9,906,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Education,Lab-19 CE,157723,,
+9,907,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Education,Lab-20 CHE,155882,,
+9,908,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Education,Lab-21 PHY,153999,,
+9,909,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Education,Lab-22 CHEM,147205,,
+9,910,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Public Assembly,Gym,137522,,
+9,911,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Education,Lab-23 MAT,130577,,
+9,912,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Education,Lab-24 BIO,128536,,
+9,913,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Education,Lab-25 DS,126077,,
+9,914,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Public Assembly,Public Assembly-9,122122,,
+9,915,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Public Assembly,Public Assembly-6,119262,,
+9,916,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Education,Lab-26 AI,111623,,
+9,917,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Education,Lab-27 HSS,111195,,
+9,918,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Education,Lab-28 ARCH,110235,,
+9,919,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Education,Lab-29 CSE,108392,,
+9,920,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Education,Lab-30 ECE,107730,,
+9,921,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Office,Sports Office,103924,,
+9,922,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Education,Lab-31 EE,101555,,
+9,923,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Education,Lab-32 ME,91629,,
+9,924,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Education,Lab-33 CE,91254,,
+9,925,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Lodging/residential,Hostel 5,86786,,
+9,926,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Office,Security Office,86167,,
+9,927,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Education,Lab-34 CHE,85623,,
+9,928,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Office,Computer Science and Engineering Department,82939,,
+9,929,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Education,Lab-35 PHY,77632,,
+9,930,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Education,Lab-36 CHEM,69799,,
+9,931,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Lodging/residential,Hostel 6,69754,,
+9,932,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Public Assembly,Public Assembly-2,66121,,
+9,933,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Public services,Public services-1,64749,,
+9,934,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Education,Lab-37 MAT,60621,,
+9,935,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Office,Electrical Engineering Department,60096,,
+9,936,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Education,Lab-38 BIO,59498,,
+9,937,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Education,Lab-39 DS,57811,,
+9,938,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Lodging/residential,Hostel 7,57334,,
+9,939,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Education,Lab-40 AI,56137,,
+9,940,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Education,Lab-41 HSS,55240,,
+9,941,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Education,Lab-42 ARCH,55087,,
+9,942,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Education,Lab-43 CSE,54405,,
+9,943,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Education,Lab-44 ECE,52559,,
+9,944,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Public Assembly,Public Assembly-7,52357,,
+9,945,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Education,Lab-45 EE,51778,,
+9,946,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Office,Electronics and Communication Engineering Department,51483,,
+9,947,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Education,Lab-46 ME,50846,,
+9,948,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Education,Lab-47 CE,47191,,
+9,949,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Education,Lab-48 CHE,46230,,
+9,950,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Lodging/residential,Hostel 8,45086,,
+9,951,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Lodging/residential,Hostel 9,44784,,
+9,952,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Public Assembly,Public Assembly-1,44564,,
+9,953,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Lodging/residential,Hostel 10,41241,,
+9,954,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Lodging/residential,Hostel 11,40697,,
+9,955,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Lodging/residential,Hostel 12,39649,,
+9,956,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Lodging/residential,Hostel 13,39648,,
+9,957,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Education,Lab-49 PHY,39143,,
+9,958,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Education,Lab-50 CHEM,38598,,
+9,959,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Office,Civil Engineering Department,38173,,
+9,960,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Education,Lab-51 MAT,37775,,
+9,961,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Public Assembly,Public Assembly-8,34819,,
+9,962,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Office,Mechanical Engineering Department,34758,,
+9,963,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Office,Chemical Engineering Department,34072,,
+9,964,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Education,Lab-52 BIO,31233,,
+9,965,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Education,Lab-53 DS,29961,,
+9,966,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Education,Lab-54 AI,26033,,
+9,967,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Education,Lab-55 HSS,24992,,
+9,968,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Office,Metallurgical and Materials Engineering Department,24463,,
+9,969,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Office,Aerospace Engineering Department,20917,,
+9,970,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Public Assembly,Public Assembly-4,20372,,
+9,971,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Office,Biotechnology Department,16135,,
+9,972,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Public Assembly,Public Assembly-5,16052,,
+9,973,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Education,Lab-56 ARCH,14561,,
+9,974,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Lodging/residential,Hostel 14,11350,,
+9,975,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Lodging/residential,Hostel 15,11227,,
+9,976,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Lodging/residential,Staff Quarter 1,10346,,
+9,977,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Office,Mathematics Department,8837,,
+9,978,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Office,Physics Department,8525,,
+9,979,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Lodging/residential,Staff Quarter 2,8079,,
+9,980,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Lodging/residential,Staff Quarter 3,8079,,
+9,981,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Lodging/residential,Staff Quarter 4,8051,,
+9,982,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Office,Chemistry Department,8004,,
+9,983,National Institute of Technology Karnataka  Surathkal,Surathkal,13.0108,74.7929,Public Assembly,Public Assembly-3,5682,,
+10,984,National Institute of Technology Warangal,Warangal,17.982,79.53,Public Assembly,Open Air Theatre (OAT),213762,,2
+10,985,National Institute of Technology Warangal,Warangal,17.982,79.53,Education,Lecture Complex - 1,186840,,2
+10,986,National Institute of Technology Warangal,Warangal,17.982,79.53,Education,Lecture Complex - 2,173479,,1
+10,987,National Institute of Technology Warangal,Warangal,17.982,79.53,Public Assembly,Auditorium,161969,,1
+10,988,National Institute of Technology Warangal,Warangal,17.982,79.53,Education,Computer Center,121146,,2
+10,989,National Institute of Technology Warangal,Warangal,17.982,79.53,Education,Library,113580,,2
+10,990,National Institute of Technology Warangal,Warangal,17.982,79.53,Technology/science,Technology/science-1,109263,,6
+10,991,National Institute of Technology Warangal,Warangal,17.982,79.53,Education,Startup Incubation Center,94751,,3
+10,992,National Institute of Technology Warangal,Warangal,17.982,79.53,Lodging/residential,Hostel 1,88480,,1
+10,993,National Institute of Technology Warangal,Warangal,17.982,79.53,Education,Materials Research Centre,87976,,2
+10,994,National Institute of Technology Warangal,Warangal,17.982,79.53,Education,Seismology Centre,84346,,2
+10,995,National Institute of Technology Warangal,Warangal,17.982,79.53,Education,Lab-1 CSE,74886,,2
+10,996,National Institute of Technology Warangal,Warangal,17.982,79.53,Education,Lab-2 ECE,74420,,2
+10,997,National Institute of Technology Warangal,Warangal,17.982,79.53,Education,Lab-3 EE,67377,,3
+10,998,National Institute of Technology Warangal,Warangal,17.982,79.53,Education,Lab-4 ME,65144,,4
+10,999,National Institute of Technology Warangal,Warangal,17.982,79.53,Education,Lab-5 CE,53855,,2
+10,1000,National Institute of Technology Warangal,Warangal,17.982,79.53,Lodging/residential,Hostel 2,52034,,2
+10,1001,National Institute of Technology Warangal,Warangal,17.982,79.53,Office,Administrative Block,43094,,3
+10,1002,National Institute of Technology Warangal,Warangal,17.982,79.53,Office,Public Works Department Office,41933,,2
+10,1003,National Institute of Technology Warangal,Warangal,17.982,79.53,Public Assembly,Sports Complex,39788,,5
+10,1004,National Institute of Technology Warangal,Warangal,17.982,79.53,Lodging/residential,Hostel 3,35465,,2
+10,1005,National Institute of Technology Warangal,Warangal,17.982,79.53,Office,Hostel Office,26948,,1
+10,1006,National Institute of Technology Warangal,Warangal,17.982,79.53,Office,Sports Office,26325,,1
+10,1007,National Institute of Technology Warangal,Warangal,17.982,79.53,Education,Lab-6 CHE,23112,,2
+10,1008,National Institute of Technology Warangal,Warangal,17.982,79.53,Public Assembly,Football Ground,22101,,2
+10,1009,National Institute of Technology Warangal,Warangal,17.982,79.53,Education,Lab-7 PHY,21892,,2
+10,1010,National Institute of Technology Warangal,Warangal,17.982,79.53,Office,Security Office,11419,,1
+10,1011,National Institute of Technology Warangal,Warangal,17.982,79.53,Other,Other,10103,,1
+10,1012,National Institute of Technology Warangal,Warangal,17.982,79.53,Other,Other,4607,,1
+10,1013,National Institute of Technology Warangal,Warangal,17.982,79.53,Other,Other,4482,,1
+11,1014,Indian Institute of Information Technology Hyderabad,Hyderabad,17.4448,78.3496,Education,Lecture Complex - 1,152559,,
+11,1015,Indian Institute of Information Technology Hyderabad,Hyderabad,17.4448,78.3496,Education,Lecture Complex - 2,127632,,
+11,1016,Indian Institute of Information Technology Hyderabad,Hyderabad,17.4448,78.3496,Education,Computer Center,93206,,
+11,1017,Indian Institute of Information Technology Hyderabad,Hyderabad,17.4448,78.3496,Education,Library,81390,,
+11,1018,Indian Institute of Information Technology Hyderabad,Hyderabad,17.4448,78.3496,Education,Startup Incubation Center,68030,,
+12,1019,Indian Institute of Space Science and Technology Thiruvananthapuram,Thiruvananthapuram,8.5576,76.8826,Education,Lecture Complex - 1,275610,,
+12,1020,Indian Institute of Space Science and Technology Thiruvananthapuram,Thiruvananthapuram,8.5576,76.8826,Public services,Public services-1,252952,,
+12,1021,Indian Institute of Space Science and Technology Thiruvananthapuram,Thiruvananthapuram,8.5576,76.8826,Education,Lecture Complex - 2,204998,,4
+12,1022,Indian Institute of Space Science and Technology Thiruvananthapuram,Thiruvananthapuram,8.5576,76.8826,Education,Computer Center,201350,,
+12,1023,Indian Institute of Space Science and Technology Thiruvananthapuram,Thiruvananthapuram,8.5576,76.8826,Education,Library,150673,,4
+12,1024,Indian Institute of Space Science and Technology Thiruvananthapuram,Thiruvananthapuram,8.5576,76.8826,Education,Startup Incubation Center,131212,,
+12,1025,Indian Institute of Space Science and Technology Thiruvananthapuram,Thiruvananthapuram,8.5576,76.8826,Office,Administrative Block,126960,,
+12,1026,Indian Institute of Space Science and Technology Thiruvananthapuram,Thiruvananthapuram,8.5576,76.8826,Education,Materials Research Centre,125701,,
+12,1027,Indian Institute of Space Science and Technology Thiruvananthapuram,Thiruvananthapuram,8.5576,76.8826,Education,Seismology Centre,118489,,
+12,1028,Indian Institute of Space Science and Technology Thiruvananthapuram,Thiruvananthapuram,8.5576,76.8826,Public Assembly,Open Air Theatre (OAT),116186,,
+12,1029,Indian Institute of Space Science and Technology Thiruvananthapuram,Thiruvananthapuram,8.5576,76.8826,Education,Lab-1 CSE,112956,,
+12,1030,Indian Institute of Space Science and Technology Thiruvananthapuram,Thiruvananthapuram,8.5576,76.8826,Education,Lab-2 ECE,94399,,
+12,1031,Indian Institute of Space Science and Technology Thiruvananthapuram,Thiruvananthapuram,8.5576,76.8826,Education,Lab-3 EE,86714,,4
+12,1032,Indian Institute of Space Science and Technology Thiruvananthapuram,Thiruvananthapuram,8.5576,76.8826,Education,Lab-4 ME,84346,,
+12,1033,Indian Institute of Space Science and Technology Thiruvananthapuram,Thiruvananthapuram,8.5576,76.8826,Education,Lab-5 CE,72958,,
+12,1034,Indian Institute of Space Science and Technology Thiruvananthapuram,Thiruvananthapuram,8.5576,76.8826,Public Assembly,Auditorium,71806,,
+12,1035,Indian Institute of Space Science and Technology Thiruvananthapuram,Thiruvananthapuram,8.5576,76.8826,Education,Lab-6 CHE,65843,,
+12,1036,Indian Institute of Space Science and Technology Thiruvananthapuram,Thiruvananthapuram,8.5576,76.8826,Education,Lab-7 PHY,58157,,
+12,1037,Indian Institute of Space Science and Technology Thiruvananthapuram,Thiruvananthapuram,8.5576,76.8826,Education,Lab-8 CHEM,55800,,
+12,1038,Indian Institute of Space Science and Technology Thiruvananthapuram,Thiruvananthapuram,8.5576,76.8826,Office,Public Works Department Office,54207,,
+12,1039,Indian Institute of Space Science and Technology Thiruvananthapuram,Thiruvananthapuram,8.5576,76.8826,Office,Hostel Office,50493,,2
+12,1040,Indian Institute of Space Science and Technology Thiruvananthapuram,Thiruvananthapuram,8.5576,76.8826,Office,Sports Office,33530,,
+12,1041,Indian Institute of Space Science and Technology Thiruvananthapuram,Thiruvananthapuram,8.5576,76.8826,Education,Lab-9 MAT,30171,,3
+12,1042,Indian Institute of Space Science and Technology Thiruvananthapuram,Thiruvananthapuram,8.5576,76.8826,Office,Security Office,29547,,
+12,1043,Indian Institute of Space Science and Technology Thiruvananthapuram,Thiruvananthapuram,8.5576,76.8826,Education,Lab-10 BIO,28406,,1
+12,1044,Indian Institute of Space Science and Technology Thiruvananthapuram,Thiruvananthapuram,8.5576,76.8826,Office,Computer Science and Engineering Department,27889,,
+12,1045,Indian Institute of Space Science and Technology Thiruvananthapuram,Thiruvananthapuram,8.5576,76.8826,Education,Lab-11 DS,26372,,4
+12,1046,Indian Institute of Space Science and Technology Thiruvananthapuram,Thiruvananthapuram,8.5576,76.8826,Office,Electrical Engineering Department,21582,,
+12,1047,Indian Institute of Space Science and Technology Thiruvananthapuram,Thiruvananthapuram,8.5576,76.8826,Office,Electronics and Communication Engineering Department,14585,,
+12,1048,Indian Institute of Space Science and Technology Thiruvananthapuram,Thiruvananthapuram,8.5576,76.8826,Office,Civil Engineering Department,12152,,
+12,1049,Indian Institute of Space Science and Technology Thiruvananthapuram,Thiruvananthapuram,8.5576,76.8826,Technology/science,Technology/science-1,9838,,
+12,1050,Indian Institute of Space Science and Technology Thiruvananthapuram,Thiruvananthapuram,8.5576,76.8826,Education,Lab-12 AI,8805,,
+12,1051,Indian Institute of Space Science and Technology Thiruvananthapuram,Thiruvananthapuram,8.5576,76.8826,Education,Lab-13 HSS,8073,,
+12,1052,Indian Institute of Space Science and Technology Thiruvananthapuram,Thiruvananthapuram,8.5576,76.8826,Retail,Stationery Shop,3907,,1
+13,1053,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Office,Administrative Block,861524,,
+13,1054,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Parking,Parking-2,679614,,
+13,1055,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Office,Public Works Department Office,671507,,
+13,1056,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Office,Hostel Office,577101,,
+13,1057,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Public Assembly,Open Air Theatre (OAT),545351,,
+13,1058,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Public services,Public services-5,381221,,
+13,1059,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Office,Sports Office,336650,,
+13,1060,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Education,Lecture Complex - 1,332884,,
+13,1061,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Office,Security Office,305047,,
+13,1062,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Healthcare,Dispensary,305000,,
+13,1063,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Public services,Public services-3,294812,,
+13,1064,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Office,Computer Science and Engineering Department,293990,,
+13,1065,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Education,Lecture Complex - 2,287594,,
+13,1066,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Education,Computer Center,280225,,
+13,1067,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Parking,Parking-3,271492,,
+13,1068,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Public Assembly,Auditorium,268480,,
+13,1069,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Office,Electrical Engineering Department,267536,,
+13,1070,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Lodging/residential,Hostel 1,262156,,
+13,1071,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Education,Library,259989,,
+13,1072,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Office,Electronics and Communication Engineering Department,249457,,
+13,1073,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Public services,Public services-4,237518,,
+13,1074,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Public Assembly,Sports Complex,234476,,
+13,1075,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Lodging/residential,Hostel 2,233341,,
+13,1076,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Lodging/residential,Hostel 3,230747,,
+13,1077,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Education,Startup Incubation Center,207115,,
+13,1078,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Public services,Public services-1,199722,,
+13,1079,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Office,Civil Engineering Department,196043,,
+13,1080,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Office,Mechanical Engineering Department,195437,,
+13,1081,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Office,Chemical Engineering Department,194111,,
+13,1082,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Education,Materials Research Centre,192152,,
+13,1083,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Office,Metallurgical and Materials Engineering Department,190471,,
+13,1084,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Lodging/residential,Hostel 4,187174,,
+13,1085,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Education,Seismology Centre,184098,,
+13,1086,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Parking,Parking-6,178270,,
+13,1087,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Lodging/residential,Hostel 5,174924,,
+13,1088,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Public Assembly,Football Ground,166856,,
+13,1089,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Office,Aerospace Engineering Department,157545,,
+13,1090,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Lodging/residential,Hostel 6,157070,,
+13,1091,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Education,Lab-1 CSE,156483,,
+13,1092,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Education,Lab-2 ECE,155439,,
+13,1093,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Lodging/residential,Hostel 7,153299,,
+13,1094,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Office,Biotechnology Department,152946,,
+13,1095,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Office,Mathematics Department,152312,,
+13,1096,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Education,Lab-3 EE,150393,,
+13,1097,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Office,Physics Department,143973,,
+13,1098,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Public Assembly,Tennis Lawn,143228,,
+13,1099,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Education,Lab-4 ME,142672,,
+13,1100,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Lodging/residential,Hostel 8,138602,,
+13,1101,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Office,Chemistry Department,133100,,
+13,1102,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Education,Lab-5 CE,133072,,
+13,1103,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Office,Humanities and Social Sciences Department,131745,,
+13,1104,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Office,Architecture and Planning Department,129532,,
+13,1105,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Office,Earthquake Engineering Department,122922,,
+13,1106,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Office,Environmental Engineering Department,121714,,
+13,1107,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Office,Industrial Engineering and Management Department,119509,,
+13,1108,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Office,Data Science and AI Department,118858,,
+13,1109,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Lodging/residential,Hostel 9,117054,,
+13,1110,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Office,Mechatronics Department,111424,,
+13,1111,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Office,Instrumentation Engineering Department,106511,,
+13,1112,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Office,Computer Science and Engineering Department,105167,,
+13,1113,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Office,Electrical Engineering Department,103926,,
+13,1114,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Office,Electronics and Communication Engineering Department,103718,,
+13,1115,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Office,Civil Engineering Department,102191,,
+13,1116,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Education,Lab-6 CHE,100813,,
+13,1117,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Parking,Parking-7,100328,,
+13,1118,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Office,Mechanical Engineering Department,99946,,
+13,1119,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Office,Chemical Engineering Department,98212,,
+13,1120,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Office,Metallurgical and Materials Engineering Department,96612,,
+13,1121,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Education,Lab-7 PHY,95182,,
+13,1122,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Office,Aerospace Engineering Department,94988,,
+13,1123,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Office,Biotechnology Department,92994,,
+13,1124,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Office,Mathematics Department,92500,,
+13,1125,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Office,Physics Department,92099,,
+13,1126,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Office,Chemistry Department,91316,,
+13,1127,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Office,Humanities and Social Sciences Department,89858,,
+13,1128,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Technology/science,Technology/science-1,89456,,
+13,1129,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Office,Architecture and Planning Department,87187,,
+13,1130,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Office,Earthquake Engineering Department,87131,,
+13,1131,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Education,Lab-8 CHEM,85732,,
+13,1132,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Education,Lab-9 MAT,85164,,
+13,1133,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Office,Environmental Engineering Department,84365,,
+13,1134,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Parking,Parking-5,83919,,
+13,1135,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Parking,Parking-1,83772,,
+13,1136,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Public services,Public services-2,83155,,
+13,1137,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Office,Industrial Engineering and Management Department,82302,,
+13,1138,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Public Assembly,Cricket Ground,80438,,
+13,1139,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Office,Data Science and AI Department,80205,,
+13,1140,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Office,Mechatronics Department,79782,,
+13,1141,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Lodging/residential,Hostel 10,74584,,
+13,1142,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Education,Lab-10 BIO,73597,,
+13,1143,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Education,Lab-11 DS,73044,,
+13,1144,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Office,Instrumentation Engineering Department,72958,,
+13,1145,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Office,Computer Science and Engineering Department,72709,,
+13,1146,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Education,Lab-12 AI,72332,,
+13,1147,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Office,Electrical Engineering Department,71936,,
+13,1148,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Office,Electronics and Communication Engineering Department,70852,,
+13,1149,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Services,Services-4,70040,,
+13,1150,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Office,Civil Engineering Department,67839,,
+13,1151,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Warehouse/storage,Warehouse/storage-2,66585,,
+13,1152,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Other,Other,64810,,
+13,1153,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Office,Mechanical Engineering Department,63771,,
+13,1154,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Office,Chemical Engineering Department,62837,,
+13,1155,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Education,Lab-13 HSS,60606,,
+13,1156,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Office,Metallurgical and Materials Engineering Department,59476,,
+13,1157,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Office,Aerospace Engineering Department,58703,,
+13,1158,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Education,Lab-14 ARCH,58377,,
+13,1159,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Office,Biotechnology Department,57394,,
+13,1160,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Public Assembly,Indoor Sports Complex,57201,,
+13,1161,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Office,Mathematics Department,56569,,
+13,1162,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Office,Physics Department,53077,,
+13,1163,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Office,Chemistry Department,52748,,
+13,1164,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Services,Services-5,50552,,
+13,1165,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Office,Humanities and Social Sciences Department,47578,,
+13,1166,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Office,Architecture and Planning Department,43587,,
+13,1167,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Services,Services-1,42028,,
+13,1168,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Education,Lab-15 CSE,39988,,
+13,1169,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Office,Earthquake Engineering Department,39807,,
+13,1170,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Warehouse/storage,Warehouse/storage-4,39464,,
+13,1171,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Office,Environmental Engineering Department,38382,,
+13,1172,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Education,Lab-16 ECE,37107,,
+13,1173,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Office,Industrial Engineering and Management Department,37096,,
+13,1174,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Office,Data Science and AI Department,35829,,
+13,1175,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Office,Mechatronics Department,33401,,
+13,1176,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Food sales and service,Food sales and service-1,33215,,
+13,1177,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Education,Lab-17 EE,32256,,
+13,1178,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Office,Instrumentation Engineering Department,29062,,
+13,1179,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Office,Computer Science and Engineering Department,28991,,
+13,1180,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Other,Other,27648,,
+13,1181,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Office,Electrical Engineering Department,27452,,
+13,1182,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Office,Electronics and Communication Engineering Department,27145,,
+13,1183,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Services,Services-3,26926,,
+13,1184,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Office,Civil Engineering Department,25463,,
+13,1185,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Other,Other,23903,,
+13,1186,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Parking,Parking-4,20986,,
+13,1187,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Office,Mechanical Engineering Department,20864,,
+13,1188,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Office,Chemical Engineering Department,20444,,
+13,1189,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Public Assembly,Swimming Pool Complex,19454,,
+13,1190,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Warehouse/storage,Warehouse/storage-1,19059,,
+13,1191,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Office,Metallurgical and Materials Engineering Department,16805,,
+13,1192,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Office,Aerospace Engineering Department,16472,,
+13,1193,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Office,Biotechnology Department,15269,,
+13,1194,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Education,Lab-18 ME,14185,,
+13,1195,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Services,Services-2,11681,,
+13,1196,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Warehouse/storage,Warehouse/storage-3,10559,,
+13,1197,Indian Institute of Science Education and Research Pune,Pune,18.5486,73.8077,Office,Mathematics Department,10385,,
+14,1198,Indian Institute of Science Education and Research Kolkata,Kolkata,22.963,88.529,Education,Lecture Complex - 1,442438,,
+14,1199,Indian Institute of Science Education and Research Kolkata,Kolkata,22.963,88.529,Public Assembly,Open Air Theatre (OAT),370024,,
+14,1200,Indian Institute of Science Education and Research Kolkata,Kolkata,22.963,88.529,Public Assembly,Auditorium,287419,,
+14,1201,Indian Institute of Science Education and Research Kolkata,Kolkata,22.963,88.529,Public services,Public services-1,278369,,
+14,1202,Indian Institute of Science Education and Research Kolkata,Kolkata,22.963,88.529,Education,Lecture Complex - 2,273234,,
+14,1203,Indian Institute of Science Education and Research Kolkata,Kolkata,22.963,88.529,Public services,Public services-6,247471,,
+14,1204,Indian Institute of Science Education and Research Kolkata,Kolkata,22.963,88.529,Healthcare,Dispensary,237704,,
+14,1205,Indian Institute of Science Education and Research Kolkata,Kolkata,22.963,88.529,Office,Administrative Block,237546,,
+14,1206,Indian Institute of Science Education and Research Kolkata,Kolkata,22.963,88.529,Education,Computer Center,232139,,
+14,1207,Indian Institute of Science Education and Research Kolkata,Kolkata,22.963,88.529,Education,Library,200442,,
+14,1208,Indian Institute of Science Education and Research Kolkata,Kolkata,22.963,88.529,Education,Startup Incubation Center,194441,,
+14,1209,Indian Institute of Science Education and Research Kolkata,Kolkata,22.963,88.529,Education,Materials Research Centre,181328,,
+14,1210,Indian Institute of Science Education and Research Kolkata,Kolkata,22.963,88.529,Public Assembly,Sports Complex,180806,,
+14,1211,Indian Institute of Science Education and Research Kolkata,Kolkata,22.963,88.529,Education,Seismology Centre,171084,,
+14,1212,Indian Institute of Science Education and Research Kolkata,Kolkata,22.963,88.529,Public Assembly,Football Ground,166489,,
+14,1213,Indian Institute of Science Education and Research Kolkata,Kolkata,22.963,88.529,Education,Lab-1 CSE,164206,,
+14,1214,Indian Institute of Science Education and Research Kolkata,Kolkata,22.963,88.529,Office,Public Works Department Office,162549,,
+14,1215,Indian Institute of Science Education and Research Kolkata,Kolkata,22.963,88.529,Office,Hostel Office,159384,,
+14,1216,Indian Institute of Science Education and Research Kolkata,Kolkata,22.963,88.529,Education,Lab-2 ECE,138977,,
+14,1217,Indian Institute of Science Education and Research Kolkata,Kolkata,22.963,88.529,Education,Lab-3 EE,134748,,
+14,1218,Indian Institute of Science Education and Research Kolkata,Kolkata,22.963,88.529,Office,Sports Office,129707,,
+14,1219,Indian Institute of Science Education and Research Kolkata,Kolkata,22.963,88.529,Office,Security Office,122746,,
+14,1220,Indian Institute of Science Education and Research Kolkata,Kolkata,22.963,88.529,Education,Lab-4 ME,116249,,
+14,1221,Indian Institute of Science Education and Research Kolkata,Kolkata,22.963,88.529,Office,Computer Science and Engineering Department,115676,,
+14,1222,Indian Institute of Science Education and Research Kolkata,Kolkata,22.963,88.529,Office,Electrical Engineering Department,114166,,
+14,1223,Indian Institute of Science Education and Research Kolkata,Kolkata,22.963,88.529,Education,Lab-5 CE,104604,,
+14,1224,Indian Institute of Science Education and Research Kolkata,Kolkata,22.963,88.529,Office,Electronics and Communication Engineering Department,104089,,
+14,1225,Indian Institute of Science Education and Research Kolkata,Kolkata,22.963,88.529,Office,Civil Engineering Department,103138,,
+14,1226,Indian Institute of Science Education and Research Kolkata,Kolkata,22.963,88.529,Education,Lab-6 CHE,97838,,
+14,1227,Indian Institute of Science Education and Research Kolkata,Kolkata,22.963,88.529,Public services,Public services-3,95526,,
+14,1228,Indian Institute of Science Education and Research Kolkata,Kolkata,22.963,88.529,Office,Mechanical Engineering Department,91363,,
+14,1229,Indian Institute of Science Education and Research Kolkata,Kolkata,22.963,88.529,Office,Chemical Engineering Department,90411,,
+14,1230,Indian Institute of Science Education and Research Kolkata,Kolkata,22.963,88.529,Office,Metallurgical and Materials Engineering Department,87200,,
+14,1231,Indian Institute of Science Education and Research Kolkata,Kolkata,22.963,88.529,Office,Aerospace Engineering Department,86455,,
+14,1232,Indian Institute of Science Education and Research Kolkata,Kolkata,22.963,88.529,Public Assembly,Tennis Lawn,84688,,
+14,1233,Indian Institute of Science Education and Research Kolkata,Kolkata,22.963,88.529,Public Assembly,Cricket Ground,82789,,
+14,1234,Indian Institute of Science Education and Research Kolkata,Kolkata,22.963,88.529,Education,Lab-7 PHY,79949,,
+14,1235,Indian Institute of Science Education and Research Kolkata,Kolkata,22.963,88.529,Lodging/residential,Hostel 1,79900,,
+14,1236,Indian Institute of Science Education and Research Kolkata,Kolkata,22.963,88.529,Office,Biotechnology Department,78002,,
+14,1237,Indian Institute of Science Education and Research Kolkata,Kolkata,22.963,88.529,Education,Lab-8 CHEM,76903,,
+14,1238,Indian Institute of Science Education and Research Kolkata,Kolkata,22.963,88.529,Public services,Public services-7,76537,,
+14,1239,Indian Institute of Science Education and Research Kolkata,Kolkata,22.963,88.529,Lodging/residential,Hostel 2,75000,,
+14,1240,Indian Institute of Science Education and Research Kolkata,Kolkata,22.963,88.529,Education,Lab-9 MAT,73813,,
+14,1241,Indian Institute of Science Education and Research Kolkata,Kolkata,22.963,88.529,Public Assembly,Indoor Sports Complex,73488,,
+14,1242,Indian Institute of Science Education and Research Kolkata,Kolkata,22.963,88.529,Public services,Public services-2,73277,,
+14,1243,Indian Institute of Science Education and Research Kolkata,Kolkata,22.963,88.529,Education,Lab-10 BIO,71088,,
+14,1244,Indian Institute of Science Education and Research Kolkata,Kolkata,22.963,88.529,Food sales and service,Food sales and service-1,69876,,
+14,1245,Indian Institute of Science Education and Research Kolkata,Kolkata,22.963,88.529,Lodging/residential,Hostel 3,66794,,
+14,1246,Indian Institute of Science Education and Research Kolkata,Kolkata,22.963,88.529,Lodging/residential,Hostel 4,66013,,
+14,1247,Indian Institute of Science Education and Research Kolkata,Kolkata,22.963,88.529,Office,Mathematics Department,65000,,
+14,1248,Indian Institute of Science Education and Research Kolkata,Kolkata,22.963,88.529,Office,Physics Department,64743,,
+14,1249,Indian Institute of Science Education and Research Kolkata,Kolkata,22.963,88.529,Lodging/residential,Hostel 5,62279,,
+14,1250,Indian Institute of Science Education and Research Kolkata,Kolkata,22.963,88.529,Education,Lab-11 DS,62242,,
+14,1251,Indian Institute of Science Education and Research Kolkata,Kolkata,22.963,88.529,Office,Chemistry Department,61756,,
+14,1252,Indian Institute of Science Education and Research Kolkata,Kolkata,22.963,88.529,Office,Humanities and Social Sciences Department,61274,,
+14,1253,Indian Institute of Science Education and Research Kolkata,Kolkata,22.963,88.529,Education,Lab-12 AI,60582,,
+14,1254,Indian Institute of Science Education and Research Kolkata,Kolkata,22.963,88.529,Office,Architecture and Planning Department,58196,,
+14,1255,Indian Institute of Science Education and Research Kolkata,Kolkata,22.963,88.529,Lodging/residential,Hostel 6,58041,,
+14,1256,Indian Institute of Science Education and Research Kolkata,Kolkata,22.963,88.529,Lodging/residential,Hostel 7,57274,,
+14,1257,Indian Institute of Science Education and Research Kolkata,Kolkata,22.963,88.529,Lodging/residential,Hostel 8,54172,,
+14,1258,Indian Institute of Science Education and Research Kolkata,Kolkata,22.963,88.529,Office,Earthquake Engineering Department,53860,,
+14,1259,Indian Institute of Science Education and Research Kolkata,Kolkata,22.963,88.529,Office,Environmental Engineering Department,52141,,
+14,1260,Indian Institute of Science Education and Research Kolkata,Kolkata,22.963,88.529,Office,Industrial Engineering and Management Department,51471,,
+14,1261,Indian Institute of Science Education and Research Kolkata,Kolkata,22.963,88.529,Office,Data Science and AI Department,50327,,
+14,1262,Indian Institute of Science Education and Research Kolkata,Kolkata,22.963,88.529,Public Assembly,Swimming Pool Complex,49975,,
+14,1263,Indian Institute of Science Education and Research Kolkata,Kolkata,22.963,88.529,Education,Lab-13 HSS,46037,,
+14,1264,Indian Institute of Science Education and Research Kolkata,Kolkata,22.963,88.529,Office,Mechatronics Department,45240,,
+14,1265,Indian Institute of Science Education and Research Kolkata,Kolkata,22.963,88.529,Education,Lab-14 ARCH,43143,,
+14,1266,Indian Institute of Science Education and Research Kolkata,Kolkata,22.963,88.529,Office,Instrumentation Engineering Department,43007,,
+14,1267,Indian Institute of Science Education and Research Kolkata,Kolkata,22.963,88.529,Office,Computer Science and Engineering Department,42942,,
+14,1268,Indian Institute of Science Education and Research Kolkata,Kolkata,22.963,88.529,Office,Electrical Engineering Department,42755,,
+14,1269,Indian Institute of Science Education and Research Kolkata,Kolkata,22.963,88.529,Office,Electronics and Communication Engineering Department,37917,,
+14,1270,Indian Institute of Science Education and Research Kolkata,Kolkata,22.963,88.529,Lodging/residential,Hostel 9,37803,,
+14,1271,Indian Institute of Science Education and Research Kolkata,Kolkata,22.963,88.529,Food sales and service,Food sales and service-2,35605,,
+14,1272,Indian Institute of Science Education and Research Kolkata,Kolkata,22.963,88.529,Public Assembly,Gym,34565,,
+14,1273,Indian Institute of Science Education and Research Kolkata,Kolkata,22.963,88.529,Education,Lab-15 CSE,33012,,
+14,1274,Indian Institute of Science Education and Research Kolkata,Kolkata,22.963,88.529,Office,Civil Engineering Department,31300,,
+14,1275,Indian Institute of Science Education and Research Kolkata,Kolkata,22.963,88.529,Education,Lab-16 ECE,27995,,
+14,1276,Indian Institute of Science Education and Research Kolkata,Kolkata,22.963,88.529,Office,Mechanical Engineering Department,27646,,
+14,1277,Indian Institute of Science Education and Research Kolkata,Kolkata,22.963,88.529,Education,Lab-17 EE,25401,,
+14,1278,Indian Institute of Science Education and Research Kolkata,Kolkata,22.963,88.529,Education,Lab-18 ME,24979,,
+14,1279,Indian Institute of Science Education and Research Kolkata,Kolkata,22.963,88.529,Office,Chemical Engineering Department,23871,,
+14,1280,Indian Institute of Science Education and Research Kolkata,Kolkata,22.963,88.529,Office,Metallurgical and Materials Engineering Department,23702,,
+14,1281,Indian Institute of Science Education and Research Kolkata,Kolkata,22.963,88.529,Office,Aerospace Engineering Department,23481,,
+14,1282,Indian Institute of Science Education and Research Kolkata,Kolkata,22.963,88.529,Office,Biotechnology Department,22524,,
+14,1283,Indian Institute of Science Education and Research Kolkata,Kolkata,22.963,88.529,Office,Mathematics Department,21469,,
+14,1284,Indian Institute of Science Education and Research Kolkata,Kolkata,22.963,88.529,Public services,Public services-5,20540,,
+14,1285,Indian Institute of Science Education and Research Kolkata,Kolkata,22.963,88.529,Public Assembly,Public Assembly-1,18551,,
+14,1286,Indian Institute of Science Education and Research Kolkata,Kolkata,22.963,88.529,Office,Physics Department,17077,,
+14,1287,Indian Institute of Science Education and Research Kolkata,Kolkata,22.963,88.529,Office,Chemistry Department,15649,,
+14,1288,Indian Institute of Science Education and Research Kolkata,Kolkata,22.963,88.529,Public services,Public services-4,13469,,
+14,1289,Indian Institute of Science Education and Research Kolkata,Kolkata,22.963,88.529,Education,Lab-19 CE,13220,,
+14,1290,Indian Institute of Science Education and Research Kolkata,Kolkata,22.963,88.529,Office,Humanities and Social Sciences Department,8836,,
