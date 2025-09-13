@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Carbon Marketplace",
+    "status": "Verified",
+    "date": "24.Jan.2021",
+    "progress": 75.5
+  },
+  {
+    "name": "Carbon Marketplace",
+    "status": "Inactive",
+    "date": "30.Dec.2021",
+    "progress": 25.5
+  },
+  {
+    "name": "Carbon Marketplace",
+    "status": "Anomaly Detected",
+    "date": "20.May.2021",
+    "progress": 90
+  },
+  {
+    "name": "Carbon Marketplace",
+    "status": "Verified",
+    "date": "12.Jul.2021",
+    "progress": 50.5
+  }
+]

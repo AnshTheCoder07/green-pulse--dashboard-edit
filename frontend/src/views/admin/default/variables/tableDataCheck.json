@@ -1,0 +1,31 @@
+[{
+  "name":["DEPARTMENT A",false],
+  "quantity": 2458, 
+  "date": "12 Jan 2025",
+  "progress": 17.5  
+},
+{
+  "name":["DEPARTMENT B",true],
+  "quantity": 1485, 
+  "date": "21 Feb 2025",
+  "progress": 10.8  
+},
+{
+  "name":["DEPARTMENT C",true],
+  "quantity": 1024, 
+  "date": "13 Mar 2025",
+  "progress": 21.3  
+},
+{
+  "name":["DEPARTMENT D",true],
+  "quantity": 858, 
+  "date": "24 Jan 2025",
+  "progress": 31.5  
+},
+{
+  "name":["DEPARTMENT D",false],
+  "quantity": 258, 
+  "date": "24 May 2025",
+  "progress": 12.2  
+}
+]

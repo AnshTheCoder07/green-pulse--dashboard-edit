@@ -1,0 +1,42 @@
+[
+  {
+    "type": "energy_consumption",
+    "amount": 150.5,
+    "txHash": "0x1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef",
+    "timestamp": "2025-01-15T10:30:00Z",
+    "description": "Energy consumption in Computer Science Dept",
+    "building": "Computer Science Dept"
+  },
+  {
+    "type": "carbon_offset_purchase",
+    "amount": 500.0,
+    "txHash": "0xabcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890",
+    "timestamp": "2025-01-14T14:22:00Z",
+    "description": "Carbon offset purchase - Renewable Energy",
+    "building": "N/A"
+  },
+  {
+    "type": "credit",
+    "amount": 1000.0,
+    "txHash": "0x9876543210fedcba9876543210fedcba9876543210fedcba9876543210fedcba",
+    "timestamp": "2025-01-13T09:15:00Z",
+    "description": "Wallet top-up",
+    "building": "N/A"
+  },
+  {
+    "type": "energy_consumption",
+    "amount": 89.2,
+    "txHash": "0xfedcba0987654321fedcba0987654321fedcba0987654321fedcba0987654321",
+    "timestamp": "2025-01-12T16:45:00Z",
+    "description": "Energy consumption in Engineering Dept",
+    "building": "Engineering Dept"
+  },
+  {
+    "type": "carbon_offset_purchase",
+    "amount": 250.0,
+    "txHash": "0x1111222233334444555566667777888899990000aaaabbbbccccddddeeeeffff",
+    "timestamp": "2025-01-11T11:30:00Z",
+    "description": "Carbon offset purchase - Forest Conservation",
+    "building": "N/A"
+  }
+]
