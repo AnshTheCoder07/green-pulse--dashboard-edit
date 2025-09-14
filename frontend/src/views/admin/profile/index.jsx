@@ -78,10 +78,10 @@ export default function ProfilePage() {
     department: "",
     branch: "",
     position: "",
-    email: "",
+    email: "", // Will be populated from DB but non-editable
     phone: "",
-    location: "",
-    education: "",
+    location: "", // Will be populated from DB but editable
+    education: "", // Will be populated from user.institute.name (non-editable)
     joinDate: "",
     employeeId: "",
     manager: "",
@@ -119,15 +119,15 @@ export default function ProfilePage() {
   ]);
 
   const [isEditing, setIsEditing] = useState(false);
+  // UPDATED: Removed 'education' and 'email' from editData since they're not editable
+  // Location is still editable but populated from DB
   const [editData, setEditData] = useState({
     name: '',
     position: '',
     department: '',
     branch: '',
     bio: '',
-    email: '',
-    education: '',
-    location: ''
+    location: '' // Still editable but populated from DB
   });
   const [postText, setPostText] = useState("");
 
@@ -141,7 +141,15 @@ export default function ProfilePage() {
       if (savedProfileData) {
         const profileData = JSON.parse(savedProfileData);
         setPersonalInfo(profileData);
-        setEditData(profileData);
+        // UPDATED: Don't include education and email in editData
+        setEditData({
+          name: profileData.name || '',
+          position: profileData.position || '',
+          department: profileData.department || '',
+          branch: profileData.branch || '',
+          bio: profileData.bio || '',
+          location: profileData.location || ''
+        });
       }
 
       if (savedDeptStats) {
@@ -159,9 +167,9 @@ export default function ProfilePage() {
             department: userData.department || '',
             branch: userData.branch || '',
             bio: userData.bio || '',
-            email: userData.email || '',
-            education: userData.education || '',
-            location: userData.location || '',
+            email: userData.email || '', // UPDATED: Get from user data (non-editable)
+            education: user?.institute?.name || 'No Institute', // UPDATED: Get from user.institute.name (non-editable)
+            location: userData.location || '', // UPDATED: Get from user data but still editable
             // Keep other fields
             phone: "+1 (555) 123-4567",
             employeeId: "GP-2022-001",
@@ -171,7 +179,15 @@ export default function ProfilePage() {
           };
 
           setPersonalInfo(updatedInfo);
-          setEditData(updatedInfo);
+          // UPDATED: Don't include education and email in editData
+          setEditData({
+            name: updatedInfo.name,
+            position: updatedInfo.position,
+            department: updatedInfo.department,
+            branch: updatedInfo.branch,
+            bio: updatedInfo.bio,
+            location: updatedInfo.location
+          });
           localStorage.setItem('profileData', JSON.stringify(updatedInfo));
 
           const updatedDeptStats = {
@@ -201,9 +217,9 @@ export default function ProfilePage() {
             department: user.department || '',
             branch: user.branch || '',
             bio: user.bio || '',
-            email: user.email || '',
-            education: user.education || '',
-            location: user.location || '',
+            email: user.email || '', // UPDATED: Get from user data (non-editable)
+            education: user.institute?.name || 'No Institute', // UPDATED: Get from user.institute.name (non-editable)
+            location: user.location || '', // UPDATED: Get from user data but still editable
             phone: "+1 (555) 123-4567",
             employeeId: "GP-2022-001",
             manager: "Dr. Sarah Chen",
@@ -211,7 +227,15 @@ export default function ProfilePage() {
             joinDate: "2022-03-15"
           };
           setPersonalInfo(fallbackInfo);
-          setEditData(fallbackInfo);
+          // UPDATED: Don't include education and email in editData
+          setEditData({
+            name: fallbackInfo.name,
+            position: fallbackInfo.position,
+            department: fallbackInfo.department,
+            branch: fallbackInfo.branch,
+            bio: fallbackInfo.bio,
+            location: fallbackInfo.location
+          });
         }
       }
     };
@@ -222,14 +246,13 @@ export default function ProfilePage() {
   // Sync editData with personalInfo when not editing
   useEffect(() => {
     if (!isEditing && personalInfo.name) {
+      // UPDATED: Don't include education and email in editData
       setEditData({
         name: personalInfo.name || '',
         position: personalInfo.position || '',
         department: personalInfo.department || '',
         branch: personalInfo.branch || '',
         bio: personalInfo.bio || '',
-        email: personalInfo.email || '',
-        education: personalInfo.education || '',
         location: personalInfo.location || ''
       });
     }
@@ -237,29 +260,26 @@ export default function ProfilePage() {
 
   const handleEdit = () => {
     setIsEditing(true);
-    // Properly set editData with current personalInfo values
+    // UPDATED: Don't include education and email in editData
     setEditData({
       name: personalInfo.name || '',
       position: personalInfo.position || '',
       department: personalInfo.department || '',
       branch: personalInfo.branch || '',
       bio: personalInfo.bio || '',
-      email: personalInfo.email || '',
-      education: personalInfo.education || '',
       location: personalInfo.location || ''
     });
   };
 
   const handleSave = async () => {
     try {
+      // UPDATED: Don't include education and email in updateData
       const updateData = {
         fullName: editData.name,
         position: editData.position,
         department: editData.department,
         branch: editData.branch,
         bio: editData.bio,
-        email: editData.email,
-        education: editData.education,
         location: editData.location
       };
 
@@ -274,9 +294,8 @@ export default function ProfilePage() {
           department: updateData.department,
           branch: updateData.branch,
           bio: updateData.bio,
-          email: updateData.email,
-          education: updateData.education,
           location: updateData.location
+          // Keep email and education as is - don't update them
         };
 
         setPersonalInfo(updatedPersonalInfo);
@@ -318,15 +337,13 @@ export default function ProfilePage() {
 
   const handleCancel = () => {
     setIsEditing(false);
-    // Properly reset editData to current personalInfo values
+    // UPDATED: Don't include education and email in editData
     setEditData({
       name: personalInfo.name || '',
       position: personalInfo.position || '',
       department: personalInfo.department || '',
       branch: personalInfo.branch || '',
       bio: personalInfo.bio || '',
-      email: personalInfo.email || '',
-      education: personalInfo.education || '',
       location: personalInfo.location || ''
     });
   };
@@ -359,9 +376,9 @@ export default function ProfilePage() {
           department: userData.department || '',
           branch: userData.branch || '',
           bio: userData.bio || '',
-          email: userData.email || '',
-          education: userData.education || '',
-          location: userData.location || '',
+          email: userData.email || '', // UPDATED: Get from user data (non-editable)
+          education: user?.institute?.name || 'No Institute', // UPDATED: Get from user.institute.name (non-editable)
+          location: userData.location || '', // UPDATED: Get from user data but still editable
           // Keep other fields
           phone: "+1 (555) 123-4567",
           employeeId: "GP-2022-001",
@@ -371,7 +388,15 @@ export default function ProfilePage() {
         };
 
         setPersonalInfo(updatedInfo);
-        setEditData(updatedInfo);
+        // UPDATED: Don't include education and email in editData
+        setEditData({
+          name: updatedInfo.name,
+          position: updatedInfo.position,
+          department: updatedInfo.department,
+          branch: updatedInfo.branch,
+          bio: updatedInfo.bio,
+          location: updatedInfo.location
+        });
         localStorage.setItem('profileData', JSON.stringify(updatedInfo));
 
         const updatedDeptStats = {
@@ -655,48 +680,39 @@ export default function ProfilePage() {
                             )}
                           </HStack>
                           
+                          {/* UPDATED: Email field is now read-only */}
                           <HStack>
                             <Icon as={MdEmail} color={textColorSecondary} w="20px" h="20px" />
                             <Text color={textColorSecondary} minW="100px">Email:</Text>
-                            {isEditing ? (
-                              <input
-                                value={editData.email}
-                                onChange={(e) => setEditData({...editData, email: e.target.value})}
-                                style={{
-                                  background: 'transparent',
-                                  border: '1px solid #e2e8f0',
-                                  borderRadius: '4px',
-                                  padding: '4px 8px',
-                                  color: textColor,
-                                  flex: 1
-                                }}
-                              />
-                            ) : (
-                              <Text color={textColor}>{personalInfo.email}</Text>
-                            )}
+                            <HStack flex="1">
+                              <Text color={textColor} fontWeight="medium">
+                                {personalInfo.email || "No Email"}
+                              </Text>
+                              {personalInfo.email && (
+                                <Badge colorScheme="green" variant="subtle" fontSize="xs">
+                                  Verified
+                                </Badge>
+                              )}
+                            </HStack>
                           </HStack>
                           
+                          {/* UPDATED: Education field is read-only */}
                           <HStack>
                             <Icon as={MdSchool} color={textColorSecondary} w="20px" h="20px" />
                             <Text color={textColorSecondary} minW="100px">Education:</Text>
-                            {isEditing ? (
-                              <input
-                                value={editData.education}
-                                onChange={(e) => setEditData({...editData, education: e.target.value})}
-                                style={{
-                                  background: 'transparent',
-                                  border: '1px solid #e2e8f0',
-                                  borderRadius: '4px',
-                                  padding: '4px 8px',
-                                  color: textColor,
-                                  flex: 1
-                                }}
-                              />
-                            ) : (
-                              <Text color={textColor}>{personalInfo.education}</Text>
-                            )}
+                            <HStack flex="1">
+                              <Text color={textColor} fontWeight="medium">
+                                {personalInfo.education || "No Institute"}
+                              </Text>
+                              {personalInfo.education && personalInfo.education !== "No Institute" && (
+                                <Badge colorScheme="blue" variant="subtle" fontSize="xs">
+                                  Institute
+                                </Badge>
+                              )}
+                            </HStack>
                           </HStack>
                           
+                          {/* UPDATED: Location field is editable but populated from DB */}
                           <HStack>
                             <Icon as={MdLocationOn} color={textColorSecondary} w="20px" h="20px" />
                             <Text color={textColorSecondary} minW="100px">Location:</Text>
@@ -712,9 +728,10 @@ export default function ProfilePage() {
                                   color: textColor,
                                   flex: 1
                                 }}
+                                placeholder="Enter your location"
                               />
                             ) : (
-                              <Text color={textColor}>{personalInfo.location}</Text>
+                              <Text color={textColor}>{personalInfo.location || "Not specified"}</Text>
                             )}
                           </HStack>
                         </VStack>
