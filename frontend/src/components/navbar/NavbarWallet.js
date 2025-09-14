@@ -17,9 +17,14 @@ import React, { useState, useEffect } from "react";
 import { MdAccountBalanceWallet, MdSettings, MdNotifications } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
 
+// Custom imports
+import { useAuth } from "contexts/AuthContext";
+import { generateInitials, getDisplayName } from "utils/userUtils";
+
 export default function WalletNavbar(props) {
   const [scrolled, setScrolled] = useState(false);
   const navigate = useNavigate();
+  const { user } = useAuth();
 
   useEffect(() => {
     window.addEventListener("scroll", changeNavbar);
@@ -138,7 +143,7 @@ export default function WalletNavbar(props) {
                 <Avatar
                   _hover={{ cursor: 'pointer' }}
                   color="white"
-                  name="Adela Parkson"
+                  name={user?.fullName || 'User'}
                   bg="#11047A"
                   size="sm"
                   w="40px"
@@ -165,7 +170,7 @@ export default function WalletNavbar(props) {
                     fontWeight="700"
                     color={mainText}
                   >
-                    👋&nbsp; Hey, Adela
+                    👋&nbsp; Hey, {getDisplayName(user?.fullName)}
                   </Text>
                 </Flex>
                 <Flex flexDirection="column" p="10px">

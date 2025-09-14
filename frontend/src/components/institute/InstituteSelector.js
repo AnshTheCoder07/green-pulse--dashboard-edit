@@ -1,3 +1,4 @@
+// components/institute/InstituteSelector.jsx
 import React, { useState } from 'react';
 import {
   Box,
@@ -16,14 +17,17 @@ import {
   useColorModeValue,
   SimpleGrid,
   Icon,
-  Divider
+  Divider,
+  Spinner,
+  Alert,
+  AlertIcon
 } from '@chakra-ui/react';
-import { MdSchool, MdLocationOn, MdPeople, MdBusiness, MdEnergySavingsLeaf } from 'react-icons/md';
+import { MdSchool, MdLocationOn, MdPeople, MdBusiness, MdEnergySavingsLeaf, MdExpandMore } from 'react-icons/md';
 import { useInstitute } from 'contexts/InstituteContext';
 
 const InstituteSelector = ({ onSelect, isSignUp = false }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const { institutes, currentInstitute, selectInstitute, loading } = useInstitute();
+  const { institutes, currentInstitute, selectInstitute, loading, error } = useInstitute();
   const [selectedInstitute, setSelectedInstitute] = useState(null);
 
   const cardBg = useColorModeValue('white', 'gray.800');
@@ -86,7 +90,7 @@ const InstituteSelector = ({ onSelect, isSignUp = false }) => {
           <HStack>
             <Icon as={MdPeople} w={4} h={4} color="purple.500" />
             <Text fontSize="sm">
-              {institute.totalStudents.toLocaleString()} Students
+              {institute.totalStudents?.toLocaleString()} Students
             </Text>
           </HStack>
         </SimpleGrid>
@@ -94,7 +98,7 @@ const InstituteSelector = ({ onSelect, isSignUp = false }) => {
         <HStack>
           <Icon as={MdEnergySavingsLeaf} w={4} h={4} color="green.500" />
           <Text fontSize="sm" color="green.600">
-            {institute.energyCapacity.toLocaleString()} kWh capacity
+            {institute.energyCapacity?.toLocaleString()} kWh capacity
           </Text>
         </HStack>
 
@@ -107,8 +111,31 @@ const InstituteSelector = ({ onSelect, isSignUp = false }) => {
 
   if (loading) {
     return (
-      <Button isLoading loadingText="Loading Institutes..." variant="outline">
-        Select Institute
+      <Button
+        isLoading
+        loadingText="Loading Institutes..."
+        variant="outline"
+        size="lg"
+        w="100%"
+        leftIcon={<MdSchool />}
+      >
+        Loading...
+      </Button>
+    );
+  }
+
+  if (error) {
+    return (
+      <Button
+        variant="outline"
+        leftIcon={<MdSchool />}
+        size="lg"
+        w="100%"
+        justifyContent="flex-start"
+        colorScheme="red"
+        onClick={() => window.location.reload()}
+      >
+        Error loading institutes - Click to retry
       </Button>
     );
   }
@@ -119,11 +146,26 @@ const InstituteSelector = ({ onSelect, isSignUp = false }) => {
         onClick={onOpen}
         variant="outline"
         leftIcon={<MdSchool />}
+        rightIcon={<MdExpandMore />}
         size="lg"
         w="100%"
-        justifyContent="flex-start"
+        justifyContent="space-between"
+        textAlign="left"
       >
-        {currentInstitute ? currentInstitute.name : 'Select Institute'}
+        <Box flex="1" textAlign="left">
+          <Text
+            isTruncated
+            maxW="300px" // Adjust this width as needed
+            fontSize="md"
+          >
+            {currentInstitute ? currentInstitute.name : 'Select Institute'}
+          </Text>
+          {currentInstitute && (
+            <Text fontSize="xs" color="gray.500" isTruncated>
+              {currentInstitute.location} • {currentInstitute.campusId}
+            </Text>
+          )}
+        </Box>
       </Button>
 
       <Modal isOpen={isOpen} onClose={onClose} size="4xl">
@@ -146,16 +188,30 @@ const InstituteSelector = ({ onSelect, isSignUp = false }) => {
               </Box>
             )}
 
-            <VStack spacing={4} align="stretch">
-              {institutes.map((institute) => (
-                <InstituteCard
-                  key={institute.id}
-                  institute={institute}
-                  isSelected={selectedInstitute?.id === institute.id}
-                  onClick={() => handleInstituteSelect(institute)}
-                />
-              ))}
-            </VStack>
+            {institutes.length === 0 && !loading && (
+              <Box textAlign="center" py={8}>
+                <Icon as={MdSchool} w={12} h={12} color="gray.400" />
+                <Text mt={4} color="gray.600">
+                  No institutes available
+                </Text>
+                <Button mt={4} onClick={() => window.location.reload()}>
+                  Refresh
+                </Button>
+              </Box>
+            )}
+
+            {institutes.length > 0 && (
+              <VStack spacing={4} align="stretch">
+                {institutes.map((institute) => (
+                  <InstituteCard
+                    key={institute.id}
+                    institute={institute}
+                    isSelected={selectedInstitute?.id === institute.id}
+                    onClick={() => handleInstituteSelect(institute)}
+                  />
+                ))}
+              </VStack>
+            )}
 
             <Divider my={4} />
 

@@ -1,3 +1,4 @@
+// frontend/src/App.js
 import './assets/css/App.css';
 import { Routes, Route, Navigate } from 'react-router-dom';
 import AuthLayout from './layouts/auth';
@@ -8,6 +9,7 @@ import { useState, useEffect } from 'react';
 import { CarbonProvider } from './contexts/CarbonContext';
 import { InstituteProvider } from './contexts/InstituteContext';
 import { DepartmentProvider } from './contexts/DepartmentContext';
+import { AuthProvider } from './contexts/AuthContext'; // Add this import
 import ErrorBoundary from './components/ErrorBoundary';
 import LoadingScreen from './components/loading_screen/LoadingScreen';
 
@@ -48,29 +50,31 @@ export default function Main() {
   return (
     <ErrorBoundary>
       <ChakraProvider theme={currentTheme}>
-        <InstituteProvider>
-          <DepartmentProvider>
-            <CarbonProvider>
-              {isLoading && (
-                <LoadingScreen 
-                  loading={isLoading}
-                  progress={loadingProgress}
-                  message={loadingMessage}
-                />
-              )}
-              <Routes>
-                <Route path="auth/*" element={<AuthLayout />} />
-                <Route
-                  path="admin/*"
-                  element={
-                    <AdminLayout theme={currentTheme} setTheme={setCurrentTheme} />
-                  }
-                />
-                <Route path="/" element={<Navigate to="/auth/sign-in" replace />} />
-              </Routes>
-            </CarbonProvider>
-          </DepartmentProvider>
-        </InstituteProvider>
+        <AuthProvider> {/* Wrap with AuthProvider */}
+          <InstituteProvider>
+            <DepartmentProvider>
+              <CarbonProvider>
+                {isLoading && (
+                  <LoadingScreen 
+                    loading={isLoading}
+                    progress={loadingProgress}
+                    message={loadingMessage}
+                  />
+                )}
+                <Routes>
+                  <Route path="auth/*" element={<AuthLayout />} />
+                  <Route
+                    path="admin/*"
+                    element={
+                      <AdminLayout theme={currentTheme} setTheme={setCurrentTheme} />
+                    }
+                  />
+                  <Route path="/" element={<Navigate to="/auth/sign-in" replace />} />
+                </Routes>
+              </CarbonProvider>
+            </DepartmentProvider>
+          </InstituteProvider>
+        </AuthProvider> {/* Close AuthProvider */}
       </ChakraProvider>
     </ErrorBoundary>
   );

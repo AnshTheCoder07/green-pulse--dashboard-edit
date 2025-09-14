@@ -1,6 +1,7 @@
 {
   "name": "webapp",
   "version": "2.0.0",
+  "proxy": "http://localhost:5000",
   "private": true,
   "dependencies": {
     "@babel/preset-react": "^7.18.6",
@@ -16,6 +17,7 @@
     "@testing-library/react": "^16.0.0",
     "@testing-library/user-event": "^14.5.2",
     "apexcharts": "3.50.0",
+    "axios": "^1.12.1",
     "framer-motion": "^11.3.7",
     "npm-force-resolutions": "^0.0.10",
     "react": "^18.3.1",

@@ -1,4 +1,5 @@
-import React from "react";
+// frontend/src/views/auth/signIn/index.jsx
+import React, { useState, useEffect } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import {
   Box,
@@ -14,6 +15,9 @@ import {
   InputRightElement,
   Text,
   useColorModeValue,
+  Alert,
+  AlertIcon,
+  useToast,
 } from "@chakra-ui/react";
 import DefaultAuth from "layouts/auth/Default";
 import illustration from "assets/img/auth/auth.png";
@@ -21,10 +25,29 @@ import { MdOutlineRemoveRedEye } from "react-icons/md";
 import { RiEyeCloseLine } from "react-icons/ri";
 import InstituteSelector from "components/institute/InstituteSelector";
 import { useInstitute } from "contexts/InstituteContext";
+import { useAuth } from "contexts/AuthContext";
 
 function SignIn() {
   const navigate = useNavigate();
-  const { currentInstitute } = useInstitute();
+  const toast = useToast();
+  
+  // Destructure ALL context values (this was the main issue)
+  const {
+    currentInstitute,
+    institutes,
+    loading: instituteLoading,
+    error: instituteError
+  } = useInstitute();
+  
+  const { login, loading } = useAuth();
+
+  // Form state
+  const [formData, setFormData] = useState({
+    email: '',
+    password: ''
+  });
+  const [errors, setErrors] = useState([]);
+  const [show, setShow] = useState(false);
 
   // Chakra color mode
   const textColor = useColorModeValue("navy.700", "white");
@@ -32,20 +55,105 @@ function SignIn() {
   const textColorDetails = useColorModeValue("navy.700", "secondaryGray.600");
   const textColorBrand = useColorModeValue("brand.500", "white");
   const brandStars = useColorModeValue("brand.500", "brand.400");
-  const [show, setShow] = React.useState(false);
+
   const handleClick = () => setShow(!show);
 
-  // Handle sign in and redirect
-  const handleSignIn = (event) => {
-    event.preventDefault();
-    // Add authentication logic here (API call, validation, etc.)
-    // On successful sign in, redirect:
-    if (currentInstitute) {
-      navigate('/admin/dashboard');
-    } else {
-      alert('Please select an institute first');
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }));
+    if (errors.length > 0) {
+      setErrors([]);
     }
   };
+
+  const handleSignIn = async (event) => {
+    event.preventDefault();
+    setErrors([]);
+
+    if (!currentInstitute) {
+      setErrors(['Please select an institute first']);
+      return;
+    }
+
+    try {
+      const credentials = {
+        email: formData.email,
+        password: formData.password,
+        institute: currentInstitute
+      };
+
+      const response = await login(credentials);
+
+      if (response.success) {
+        toast({
+          title: "Success",
+          description: "Login successful! Welcome back.",
+          status: "success",
+          duration: 3000,
+          isClosable: true,
+        });
+
+        navigate('/admin/dashboard');
+      }
+    } catch (error) {
+      console.error('Login error:', error);
+
+      if (error.errors && Array.isArray(error.errors)) {
+        setErrors(error.errors);
+      } else if (error.message) {
+        setErrors([error.message]);
+      } else {
+        setErrors(['An unexpected error occurred. Please try again.']);
+      }
+
+      toast({
+        title: "Login Failed",
+        description: error.message || "Please check your credentials and try again.",
+        status: "error",
+        duration: 5000,
+        isClosable: true,
+      });
+    }
+  };
+
+  // Debug logging to help troubleshoot
+  useEffect(() => {
+    console.log("🏫 SignIn Debug:");
+    console.log("  - Institutes:", institutes);
+    console.log("  - Institutes length:", institutes?.length);
+    console.log("  - Loading:", instituteLoading);
+    console.log("  - Error:", instituteError);
+    console.log("  - Current Institute:", currentInstitute);
+  }, [institutes, instituteLoading, instituteError, currentInstitute]);
+
+  // Handle loading state
+  if (instituteLoading) {
+    return (
+      <DefaultAuth illustrationBackground={illustration} image={illustration}>
+        <Flex justify="center" align="center" height="50vh">
+          <Text>Loading institutes...</Text>
+        </Flex>
+      </DefaultAuth>
+    );
+  }
+
+  // Handle error state
+  if (instituteError) {
+    return (
+      <DefaultAuth illustrationBackground={illustration} image={illustration}>
+        <Flex justify="center" align="center" height="50vh" flexDirection="column">
+          <Alert status="error" mb="20px">
+            <AlertIcon />
+            Failed to load institutes: {instituteError}
+          </Alert>
+          <Button onClick={() => window.location.reload()}>Retry</Button>
+        </Flex>
+      </DefaultAuth>
+    );
+  }
 
   return (
     <DefaultAuth illustrationBackground={illustration} image={illustration}>
@@ -62,6 +170,14 @@ function SignIn() {
         mt={{ base: "40px", md: "14vh" }}
         flexDirection="column"
       >
+        {/* Debug info (only shows in development) */}
+        {process.env.NODE_ENV === 'development' && (
+          <Box mb="10px" p="10px" bg="gray.100" borderRadius="md" fontSize="sm">
+            <Text>Debug: {institutes?.length || 0} institutes loaded</Text>
+            {instituteError && <Text color="red.500">Error: {instituteError}</Text>}
+          </Box>
+        )}
+
         <Box me="auto">
           <Heading color={textColor} fontSize="36px" mb="10px">
             Sign In
@@ -76,6 +192,7 @@ function SignIn() {
             Enter your email and password to sign in!
           </Text>
         </Box>
+
         <Flex
           zIndex="2"
           direction="column"
@@ -87,6 +204,20 @@ function SignIn() {
           me="auto"
           mb={{ base: "20px", md: "auto" }}
         >
+          {/* Error Messages */}
+          {errors.length > 0 && (
+            <Alert status="error" mb="20px" borderRadius="15px">
+              <AlertIcon />
+              <Box>
+                {errors.map((error, index) => (
+                  <Text key={index} fontSize="sm">
+                    {error}
+                  </Text>
+                ))}
+              </Box>
+            </Alert>
+          )}
+
           {/* Institute Selection */}
           <Box mb="25px">
             <FormLabel
@@ -100,8 +231,14 @@ function SignIn() {
               Institute<Text color={brandStars}>*</Text>
             </FormLabel>
             <InstituteSelector />
+            {/* Show institute count for debugging */}
+            {institutes && (
+              <Text fontSize="xs" color="gray.500" mt="4px">
+                {institutes.length} institutes available
+              </Text>
+            )}
           </Box>
-          
+
           {/* FORM STARTS HERE */}
           <form onSubmit={handleSignIn}>
             <FormControl>
@@ -116,6 +253,9 @@ function SignIn() {
                 Email<Text color={brandStars}>*</Text>
               </FormLabel>
               <Input
+                name="email"
+                value={formData.email}
+                onChange={handleInputChange}
                 isRequired={true}
                 variant="auth"
                 fontSize="sm"
@@ -126,6 +266,7 @@ function SignIn() {
                 fontWeight="500"
                 size="lg"
               />
+
               <FormLabel
                 ms="4px"
                 fontSize="sm"
@@ -137,9 +278,12 @@ function SignIn() {
               </FormLabel>
               <InputGroup size="md">
                 <Input
+                  name="password"
+                  value={formData.password}
+                  onChange={handleInputChange}
                   isRequired={true}
                   fontSize="sm"
-                  placeholder="Min. 8 characters"
+                  placeholder="Min. 6 characters"
                   mb="24px"
                   size="lg"
                   type={show ? "text" : "password"}
@@ -154,6 +298,7 @@ function SignIn() {
                   />
                 </InputRightElement>
               </InputGroup>
+
               <Flex justifyContent="space-between" align="center" mb="24px">
                 <FormControl display="flex" alignItems="center">
                   <Checkbox
@@ -182,8 +327,11 @@ function SignIn() {
                   </Text>
                 </NavLink>
               </Flex>
+
               <Button
                 type="submit"
+                isLoading={loading}
+                loadingText="Signing In..."
                 fontSize="sm"
                 variant="brand"
                 fontWeight="500"
@@ -196,6 +344,7 @@ function SignIn() {
             </FormControl>
           </form>
           {/* FORM ENDS HERE */}
+
           <Flex
             flexDirection="column"
             justifyContent="center"

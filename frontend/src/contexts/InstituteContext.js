@@ -10,112 +10,176 @@ export const useInstitute = () => {
   return context;
 };
 
+// API service functions
+const instituteAPI = {
+  // Fetch all institutes
+  async fetchInstitutes() {
+    try {
+      const response = await fetch('http://localhost:5000/api/institutes', {
+        method: 'GET',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      });
+      
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      
+      return await response.json();
+    } catch (error) {
+      console.error('Error fetching institutes:', error);
+      throw error;
+    }
+  },
+
+  // Fetch single institute by ID
+  async fetchInstituteById(id) {
+    try {
+      const response = await fetch(`/api/institutes/${id}`, {
+        method: 'GET',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      });
+      
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      
+      return await response.json();
+    } catch (error) {
+      console.error('Error fetching institute:', error);
+      throw error;
+    }
+  },
+
+  // Update institute
+  async updateInstitute(id, updates) {
+    try {
+      const response = await fetch(`/api/institutes/${id}`, {
+        method: 'PUT',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(updates),
+      });
+      
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      
+      return await response.json();
+    } catch (error) {
+      console.error('Error updating institute:', error);
+      throw error;
+    }
+  },
+
+  // Add new institute
+  async addInstitute(instituteData) {
+    try {
+      const response = await fetch('/api/institutes', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(instituteData),
+      });
+      
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      
+      return await response.json();
+    } catch (error) {
+      console.error('Error adding institute:', error);
+      throw error;
+    }
+  },
+
+  // Delete institute
+  async deleteInstitute(id) {
+    try {
+      const response = await fetch(`/api/institutes/${id}`, {
+        method: 'DELETE',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      });
+      
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      
+      return await response.json();
+    } catch (error) {
+      console.error('Error deleting institute:', error);
+      throw error;
+    }
+  }
+};
+
 export const InstituteProvider = ({ children }) => {
   const [currentInstitute, setCurrentInstitute] = useState(null);
   const [institutes, setInstitutes] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
-  // Mock institutes data - in real app, this would come from backend
-  const mockInstitutes = [
-    {
-      id: 'inst_001',
-      name: 'Green University',
-      campusId: 'GU_MAIN',
-      location: 'Main Campus',
-      address: '123 Green Street, Eco City',
-      established: '1995',
-      totalBuildings: 12,
-      totalStudents: 15000,
-      energyCapacity: 50000, // kWh per month
-      carbonBudget: 10000, // ENTO per month
-      contact: {
-        email: 'admin@greenuniversity.edu',
-        phone: '+1-555-0123'
-      }
-    },
-    {
-      id: 'inst_002',
-      name: 'EcoTech Institute',
-      campusId: 'ETI_NORTH',
-      location: 'North Campus',
-      address: '456 Sustainable Ave, Green Valley',
-      established: '2005',
-      totalBuildings: 8,
-      totalStudents: 8500,
-      energyCapacity: 35000,
-      carbonBudget: 7500,
-      contact: {
-        email: 'info@ecotech.edu',
-        phone: '+1-555-0456'
-      }
-    },
-    {
-      id: 'inst_003',
-      name: 'Climate College',
-      campusId: 'CC_SOUTH',
-      location: 'South Campus',
-      address: '789 Renewable Blvd, Clean City',
-      established: '2010',
-      totalBuildings: 6,
-      totalStudents: 6200,
-      energyCapacity: 28000,
-      carbonBudget: 6000,
-      contact: {
-        email: 'contact@climatecollege.edu',
-        phone: '+1-555-0789'
-      }
-    },
-    {
-      id: 'inst_004',
-      name: 'Environmental Academy',
-      campusId: 'EA_EAST',
-      location: 'East Campus',
-      address: '321 Conservation Dr, Nature Town',
-      established: '1988',
-      totalBuildings: 15,
-      totalStudents: 22000,
-      energyCapacity: 65000,
-      carbonBudget: 12000,
-      contact: {
-        email: 'admin@envacademy.edu',
-        phone: '+1-555-0321'
-      }
-    }
-  ];
-
-  // Load institutes data
+  // Load institutes data from MongoDB
   useEffect(() => {
     const loadInstitutes = async () => {
       try {
         setLoading(true);
-        // Simulate API call
-        await new Promise(resolve => setTimeout(resolve, 1000));
-        setInstitutes(mockInstitutes);
+        setError(null);
+        
+        // Fetch institutes from MongoDB via API
+        const data = await instituteAPI.fetchInstitutes();
+        setInstitutes(data);
         
         // Load current institute from localStorage
-        const savedInstitute = localStorage.getItem('greenpulse_current_institute');
-        if (savedInstitute) {
-          const institute = mockInstitutes.find(inst => inst.id === savedInstitute);
+        const savedInstituteId = localStorage.getItem('greenpulse_current_institute');
+        if (savedInstituteId && data.length > 0) {
+          const institute = data.find(inst => inst.id === savedInstituteId);
           if (institute) {
             setCurrentInstitute(institute);
+          } else {
+            // If saved institute not found, set first institute as default
+            setCurrentInstitute(data[0]);
+            localStorage.setItem('greenpulse_current_institute', data[0].id);
           }
+        } else if (data.length > 0) {
+          // Set first institute as default if no saved selection
+          setCurrentInstitute(data[0]);
+          localStorage.setItem('greenpulse_current_institute', data[0].id);
         }
       } catch (error) {
         console.error('Error loading institutes:', error);
+        setError(error.message);
       } finally {
         setLoading(false);
       }
     };
 
     loadInstitutes();
-  }, []); // Empty dependency array is correct - mockInstitutes is static
+  }, []);
 
   // Set current institute
-  const selectInstitute = (instituteId) => {
-    const institute = institutes.find(inst => inst.id === instituteId);
-    if (institute) {
-      setCurrentInstitute(institute);
-      localStorage.setItem('greenpulse_current_institute', instituteId);
+  const selectInstitute = async (instituteId) => {
+    try {
+      const institute = institutes.find(inst => inst.id === instituteId);
+      if (institute) {
+        setCurrentInstitute(institute);
+        localStorage.setItem('greenpulse_current_institute', instituteId);
+      } else {
+        // If not found in current list, fetch from API
+        const fetchedInstitute = await instituteAPI.fetchInstituteById(instituteId);
+        setCurrentInstitute(fetchedInstitute);
+        localStorage.setItem('greenpulse_current_institute', instituteId);
+      }
+    } catch (error) {
+      console.error('Error selecting institute:', error);
+      setError(error.message);
     }
   };
 
@@ -140,41 +204,98 @@ export const InstituteProvider = ({ children }) => {
   };
 
   // Update institute data
-  const updateInstitute = (instituteId, updates) => {
-    setInstitutes(prevInstitutes => 
-      prevInstitutes.map(inst => 
-        inst.id === instituteId ? { ...inst, ...updates } : inst
-      )
-    );
+  const updateInstitute = async (instituteId, updates) => {
+    try {
+      setLoading(true);
+      
+      // Update in database via API
+      const updatedInstitute = await instituteAPI.updateInstitute(instituteId, updates);
+      
+      // Update local state
+      setInstitutes(prevInstitutes => 
+        prevInstitutes.map(inst => 
+          inst.id === instituteId ? { ...inst, ...updates } : inst
+        )
+      );
 
-    // Update current institute if it's the one being updated
-    if (currentInstitute && currentInstitute.id === instituteId) {
-      setCurrentInstitute(prev => ({ ...prev, ...updates }));
+      // Update current institute if it's the one being updated
+      if (currentInstitute && currentInstitute.id === instituteId) {
+        setCurrentInstitute(prev => ({ ...prev, ...updates }));
+      }
+
+      return updatedInstitute;
+    } catch (error) {
+      console.error('Error updating institute:', error);
+      setError(error.message);
+      throw error;
+    } finally {
+      setLoading(false);
     }
   };
 
   // Add new institute (admin function)
-  const addInstitute = (instituteData) => {
-    const newInstitute = {
-      id: `inst_${Date.now()}`,
-      ...instituteData,
-      established: new Date().getFullYear().toString()
-    };
-    
-    setInstitutes(prevInstitutes => [...prevInstitutes, newInstitute]);
-    return newInstitute;
+  const addInstitute = async (instituteData) => {
+    try {
+      setLoading(true);
+      
+      // Add to database via API
+      const newInstitute = await instituteAPI.addInstitute({
+        ...instituteData,
+        established: instituteData.established || new Date().getFullYear().toString()
+      });
+      
+      // Update local state
+      setInstitutes(prevInstitutes => [...prevInstitutes, newInstitute]);
+      
+      return newInstitute;
+    } catch (error) {
+      console.error('Error adding institute:', error);
+      setError(error.message);
+      throw error;
+    } finally {
+      setLoading(false);
+    }
   };
 
   // Remove institute (admin function)
-  const removeInstitute = (instituteId) => {
-    setInstitutes(prevInstitutes => 
-      prevInstitutes.filter(inst => inst.id !== instituteId)
-    );
+  const removeInstitute = async (instituteId) => {
+    try {
+      setLoading(true);
+      
+      // Delete from database via API
+      await instituteAPI.deleteInstitute(instituteId);
+      
+      // Update local state
+      setInstitutes(prevInstitutes => 
+        prevInstitutes.filter(inst => inst.id !== instituteId)
+      );
 
-    // Clear current institute if it's being removed
-    if (currentInstitute && currentInstitute.id === instituteId) {
-      setCurrentInstitute(null);
-      localStorage.removeItem('greenpulse_current_institute');
+      // Clear current institute if it's being removed
+      if (currentInstitute && currentInstitute.id === instituteId) {
+        setCurrentInstitute(null);
+        localStorage.removeItem('greenpulse_current_institute');
+      }
+    } catch (error) {
+      console.error('Error removing institute:', error);
+      setError(error.message);
+      throw error;
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  // Refresh institutes data
+  const refreshInstitutes = async () => {
+    try {
+      setLoading(true);
+      setError(null);
+      const data = await instituteAPI.fetchInstitutes();
+      setInstitutes(data);
+    } catch (error) {
+      console.error('Error refreshing institutes:', error);
+      setError(error.message);
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -182,12 +303,14 @@ export const InstituteProvider = ({ children }) => {
     currentInstitute,
     institutes,
     loading,
+    error,
     selectInstitute,
     getInstituteByCampusId,
     getInstituteStats,
     updateInstitute,
     addInstitute,
-    removeInstitute
+    removeInstitute,
+    refreshInstitutes
   };
 
   return (

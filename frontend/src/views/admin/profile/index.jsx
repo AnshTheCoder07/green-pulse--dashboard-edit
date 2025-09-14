@@ -1,22 +1,3 @@
-/*!
-  _   _  ___  ____  ___ ________  _   _   _   _ ___   
- | | | |/ _ \|  _ \|_ _|__  / _ \| \ | | | | | |_ _| 
- | |_| | | | | |_) || |  / / | | |  \| | | | | || | 
- |  _  | |_| |  _ < | | / /| |_| | |\  | | |_| || |
- |_| |_|\___/|_| \_\___/____\___/|_| \_|  \___/|___|
-                                                                                                                                                                                                                                                                                                                                       
-=========================================================
-* GreenPulse Profile - Personal & Department Information
-=========================================================
-
-* Designed for GreenPulse Carbon Management Platform
-* Personal Profile with Department & ENTO Details
-
-=========================================================
-
-*/
-
-// Chakra imports
 import {
   Box,
   Flex,
@@ -45,7 +26,7 @@ import {
   InputGroup,
   InputLeftElement,
 } from "@chakra-ui/react";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   MdPerson,
   MdWork,
@@ -73,6 +54,10 @@ import {
 import banner from "assets/img/auth/banner.png";
 import avatar from "assets/img/avatars/avatarSimmmple.png";
 
+// Import Auth Context and Service
+import { useAuth } from "contexts/AuthContext";
+import authService from "services/authService";
+
 export default function ProfilePage() {
   // Chakra Color Mode
   const textColor = useColorModeValue("navy.700", "white");
@@ -85,33 +70,34 @@ export default function ProfilePage() {
   const errorColor = useColorModeValue("red.500", "red.300");
   
   const toast = useToast();
+  const { user, updateUserData } = useAuth();
 
   // Personal Information State
   const [personalInfo, setPersonalInfo] = useState({
-    name: "Milan Jack",
-    department: "Computer Science Department",
-    branch: "Software Engineering",
-    position: "UI/UX Designer",
-    email: "milanjack@thegmail.com",
-    phone: "+1 (555) 123-4567",
-    location: "Canada",
-    education: "Student at Mr. College, Canada",
-    joinDate: "2022-03-15",
-    employeeId: "GP-2022-001",
-    manager: "Dr. Sarah Chen",
-    team: "Carbon Analytics Team",
-    bio: "Passionate about sustainable technology and carbon footprint reduction. Leading initiatives to help organizations achieve their green energy goals through data-driven insights and innovative solutions.",
+    name: "",
+    department: "",
+    branch: "",
+    position: "",
+    email: "",
+    phone: "",
+    location: "",
+    education: "",
+    joinDate: "",
+    employeeId: "",
+    manager: "",
+    team: "",
+    bio: "",
   });
 
   // Department & ENTO Statistics
   const [departmentStats, setDepartmentStats] = useState({
-    departmentName: "Computer Science Department",
-    branch: "Software Engineering",
-    entoSaved: 15400, // ENTO tokens saved
-    entoCount: 12500, // Current ENTO balance
+    departmentName: "",
+    branch: "",
+    entoSaved: 15400,
+    entoCount: 12500,
     carbonCredits: 1250,
-    co2Saved: 1540, // kg
-    rank: 4, // in department
+    co2Saved: 1540,
+    rank: 4,
     totalMembers: 450,
     activeMembers: 320,
   });
@@ -133,29 +119,216 @@ export default function ProfilePage() {
   ]);
 
   const [isEditing, setIsEditing] = useState(false);
-  const [editData, setEditData] = useState(personalInfo);
+  const [editData, setEditData] = useState({
+    name: '',
+    position: '',
+    department: '',
+    branch: '',
+    bio: '',
+    email: '',
+    education: '',
+    location: ''
+  });
   const [postText, setPostText] = useState("");
+
+  // Load user data on component mount
+  useEffect(() => {
+    const loadUserData = async () => {
+      // First, try to load from localStorage
+      const savedProfileData = localStorage.getItem('profileData');
+      const savedDeptStats = localStorage.getItem('departmentStats');
+
+      if (savedProfileData) {
+        const profileData = JSON.parse(savedProfileData);
+        setPersonalInfo(profileData);
+        setEditData(profileData);
+      }
+
+      if (savedDeptStats) {
+        setDepartmentStats(JSON.parse(savedDeptStats));
+      }
+
+      // Then, try to get fresh data from server only once
+      try {
+        const response = await authService.getProfile();
+        if (response.success) {
+          const userData = response.data;
+          const updatedInfo = {
+            name: userData.fullName || '',
+            position: userData.position || 'Student',
+            department: userData.department || '',
+            branch: userData.branch || '',
+            bio: userData.bio || '',
+            email: userData.email || '',
+            education: userData.education || '',
+            location: userData.location || '',
+            // Keep other fields
+            phone: "+1 (555) 123-4567",
+            employeeId: "GP-2022-001",
+            manager: "Dr. Sarah Chen",
+            team: "Carbon Analytics Team",
+            joinDate: "2022-03-15"
+          };
+
+          setPersonalInfo(updatedInfo);
+          setEditData(updatedInfo);
+          localStorage.setItem('profileData', JSON.stringify(updatedInfo));
+
+          const updatedDeptStats = {
+            departmentName: userData.department || '',
+            branch: userData.branch || '',
+            entoSaved: 15400,
+            entoCount: 12500,
+            carbonCredits: 1250,
+            co2Saved: 1540,
+            rank: 4,
+            totalMembers: 450,
+            activeMembers: 320,
+          };
+          setDepartmentStats(updatedDeptStats);
+          localStorage.setItem('departmentStats', JSON.stringify(updatedDeptStats));
+
+          // Update global context
+          updateUserData(userData);
+        }
+      } catch (error) {
+        console.error('Error loading fresh data:', error);
+        // Fall back to user context data if available
+        if (user && !savedProfileData) {
+          const fallbackInfo = {
+            name: user.fullName || '',
+            position: user.position || '',
+            department: user.department || '',
+            branch: user.branch || '',
+            bio: user.bio || '',
+            email: user.email || '',
+            education: user.education || '',
+            location: user.location || '',
+            phone: "+1 (555) 123-4567",
+            employeeId: "GP-2022-001",
+            manager: "Dr. Sarah Chen",
+            team: "Carbon Analytics Team",
+            joinDate: "2022-03-15"
+          };
+          setPersonalInfo(fallbackInfo);
+          setEditData(fallbackInfo);
+        }
+      }
+    };
+
+    loadUserData();
+  }, []); // Remove dependencies to prevent infinite loops
+
+  // Sync editData with personalInfo when not editing
+  useEffect(() => {
+    if (!isEditing && personalInfo.name) {
+      setEditData({
+        name: personalInfo.name || '',
+        position: personalInfo.position || '',
+        department: personalInfo.department || '',
+        branch: personalInfo.branch || '',
+        bio: personalInfo.bio || '',
+        email: personalInfo.email || '',
+        education: personalInfo.education || '',
+        location: personalInfo.location || ''
+      });
+    }
+  }, [personalInfo, isEditing]);
 
   const handleEdit = () => {
     setIsEditing(true);
-    setEditData(personalInfo);
+    // Properly set editData with current personalInfo values
+    setEditData({
+      name: personalInfo.name || '',
+      position: personalInfo.position || '',
+      department: personalInfo.department || '',
+      branch: personalInfo.branch || '',
+      bio: personalInfo.bio || '',
+      email: personalInfo.email || '',
+      education: personalInfo.education || '',
+      location: personalInfo.location || ''
+    });
   };
 
-  const handleSave = () => {
-    setPersonalInfo(editData);
-    setIsEditing(false);
-    toast({
-      title: "Profile Updated",
-      description: "Your profile information has been saved successfully.",
-      status: "success",
-      duration: 3000,
-      isClosable: true,
-    });
+  const handleSave = async () => {
+    try {
+      const updateData = {
+        fullName: editData.name,
+        position: editData.position,
+        department: editData.department,
+        branch: editData.branch,
+        bio: editData.bio,
+        email: editData.email,
+        education: editData.education,
+        location: editData.location
+      };
+
+      const response = await authService.updateProfile(updateData);
+      
+      if (response.success) {
+        // Update local state and localStorage for persistence
+        const updatedPersonalInfo = {
+          ...personalInfo,
+          name: updateData.fullName,
+          position: updateData.position,
+          department: updateData.department,
+          branch: updateData.branch,
+          bio: updateData.bio,
+          email: updateData.email,
+          education: updateData.education,
+          location: updateData.location
+        };
+
+        setPersonalInfo(updatedPersonalInfo);
+        localStorage.setItem('profileData', JSON.stringify(updatedPersonalInfo));
+
+        // Update department stats
+        const updatedDeptStats = {
+          ...departmentStats,
+          departmentName: updateData.department,
+          branch: updateData.branch
+        };
+        
+        setDepartmentStats(updatedDeptStats);
+        localStorage.setItem('departmentStats', JSON.stringify(updatedDeptStats));
+        
+        setIsEditing(false);
+        toast({
+          title: "Profile Updated",
+          description: "Your profile information has been saved successfully.",
+          status: "success",
+          duration: 3000,
+          isClosable: true,
+        });
+
+        // Update global context
+        updateUserData(response.data);
+      }
+    } catch (error) {
+      console.error('Profile update error:', error);
+      toast({
+        title: "Update Failed",
+        description: error.message || "Failed to update profile.",
+        status: "error",
+        duration: 5000,
+        isClosable: true,
+      });
+    }
   };
 
   const handleCancel = () => {
     setIsEditing(false);
-    setEditData(personalInfo);
+    // Properly reset editData to current personalInfo values
+    setEditData({
+      name: personalInfo.name || '',
+      position: personalInfo.position || '',
+      department: personalInfo.department || '',
+      branch: personalInfo.branch || '',
+      bio: personalInfo.bio || '',
+      email: personalInfo.email || '',
+      education: personalInfo.education || '',
+      location: personalInfo.location || ''
+    });
   };
 
   const handlePost = () => {
@@ -168,6 +341,78 @@ export default function ProfilePage() {
         isClosable: true,
       });
       setPostText("");
+    }
+  };
+
+  const [isRefreshing, setIsRefreshing] = useState(false);
+
+  // Add this refresh function
+  const handleRefresh = async () => {
+    setIsRefreshing(true);
+    try {
+      const response = await authService.getProfile();
+      if (response.success) {
+        const userData = response.data;
+        const updatedInfo = {
+          name: userData.fullName || '',
+          position: userData.position || 'Student',
+          department: userData.department || '',
+          branch: userData.branch || '',
+          bio: userData.bio || '',
+          email: userData.email || '',
+          education: userData.education || '',
+          location: userData.location || '',
+          // Keep other fields
+          phone: "+1 (555) 123-4567",
+          employeeId: "GP-2022-001",
+          manager: "Dr. Sarah Chen",
+          team: "Carbon Analytics Team",
+          joinDate: "2022-03-15"
+        };
+
+        setPersonalInfo(updatedInfo);
+        setEditData(updatedInfo);
+        localStorage.setItem('profileData', JSON.stringify(updatedInfo));
+
+        const updatedDeptStats = {
+          departmentName: userData.department || '',
+          branch: userData.branch || '',
+          entoSaved: 15400,
+          entoCount: 12500,
+          carbonCredits: 1250,
+          co2Saved: 1540,
+          rank: 4,
+          totalMembers: 450,
+          activeMembers: 320,
+        };
+        setDepartmentStats(updatedDeptStats);
+        localStorage.setItem('departmentStats', JSON.stringify(updatedDeptStats));
+
+        // Update global context
+        updateUserData(userData);
+        
+        // Notify navbar of update
+        window.dispatchEvent(new CustomEvent('profileUpdated'));
+
+        toast({
+          title: "Profile Refreshed",
+          description: "Your profile data has been updated from server.",
+          status: "success",
+          duration: 3000,
+          isClosable: true,
+        });
+      }
+    } catch (error) {
+      console.error('Refresh error:', error);
+      toast({
+        title: "Refresh Failed",
+        description: error.message || "Failed to refresh profile data.",
+        status: "error",
+        duration: 5000,
+        isClosable: true,
+      });
+    } finally {
+      setIsRefreshing(false);
     }
   };
 
@@ -189,6 +434,9 @@ export default function ProfilePage() {
             colorScheme="brand"
             variant="outline"
             size="sm"
+            onClick={handleRefresh}
+            isLoading={isRefreshing}
+            loadingText="Refreshing..."
           >
             Refresh
           </Button>
@@ -227,7 +475,7 @@ export default function ProfilePage() {
       {/* Profile Banner Card */}
       <Card bg={cardBg} mb="30px" borderColor={borderColor} overflow="hidden">
         <Box
-          h="200px"
+          h="250px"
           bgImage={`url(${banner})`}
           bgSize="cover"
           bgPosition="center"
@@ -294,14 +542,46 @@ export default function ProfilePage() {
             <Stat textAlign="center">
               <StatLabel color={textColorSecondary} fontSize="sm">Department</StatLabel>
               <StatNumber color={textColor} fontSize="lg">
-                {departmentStats.departmentName}
+                {isEditing ? (
+                  <input
+                    value={editData.department}
+                    onChange={(e) => setEditData({...editData, department: e.target.value})}
+                    style={{
+                      background: 'transparent',
+                      border: '1px solid #e2e8f0',
+                      borderRadius: '4px',
+                      padding: '4px 8px',
+                      color: textColor,
+                      width: '100%',
+                      textAlign: 'center'
+                    }}
+                  />
+                ) : (
+                  departmentStats.departmentName
+                )}
               </StatNumber>
             </Stat>
             
             <Stat textAlign="center">
               <StatLabel color={textColorSecondary} fontSize="sm">Branch</StatLabel>
               <StatNumber color={textColor} fontSize="lg">
-                {departmentStats.branch}
+                {isEditing ? (
+                  <input
+                    value={editData.branch}
+                    onChange={(e) => setEditData({...editData, branch: e.target.value})}
+                    style={{
+                      background: 'transparent',
+                      border: '1px solid #e2e8f0',
+                      borderRadius: '4px',
+                      padding: '4px 8px',
+                      color: textColor,
+                      width: '100%',
+                      textAlign: 'center'
+                    }}
+                  />
+                ) : (
+                  departmentStats.branch
+                )}
               </StatNumber>
             </Stat>
             

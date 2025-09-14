@@ -21,10 +21,15 @@ import { useNavigate } from 'react-router-dom';
 import { IoMdMoon, IoMdSunny } from 'react-icons/io';
 import { FaEthereum } from 'react-icons/fa';
 import routes from 'routes';
+
+// Custom imports
+import { useAuth } from 'contexts/AuthContext';
+import { generateInitials, getDisplayName } from 'utils/userUtils';
 export default function HeaderLinks(props) {
   const { secondary } = props;
   const { colorMode, toggleColorMode } = useColorMode();
   const navigate = useNavigate();
+  const { user } = useAuth();
 
   // Handle logout
   const handleLogout = () => {
@@ -123,7 +128,7 @@ export default function HeaderLinks(props) {
           <Avatar
             _hover={{ cursor: 'pointer' }}
             color="white"
-            name="Adela Parkson"
+            name={user?.fullName || 'User'}
             bg="#11047A"
             size="sm"
             w="40px"
@@ -150,7 +155,7 @@ export default function HeaderLinks(props) {
               fontWeight="700"
               color={textColor}
             >
-              👋&nbsp; Hey, Adela
+              👋&nbsp; Hey, {getDisplayName(user?.fullName)}
             </Text>
           </Flex>
           <Flex flexDirection="column" p="10px">
