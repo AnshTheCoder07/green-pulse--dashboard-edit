@@ -10,7 +10,7 @@ import {
 // Custom components
 import Card from "components/card/CarbonCard.js";
 import LineChart from "components/charts/LineChart";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { IoCheckmarkCircle } from "react-icons/io5";
 import { MdBarChart, MdOutlineCalendarToday } from "react-icons/md";
 // Assets
@@ -40,12 +40,43 @@ export default function TotalSpent(props) {
 
   // Carbon data context
   const { getEnergyConsumptionData } = useCarbon();
-  const energyData = getEnergyConsumptionData();
+  const [energyData, setEnergyData] = useState({
+    current: 2847,
+    monthly: [2850, 3200, 2800, 3100, 2900, 2847],
+    efficiency: [85, 88, 82, 90, 87, 92],
+    buildings: {
+      'Building A': 35,
+      'Building B': 28,
+      'Building C': 22,
+      'Building D': 15
+    }
+  });
+  
+  // Load energy data on component mount
+  useEffect(() => {
+    const loadEnergyData = async () => {
+      try {
+        const data = await getEnergyConsumptionData();
+        setEnergyData(data);
+      } catch (error) {
+        console.error('Error loading energy data:', error);
+        // Keep default/fallback data if loading fails
+      }
+    };
+    
+    loadEnergyData();
+  }, [getEnergyConsumptionData]);
   
   // Calculate efficiency trend
-  const currentEfficiency = energyData.efficiency[energyData.efficiency.length - 1];
-  const previousEfficiency = energyData.efficiency[energyData.efficiency.length - 2];
-  const efficiencyChange = ((currentEfficiency - previousEfficiency) / previousEfficiency * 100).toFixed(1);
+  const currentEfficiency = energyData.efficiency && energyData.efficiency.length > 0 
+    ? energyData.efficiency[energyData.efficiency.length - 1] 
+    : 92;
+  const previousEfficiency = energyData.efficiency && energyData.efficiency.length > 1 
+    ? energyData.efficiency[energyData.efficiency.length - 2] 
+    : 87;
+  const efficiencyChange = previousEfficiency 
+    ? ((currentEfficiency - previousEfficiency) / previousEfficiency * 100).toFixed(1) 
+    : '0.0';
   
   return (
     <Card
@@ -95,7 +126,7 @@ export default function TotalSpent(props) {
             textAlign='start'
             fontWeight='700'
             lineHeight='100%'>
-            {energyData.current.toLocaleString()} kWh
+            {(energyData.current || 2847).toLocaleString()} kWh
           </Text>
           <Flex align='center' mb='20px'>
             <Text
@@ -126,11 +157,11 @@ export default function TotalSpent(props) {
             chartData={[
               {
                 name: "Energy Consumption (kWh)",
-                data: energyData.monthly
+                data: energyData.monthly || [2850, 3200, 2800, 3100, 2900, 2847]
               },
               {
                 name: "Energy Efficiency (%)",
-                data: energyData.efficiency
+                data: energyData.efficiency || [85, 88, 82, 90, 87, 92]
               }
             ]}
             chartOptions={lineChartOptionsTotalSpent}

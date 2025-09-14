@@ -6,6 +6,7 @@ const dotenv = require('dotenv');
 const connectDB = require('./config/database');
 const authRoutes = require('./routes/auth');
 const instituteRoutes = require('./routes/institutes');
+const carbonDataRoutes = require('./routes/carbonData');
 
 // Load env vars
 dotenv.config();
@@ -20,10 +21,12 @@ app.use(helmet());
 
 // CORS configuration
 app.use(cors({
-  origin: 'http://localhost:3000', // Your frontend URL
+  origin: ['http://localhost:3000', 'http://localhost:3001', 'http://localhost:3002'], // Allow multiple frontend URLs
   credentials: true,
   optionsSuccessStatus: 200
 }));
+
+console.log('CORS configured to allow origins:', ['http://localhost:3000', 'http://localhost:3001', 'http://localhost:3002']);
 
 // Body parser middleware
 app.use(express.json({ limit: '10mb' }));
@@ -32,6 +35,7 @@ app.use(express.urlencoded({ extended: true, limit: '10mb' }));
 // Routes
 app.use('/api/auth', authRoutes);
 app.use('/api/institutes', instituteRoutes);
+app.use('/api/carbon-data', carbonDataRoutes);
 
 // Health check route
 app.get('/api/health', (req, res) => {

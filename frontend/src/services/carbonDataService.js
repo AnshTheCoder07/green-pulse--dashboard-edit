@@ -1,205 +1,316 @@
-// Carbon Data Service for GreenPulse Dashboard
+// Carbon Data Service for GreenPulse Dashboard with Institute Filtering
 // This service handles all carbon-related data including wallet, savings, and consumption
+// Now supports institute-specific data isolation through backend API
+import axios from 'axios';
 
 class CarbonDataService {
   constructor() {
-    this.baseUrl = process.env.REACT_APP_API_URL || 'http://localhost:3001/api';
-    this.walletBalance = this.getWalletBalance();
-    this.transactions = this.getTransactions();
+    this.baseUrl = process.env.REACT_APP_API_URL || 'http://localhost:5000/api';
+    this.carbonDataEndpoint = `${this.baseUrl}/carbon-data`;
   }
 
-  // Local Storage Keys
-  STORAGE_KEYS = {
-    WALLET_BALANCE: 'greenpulse_wallet_balance',
-    TRANSACTIONS: 'greenpulse_transactions',
-    CO2_SAVINGS: 'greenpulse_co2_savings',
-    ENERGY_CONSUMPTION: 'greenpulse_energy_consumption',
-    CARBON_BUDGET: 'greenpulse_carbon_budget'
-  };
-
-  // Initialize with default data if not exists
-  initializeDefaultData() {
-    try {
-      if (!localStorage.getItem(this.STORAGE_KEYS.WALLET_BALANCE)) {
-        this.setWalletBalance(1000); // Default 1000 ENTO
-      }
-      
-      if (!localStorage.getItem(this.STORAGE_KEYS.TRANSACTIONS)) {
-        // Initialize with sample blockchain transactions
-        const sampleTransactions = [
-          {
-            id: Date.now() - 86400000,
-            timestamp: new Date(Date.now() - 86400000).toISOString(),
-            type: 'energy_consumption',
-            amount: 150.5,
-            description: 'Energy consumption in Computer Science Dept',
-            building: 'Computer Science Dept',
-            blockchainTxHash: '0x1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef'
-          },
-          {
-            id: Date.now() - 172800000,
-            timestamp: new Date(Date.now() - 172800000).toISOString(),
-            type: 'carbon_offset_purchase',
-            amount: 500.0,
-            description: 'Carbon offset purchase - Renewable Energy',
-            building: 'N/A',
-            blockchainTxHash: '0xabcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890'
-          },
-          {
-            id: Date.now() - 259200000,
-            timestamp: new Date(Date.now() - 259200000).toISOString(),
-            type: 'credit',
-            amount: 1000.0,
-            description: 'Wallet top-up',
-            building: 'N/A',
-            blockchainTxHash: '0x9876543210fedcba9876543210fedcba9876543210fedcba9876543210fedcba'
-          }
-        ];
-        this.setTransactions(sampleTransactions);
-      }
-      
-      if (!localStorage.getItem(this.STORAGE_KEYS.CO2_SAVINGS)) {
-        this.setCO2Savings(350.4); // Default CO2 savings in tonnes
-      }
-      
-      if (!localStorage.getItem(this.STORAGE_KEYS.ENERGY_CONSUMPTION)) {
-        this.setEnergyConsumption(2847); // Default energy consumption in kWh
-      }
-      
-      if (!localStorage.getItem(this.STORAGE_KEYS.CARBON_BUDGET)) {
-        this.setCarbonBudgetUsed(642.39); // Default carbon budget used
-      }
-    } catch (error) {
-      console.error('Error initializing carbon data:', error);
-      // Set default values in memory if localStorage fails
-      this.walletBalance = 1000;
-      this.transactions = [];
-    }
-  }
-
-  // Wallet Balance Management
-  getWalletBalance() {
-    try {
-      const balance = localStorage.getItem(this.STORAGE_KEYS.WALLET_BALANCE);
-      return balance ? parseFloat(balance) : 1000;
-    } catch (error) {
-      console.error('Error getting wallet balance:', error);
-      return this.walletBalance || 1000;
-    }
-  }
-
-  setWalletBalance(balance) {
-    try {
-      localStorage.setItem(this.STORAGE_KEYS.WALLET_BALANCE, balance.toString());
-      this.walletBalance = balance;
-    } catch (error) {
-      console.error('Error setting wallet balance:', error);
-      this.walletBalance = balance;
-    }
-  }
-
-  // Transaction Management
-  getTransactions() {
-    const transactions = localStorage.getItem(this.STORAGE_KEYS.TRANSACTIONS);
-    return transactions ? JSON.parse(transactions) : [];
-  }
-
-  setTransactions(transactions) {
-    localStorage.setItem(this.STORAGE_KEYS.TRANSACTIONS, JSON.stringify(transactions));
-    this.transactions = transactions;
-  }
-
-  addTransaction(transaction) {
-    const transactions = this.getTransactions();
-    const newTransaction = {
-      id: Date.now(),
-      timestamp: new Date().toISOString(),
-      type: transaction.type, // 'credit', 'debit', 'offset_purchase', 'energy_consumption'
-      amount: transaction.amount,
-      description: transaction.description,
-      building: transaction.building || 'N/A',
-      co2Impact: transaction.co2Impact || 0,
-      ...transaction
+  // Helper method to get auth headers
+  getAuthHeaders() {
+    const token = localStorage.getItem('authToken');
+    return {
+      'Content-Type': 'application/json',
+      ...(token && { Authorization: `Bearer ${token}` })
     };
-    
-    transactions.push(newTransaction);
-    this.setTransactions(transactions);
-    
-    // Update wallet balance based on transaction type
-    this.updateWalletBalance(newTransaction);
-    
-    return newTransaction;
   }
 
-  updateWalletBalance(transaction) {
-    let currentBalance = this.getWalletBalance();
-    
-    switch (transaction.type) {
-      case 'credit':
-      case 'offset_purchase':
-        currentBalance += transaction.amount;
-        break;
-      case 'debit':
-      case 'energy_consumption':
-        currentBalance -= transaction.amount;
-        break;
-      default:
-        break;
+  // Get dashboard data from backend API (institute-filtered)
+  async getDashboardData() {
+    try {
+      const response = await fetch(`${this.carbonDataEndpoint}/dashboard`, {
+        method: 'GET',
+        headers: this.getAuthHeaders()
+      });
+      
+      if (!response.ok) {
+        throw new Error(`API Error: ${response.status}`);
+      }
+      
+      const result = await response.json();
+      if (result.success) {
+        return result.data;
+      } else {
+        throw new Error(result.message || 'Failed to fetch dashboard data');
+      }
+    } catch (error) {
+      console.error('Error fetching dashboard data:', error);
+      // Don't return fallback data - let the error propagate
+      throw error;
     }
-    
-    this.setWalletBalance(Math.max(0, currentBalance)); // Prevent negative balance
   }
 
-  // CO2 Savings Management
-  getCO2Savings() {
-    const savings = localStorage.getItem(this.STORAGE_KEYS.CO2_SAVINGS);
-    return savings ? parseFloat(savings) : 350.4;
+  // Update wallet balance through API
+  async updateWalletBalance(amount, type = 'credit') {
+    try {
+      const response = await fetch(`${this.carbonDataEndpoint}/wallet-balance`, {
+        method: 'PUT',
+        headers: this.getAuthHeaders(),
+        body: JSON.stringify({ amount, type })
+      });
+      
+      if (!response.ok) {
+        throw new Error(`API Error: ${response.status}`);
+      }
+      
+      const result = await response.json();
+      if (result.success) {
+        return result;
+      } else {
+        throw new Error(result.message || 'Failed to update wallet balance');
+      }
+    } catch (error) {
+      console.error('Error updating wallet balance:', error);
+      throw error;
+    }
   }
 
-  setCO2Savings(savings) {
-    localStorage.setItem(this.STORAGE_KEYS.CO2_SAVINGS, savings.toString());
+  // Purchase carbon offset through API
+  async purchaseCarbonOffset(amount, description = 'Carbon offset purchase') {
+    try {
+      const response = await fetch(`${this.carbonDataEndpoint}/carbon-offset`, {
+        method: 'POST',
+        headers: this.getAuthHeaders(),
+        body: JSON.stringify({ amount, description })
+      });
+      
+      if (!response.ok) {
+        throw new Error(`API Error: ${response.status}`);
+      }
+      
+      const result = await response.json();
+      if (result.success) {
+        return result;
+      } else {
+        throw new Error(result.message || 'Failed to purchase carbon offset');
+      }
+    } catch (error) {
+      console.error('Error purchasing carbon offset:', error);
+      throw error;
+    }
   }
 
-  updateCO2Savings(additionalSavings) {
-    const currentSavings = this.getCO2Savings();
-    const newSavings = currentSavings + additionalSavings;
-    this.setCO2Savings(newSavings);
-    return newSavings;
+  // Record energy consumption through API
+  async recordEnergyConsumption(consumption, building = 'Building A') {
+    try {
+      const response = await fetch(`${this.carbonDataEndpoint}/energy-consumption`, {
+        method: 'POST',
+        headers: this.getAuthHeaders(),
+        body: JSON.stringify({ consumption, building })
+      });
+      
+      if (!response.ok) {
+        throw new Error(`API Error: ${response.status}`);
+      }
+      
+      const result = await response.json();
+      if (result.success) {
+        return result;
+      } else {
+        throw new Error(result.message || 'Failed to record energy consumption');
+      }
+    } catch (error) {
+      console.error('Error recording energy consumption:', error);
+      throw error;
+    }
   }
 
-  // Energy Consumption Management
-  getEnergyConsumption() {
-    const consumption = localStorage.getItem(this.STORAGE_KEYS.ENERGY_CONSUMPTION);
-    return consumption ? parseFloat(consumption) : 2847;
+  // Get institute analytics through API
+  async getInstituteAnalytics() {
+    try {
+      const response = await fetch(`${this.carbonDataEndpoint}/institute-analytics`, {
+        method: 'GET',
+        headers: this.getAuthHeaders()
+      });
+      
+      if (!response.ok) {
+        throw new Error(`API Error: ${response.status}`);
+      }
+      
+      const result = await response.json();
+      if (result.success) {
+        return result.data;
+      } else {
+        throw new Error(result.message || 'Failed to fetch institute analytics');
+      }
+    } catch (error) {
+      console.error('Error fetching institute analytics:', error);
+      return null;
+    }
   }
 
-  setEnergyConsumption(consumption) {
-    localStorage.setItem(this.STORAGE_KEYS.ENERGY_CONSUMPTION, consumption.toString());
+  // Legacy compatibility methods - these will use the main dashboard data
+  async getWalletBalance() {
+    try {
+      const dashboardData = await this.getDashboardData();
+      return dashboardData.walletBalance || 1000;
+    } catch (error) {
+      return 1000; // fallback
+    }
   }
 
-  updateEnergyConsumption(newConsumption) {
-    this.setEnergyConsumption(newConsumption);
-    return newConsumption;
+  async getCO2Savings() {
+    try {
+      const dashboardData = await this.getDashboardData();
+      return dashboardData.co2Savings || 350.4;
+    } catch (error) {
+      return 350.4; // fallback
+    }
   }
 
-  // Carbon Budget Management
-  getCarbonBudgetUsed() {
-    const budget = localStorage.getItem(this.STORAGE_KEYS.CARBON_BUDGET);
-    return budget ? parseFloat(budget) : 642.39;
+  async getCarbonBudgetUsed() {
+    try {
+      const dashboardData = await this.getDashboardData();
+      return dashboardData.carbonBudgetUsed || 642.39;
+    } catch (error) {
+      return 642.39; // fallback
+    }
   }
 
-  setCarbonBudgetUsed(budget) {
-    localStorage.setItem(this.STORAGE_KEYS.CARBON_BUDGET, budget.toString());
+  async getEnergyConsumption() {
+    try {
+      const dashboardData = await this.getDashboardData();
+      return dashboardData.currentEnergyConsumption || 2847;
+    } catch (error) {
+      return 2847; // fallback
+    }
   }
 
-  updateCarbonBudgetUsed(additionalUsage) {
-    const currentBudget = this.getCarbonBudgetUsed();
-    const newBudget = currentBudget + additionalUsage;
-    this.setCarbonBudgetUsed(newBudget);
-    return newBudget;
+  // Get energy consumption data for charts
+  async getEnergyConsumptionData() {
+    try {
+      const dashboardData = await this.getDashboardData();
+      
+      if (dashboardData && dashboardData.monthlyEnergyConsumption) {
+        return {
+          current: dashboardData.currentEnergyConsumption || 2847,
+          monthly: dashboardData.monthlyEnergyConsumption.map(item => item.consumption),
+          efficiency: dashboardData.monthlyEnergyConsumption.map(item => item.efficiency),
+          buildings: dashboardData.buildingData ? 
+            dashboardData.buildingData.reduce((acc, building) => {
+              acc[building.buildingName] = building.consumption;
+              return acc;
+            }, {}) : {
+              'Building A': 35,
+              'Building B': 28, 
+              'Building C': 22,
+              'Building D': 15
+            }
+        };
+      }
+      
+      // Fallback data
+      return {
+        current: 2847,
+        monthly: [2850, 3200, 2800, 3100, 2900, 2847],
+        efficiency: [85, 88, 82, 90, 87, 92],
+        buildings: {
+          'Building A': 35,
+          'Building B': 28,
+          'Building C': 22,
+          'Building D': 15
+        }
+      };
+    } catch (error) {
+      console.error('Error getting energy consumption data:', error);
+      // Return fallback data
+      return {
+        current: 2847,
+        monthly: [2850, 3200, 2800, 3100, 2900, 2847],
+        efficiency: [85, 88, 82, 90, 87, 92],
+        buildings: {
+          'Building A': 35,
+          'Building B': 28,
+          'Building C': 22,
+          'Building D': 15
+        }
+      };
+    }
   }
 
-  // Blockchain Integration (Mock implementation)
+  // Get weekly energy consumption data for institutes
+  async getWeeklyEnergyData() {
+    try {
+      const response = await axios.get(`${this.apiUrl}/carbon-data/weekly-energy`, {
+        headers: this.getAuthHeaders()
+      });
+      
+      if (response.data && response.data.success) {
+        // Format the data to include institution name if available
+        const weeklyData = response.data.data.weeklyEnergyData;
+        const instituteName = response.data.data.institute || '';
+        const dataSource = response.data.data.dataSource || 'sample';
+        
+        // Add institution name to each department if not already included
+        return weeklyData.map(dept => ({
+          name: dept.name.includes(' - ') ? dept.name : `${instituteName} - ${dept.name}`,
+          data: dept.data,
+          source: dataSource
+        }));
+      }
+      
+      // Return fallback data if API call succeeds but no data
+      return this.getFallbackWeeklyEnergyData();
+    } catch (error) {
+      console.error('Error getting weekly energy data:', error);
+      // Return fallback data
+      return this.getFallbackWeeklyEnergyData();
+    }
+  }
+  
+  // Fallback weekly energy data
+  getFallbackWeeklyEnergyData() {
+    return [
+      {
+        name: "University A - Computer Science Dept",
+        data: [180, 165, 195, 175, 185, 190, 170],
+        source: 'sample'
+      },
+      {
+        name: "University A - Engineering Dept", 
+        data: [220, 200, 240, 210, 225, 235, 205],
+        source: 'sample'
+      },
+      {
+        name: "University B - Medical School",
+        data: [200, 185, 215, 195, 205, 210, 190],
+        source: 'sample'
+      },
+      {
+        name: "University B - Science Lab Complex",
+        data: [250, 230, 270, 245, 255, 265, 235],
+        source: 'sample'
+      },
+      {
+        name: "University C - Business School",
+        data: [150, 140, 165, 155, 160, 165, 145],
+        source: 'sample'
+      }
+    ];
+  }
+
+  // Add transaction through wallet update or specific actions
+  async addTransaction(transaction) {
+    try {
+      if (transaction.type === 'credit' || transaction.type === 'debit') {
+        return await this.updateWalletBalance(transaction.amount, transaction.type);
+      } else if (transaction.type === 'offset_purchase') {
+        return await this.purchaseCarbonOffset(transaction.amount, transaction.description);
+      } else if (transaction.type === 'energy_consumption') {
+        return await this.recordEnergyConsumption(transaction.consumption || transaction.amount, transaction.building);
+      }
+      
+      throw new Error('Unknown transaction type');
+    } catch (error) {
+      console.error('Error adding transaction:', error);
+      throw error;
+    }
+  }
+
+  // Mock blockchain integration (maintained for compatibility)
   async submitToBlockchain(transaction) {
     try {
       // Mock blockchain submission
@@ -231,55 +342,46 @@ class CarbonDataService {
     }
   }
 
-  // Get Dashboard Data
-  getDashboardData() {
+  // Fallback data for offline/error scenarios
+  getFallbackData() {
     return {
-      walletBalance: this.getWalletBalance(),
-      co2Savings: this.getCO2Savings(),
-      energyConsumption: this.getEnergyConsumption(),
-      carbonBudgetUsed: this.getCarbonBudgetUsed(),
-      transactions: this.getTransactions(),
-      recentTransactions: this.getTransactions().slice(-5).reverse()
-    };
-  }
-
-  // Energy Consumption Data for Charts
-  getEnergyConsumptionData() {
-    const current = this.getEnergyConsumption();
-    const monthly = [2850, 3200, 2800, 3100, 2900, current];
-    const efficiency = [85, 88, 82, 90, 87, Math.round((current / 3200) * 100)];
-    
-    return {
-      current,
-      monthly,
-      efficiency,
-      buildings: {
-        'Computer Science Dept': 18,
-        'Engineering Dept': 22,
-        'Business School': 15,
-        'Medical School': 20,
-        'Arts & Humanities': 12,
-        'Science Lab Complex': 25,
-        'Library & Research Center': 18,
-        'Student Dormitories': 16,
-        'Administrative Building': 10,
-        'Sports Complex': 8
-      },
-      weekly: {
-        'Monday': 420,
-        'Tuesday': 380,
-        'Wednesday': 450,
-        'Thursday': 390,
-        'Friday': 410,
-        'Saturday': 430,
-        'Sunday': 400
+      instituteDisplayName: 'Default Institute',
+      co2Savings: 350.4,
+      carbonBudgetUsed: 642.39,
+      walletBalance: 1000,
+      offsetsPurchased: 574.34,
+      currentEnergyConsumption: 2847,
+      monthlyEnergyConsumption: [
+        { month: 'Jan', consumption: 2850, efficiency: 85 },
+        { month: 'Feb', consumption: 3200, efficiency: 88 },
+        { month: 'Mar', consumption: 2800, efficiency: 82 },
+        { month: 'Apr', consumption: 3100, efficiency: 90 },
+        { month: 'May', consumption: 2900, efficiency: 87 },
+        { month: 'Jun', consumption: 2847, efficiency: 92 }
+      ],
+      buildingData: [
+        { buildingName: 'Building A', consumption: 35, efficiency: 92, carbonFootprint: 12.3 },
+        { buildingName: 'Building B', consumption: 28, efficiency: 88, carbonFootprint: 9.8 },
+        { buildingName: 'Building C', consumption: 22, efficiency: 85, carbonFootprint: 7.7 },
+        { buildingName: 'Building D', consumption: 15, efficiency: 90, carbonFootprint: 5.3 }
+      ],
+      departmentData: [
+        { departmentName: 'Computer Science', consumption: 450, efficiency: 92, carbonFootprint: 157.5, color: '#4FD1C7' },
+        { departmentName: 'Electrical Engineering', consumption: 380, efficiency: 88, carbonFootprint: 133.0, color: '#63B3ED' },
+        { departmentName: 'Mechanical Engineering', consumption: 320, efficiency: 85, carbonFootprint: 112.0, color: '#F687B3' },
+        { departmentName: 'Civil Engineering', consumption: 290, efficiency: 87, carbonFootprint: 101.5, color: '#FEB2B2' },
+        { departmentName: 'Chemical Engineering', consumption: 250, efficiency: 90, carbonFootprint: 87.5, color: '#9AE6B4' }
+      ],
+      transactions: [],
+      analytics: {
+        totalReductionInitiatives: 154,
+        carbonValue: 2935
       }
     };
   }
 
-  // Initialize service
+  // Initialize service (now just returns instance)
   init() {
-    this.initializeDefaultData();
     return this;
   }
 }

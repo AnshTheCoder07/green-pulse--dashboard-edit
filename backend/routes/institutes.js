@@ -25,7 +25,26 @@ const Institute = mongoose.model('Institute', instituteSchema, 'institutes');
 // GET /api/institutes - Get all institutes
 router.get('/', async (req, res) => {
   try {
+    console.log('GET /api/institutes - Request received');
+    
+    // Check if collection exists and has documents
+    const collections = await mongoose.connection.db.listCollections({ name: 'institutes' }).toArray();
+    if (collections.length === 0) {
+      console.log('Collection "institutes" does not exist');
+      return res.status(404).json({
+        success: false,
+        message: 'Institutes collection not found in database'
+      });
+    }
+    
+    // Count documents in collection
+    const count = await Institute.countDocuments({});
+    console.log(`Found ${count} institutes in database`);
+    
+    // Fetch institutes
     const institutes = await Institute.find({}).select('-_id -__v');
+    console.log('Institutes fetched successfully');
+    
     res.json(institutes);
   } catch (error) {
     console.error('Error fetching institutes:', error);

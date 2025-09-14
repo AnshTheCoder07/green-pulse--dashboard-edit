@@ -67,6 +67,7 @@ import {
   MdSecurity,
   MdVerified,
   MdMore,
+  MdError,
 } from "react-icons/md";
 import { useCarbon } from "contexts/CarbonContext";
 import { useDepartment } from "contexts/DepartmentContext";
@@ -100,8 +101,8 @@ const DepartmentCarbonData = () => {
   const borderColor = useColorModeValue("gray.200", "gray.600");
   const itemBg = useColorModeValue("gray.50", "gray.700");
   
-  const { getEnergyConsumptionByDepartment } = useDepartment();
-  const departmentData = getEnergyConsumptionByDepartment();
+  const { dashboardData } = useCarbon();
+  const departmentData = dashboardData?.departmentData || [];
 
   return (
     <Card bg={cardBg} borderColor={borderColor} w="100%" h="100%">
@@ -115,7 +116,7 @@ const DepartmentCarbonData = () => {
           <HStack spacing="4" minW="max-content" pb="2">
             {departmentData.map((dept, index) => (
               <Box
-                key={dept.name}
+                key={dept.departmentName || index}
                 minW="200px"
                 p="4"
                 bg={itemBg}
@@ -125,9 +126,9 @@ const DepartmentCarbonData = () => {
               >
                 <VStack spacing="2" align="center">
                   <HStack spacing="2">
-                    <Box h="12px" w="12px" bg={dept.color} borderRadius="50%" />
+                    <Box h="12px" w="12px" bg={dept.color || '#4FD1C7'} borderRadius="50%" />
                     <Text color={textColor} fontSize="sm" fontWeight="bold" textAlign="center">
-                      {dept.name}
+                      {dept.departmentName}
                     </Text>
                   </HStack>
                   <Text color={textColor} fontSize="2xl" fontWeight="bold">
@@ -143,11 +144,11 @@ const DepartmentCarbonData = () => {
                     Efficiency
                   </Text>
                   <Badge 
-                    colorScheme={dept.efficiency >= 90 ? "green" : dept.efficiency >= 70 ? "orange" : "red"}
+                    colorScheme={dept.efficiency && dept.efficiency >= 90 ? "green" : dept.efficiency && dept.efficiency >= 70 ? "orange" : "red"}
                     variant="subtle"
                     fontSize="xs"
                   >
-                    {dept.efficiency >= 90 ? "Excellent" : dept.efficiency >= 70 ? "Good" : "Needs Improvement"}
+                    {dept.efficiency && dept.efficiency >= 90 ? "Excellent" : dept.efficiency && dept.efficiency >= 70 ? "Good" : "Needs Improvement"}
                   </Badge>
                 </VStack>
               </Box>
@@ -164,8 +165,13 @@ export default function CarbonDeptDashboard() {
   const brandColor = useColorModeValue("green.400", "white");
   const boxBg = useColorModeValue("green.50", "whiteAlpha.100"); // subtle green background for cards
   
+  // Color mode values for institute header
+  const headerCardBg = useColorModeValue("white", "navy.800");
+  const headerTextColor = useColorModeValue("navy.700", "white");
+  const headerSubTextColor = useColorModeValue("gray.600", "gray.400");
+  
   // Carbon data context
-  const { dashboardData, loading } = useCarbon();
+  const { dashboardData, loading, error } = useCarbon();
   
   // Use real data or fallback to defaults
   const co2Savings = dashboardData?.co2Savings ?? 350.4;
@@ -181,9 +187,66 @@ export default function CarbonDeptDashboard() {
     );
   }
 
+  // Show error state if no data is available
+  if (!loading && !dashboardData) {
+    return (
+      <Box pt={{ base: "130px", md: "80px", xl: "80px" }} textAlign="center" px="20px">
+        <Card p="40px" bg={headerCardBg}>
+          <VStack spacing="20px">
+            <Icon as={MdError} color="red.500" boxSize="60px" />
+            <Heading size="lg" color={headerTextColor}>
+              No Carbon Data Available
+            </Heading>
+            <Text color="gray.600" textAlign="center">
+              No carbon data found for your institute. Please contact your administrator to set up carbon monitoring data.
+            </Text>
+            {error && (
+              <Text color="red.500" fontSize="sm" textAlign="center">
+                Error: {error}
+              </Text>
+            )}
+            <Button colorScheme="green" onClick={() => window.location.reload()}>
+              Retry
+            </Button>
+          </VStack>
+        </Card>
+      </Box>
+    );
+  }
+
   return (
     <Box pt={{ base: "130px", md: "80px", xl: "80px" }} px={{ base: "20px", md: "30px" }}>
-      {/* Alert System - Top of Page */}
+      {/* Institute Name Header */}
+      <Box mb="20px">
+        <Card p="20px" bg={headerCardBg}>
+          <Flex align="center" justify="space-between">
+            <VStack align="start" spacing="5px">
+              <Heading size="lg" color={headerTextColor}>
+                {dashboardData?.instituteDisplayName || "Loading Institute..."}
+              </Heading>
+              {dashboardData?.dataSource && (
+                <Text fontSize="xs" color="gray.500">
+                  Data source: {dashboardData.dataSource} • Last updated: {dashboardData.lastUpdated ? new Date(dashboardData.lastUpdated).toLocaleString() : 'Unknown'}
+                </Text>
+              )}
+              <Text color={headerSubTextColor} fontSize="sm">
+                Institute Dashboard - Real-time Carbon & Energy Metrics
+              </Text>
+            </VStack>
+            <Badge 
+              colorScheme="green" 
+              px="12px" 
+              py="4px" 
+              borderRadius="full"
+              fontSize="sm"
+            >
+              Live Data
+            </Badge>
+          </Flex>
+        </Card>
+      </Box>
+      
+      {/* Alert System */}
       <Box mb="20px">
         <AlertSystem />
       </Box>
@@ -223,7 +286,11 @@ export default function CarbonDeptDashboard() {
           name="Carbon Budget Used (this month)"
           value={`${carbonBudgetUsed.toFixed(2)} ENTO`}
         />
-        <CarbonMiniStats growth="+23%" name="Offsets Purchased" value="574.34" />
+        <CarbonMiniStats 
+          growth="+23%" 
+          name="Offsets Purchased" 
+          value={dashboardData?.offsetsPurchased?.toFixed(2) || "574.34"} 
+        />
         <CarbonMiniStats
           endContent={
             <Flex me="-16px" mt="10px">
@@ -254,7 +321,7 @@ export default function CarbonDeptDashboard() {
             />
           }
           name="New Reduction Initiatives"
-          value="154"
+          value={dashboardData?.analytics?.totalReductionInitiatives?.toString() || "154"}
         />
         <CarbonMiniStats
           startContent={
@@ -268,7 +335,7 @@ export default function CarbonDeptDashboard() {
             />
           }
           name="Carbon Value"
-          value="2,935"
+          value={dashboardData?.analytics?.carbonValue?.toLocaleString() || "2,935"}
         />
       </SimpleGrid>
 

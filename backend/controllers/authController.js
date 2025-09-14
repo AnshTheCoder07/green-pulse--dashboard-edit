@@ -78,7 +78,17 @@ const login = async (req, res) => {
   try {
     const { email, password, institute } = req.body;
     
+    console.log('=== LOGIN ATTEMPT ===');
+    console.log('Email:', email);
+    console.log('Institute received:', institute);
+    console.log('Institute type:', typeof institute);
+    
     const user = await User.findOne({ email: email.toLowerCase() });
+    
+    if (user) {
+      console.log('User found - institute in DB:', user.institute);
+      console.log('User institute type:', typeof user.institute);
+    }
     
     if (!user) {
       return res.status(404).json({
@@ -90,15 +100,25 @@ const login = async (req, res) => {
     const userInstitute = user.institute;
     let instituteMatches = false;
     
+    console.log('=== INSTITUTE MATCHING ===');
+    console.log('User institute:', userInstitute);
+    console.log('Received institute:', institute);
+    
     if (typeof userInstitute === 'string' && typeof institute === 'string') {
+      console.log('Both strings - comparing:', userInstitute.toLowerCase(), 'vs', institute.toLowerCase());
       instituteMatches = userInstitute.toLowerCase() === institute.toLowerCase();
     } else if (typeof userInstitute === 'object' && typeof institute === 'object') {
+      console.log('Both objects - comparing IDs:', userInstitute.id, 'vs', institute.id);
       instituteMatches = userInstitute.id === institute.id;
     } else if (typeof userInstitute === 'object' && typeof institute === 'string') {
-      instituteMatches = userInstitute.name.toLowerCase() === institute.toLowerCase();
+      console.log('User=object, Received=string - comparing:', userInstitute.name?.toLowerCase(), 'vs', institute.toLowerCase());
+      instituteMatches = userInstitute.name?.toLowerCase() === institute.toLowerCase();
     } else if (typeof userInstitute === 'string' && typeof institute === 'object') {
-      instituteMatches = userInstitute.toLowerCase() === institute.name.toLowerCase();
+      console.log('User=string, Received=object - comparing:', userInstitute.toLowerCase(), 'vs', institute.name?.toLowerCase());
+      instituteMatches = userInstitute.toLowerCase() === institute.name?.toLowerCase();
     }
+    
+    console.log('Institute matches:', instituteMatches);
     
     if (!instituteMatches) {
       return res.status(401).json({
@@ -107,16 +127,23 @@ const login = async (req, res) => {
       });
     }
     
+    console.log('=== PASSWORD VALIDATION ===');
     const isPasswordValid = await user.comparePassword(password);
+    console.log('Password valid:', isPasswordValid);
     
     if (!isPasswordValid) {
+      console.log('❌ Password validation failed');
       return res.status(401).json({
         success: false,
         message: 'Invalid password'
       });
     }
     
+    console.log('✅ Password validation successful');
+    
+    console.log('=== TOKEN GENERATION ===');
     const token = generateToken(user._id);
+    console.log('Token generated successfully');
     
     const userData = {
       id: user._id,
@@ -131,6 +158,8 @@ const login = async (req, res) => {
       location: user.location,
       createdAt: user.createdAt
     };
+    
+    console.log('✅ LOGIN SUCCESSFUL - sending response');
     
     res.status(200).json({
       success: true,

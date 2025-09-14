@@ -49,7 +49,7 @@ export default function Main() {
   
   return (
     <ErrorBoundary>
-      <ChakraProvider theme={currentTheme}>
+      <ChakraProvider theme={currentTheme || initialTheme}>
         <AuthProvider> {/* Wrap with AuthProvider */}
           <InstituteProvider>
             <DepartmentProvider>

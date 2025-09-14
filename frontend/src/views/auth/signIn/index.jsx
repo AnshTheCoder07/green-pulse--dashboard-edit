@@ -128,22 +128,21 @@ function SignIn() {
     console.log("  - Error:", instituteError);
     console.log("  - Current Institute:", currentInstitute);
   }, [institutes, instituteLoading, instituteError, currentInstitute]);
-
-  // Handle loading state
-  if (instituteLoading) {
-    return (
-      <DefaultAuth illustrationBackground={illustration} image={illustration}>
+  
+  // Render loading state
+  const renderContent = () => {
+    // Handle loading state
+    if (instituteLoading) {
+      return (
         <Flex justify="center" align="center" height="50vh">
           <Text>Loading institutes...</Text>
         </Flex>
-      </DefaultAuth>
-    );
-  }
+      );
+    }
 
-  // Handle error state
-  if (instituteError) {
-    return (
-      <DefaultAuth illustrationBackground={illustration} image={illustration}>
+    // Handle error state
+    if (instituteError) {
+      return (
         <Flex justify="center" align="center" height="50vh" flexDirection="column">
           <Alert status="error" mb="20px">
             <AlertIcon />
@@ -151,12 +150,15 @@ function SignIn() {
           </Alert>
           <Button onClick={() => window.location.reload()}>Retry</Button>
         </Flex>
-      </DefaultAuth>
-    );
+      );
+    }
+
+    return null;
   }
 
-  return (
-    <DefaultAuth illustrationBackground={illustration} image={illustration}>
+  // Main content for the sign-in form
+  const renderSignInForm = () => {
+    return (
       <Flex
         maxW={{ base: "100%", md: "max-content" }}
         w="100%"
@@ -368,6 +370,13 @@ function SignIn() {
           </Flex>
         </Flex>
       </Flex>
+    );
+  };
+  
+  // Final return statement that uses the conditional rendering
+  return (
+    <DefaultAuth illustrationBackground={illustration} image={illustration}>
+      {instituteLoading || instituteError ? renderContent() : renderSignInForm()}
     </DefaultAuth>
   );
 }

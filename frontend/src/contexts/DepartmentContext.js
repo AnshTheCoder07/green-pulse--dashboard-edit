@@ -5,7 +5,18 @@ const DepartmentContext = createContext();
 export const useDepartment = () => {
   const context = useContext(DepartmentContext);
   if (!context) {
-    throw new Error('useDepartment must be used within a DepartmentProvider');
+    // Return fallback data instead of throwing error
+    return {
+      departments: [],
+      loading: false,
+      getDepartmentById: () => null,
+      getDepartmentByCode: () => null,
+      getDepartmentStats: () => ({ totalDepartments: 0, totalStudents: 0, totalFaculty: 0, totalEnergyCapacity: 0, totalCurrentConsumption: 0, averageEfficiency: 0 }),
+      getEnergyConsumptionByDepartment: () => [],
+      updateDepartmentConsumption: () => {},
+      getTopEnergyConsumers: () => [],
+      getMostEfficientDepartments: () => []
+    };
   }
   return context;
 };

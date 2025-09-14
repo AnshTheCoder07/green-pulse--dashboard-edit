@@ -61,7 +61,12 @@ const validateRegistration = (req, res, next) => {
 const validateLogin = (req, res, next) => {
   const { email, password, institute } = req.body;
   
-  console.log('Login validation - received data:', { email, password: '***', institute: institute ? 'provided' : 'missing' });
+  console.log('Login validation - received data:', { 
+    email, 
+    password: '***', 
+    institute: institute,
+    instituteType: typeof institute
+  });
   
   const errors = [];
   

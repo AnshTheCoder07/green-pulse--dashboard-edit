@@ -21,17 +21,21 @@ export default function Conversion(props) {
 
   // Department data context
   const { getEnergyConsumptionByDepartment } = useDepartment();
-  const departmentData = getEnergyConsumptionByDepartment();
+  const departmentData = getEnergyConsumptionByDepartment() || [];
 
   // Calculate department energy usage percentages
-  const totalEnergy = departmentData.reduce((sum, dept) => sum + dept.consumption, 0);
-  const departmentPercentages = departmentData.map(dept => ({
-    building: dept.name,
-    energy: dept.consumption,
-    percentage: Math.round((dept.consumption / totalEnergy) * 100),
-    efficiency: dept.efficiency,
-    color: dept.color
-  }));
+  const totalEnergy = departmentData.length > 0 
+    ? departmentData.reduce((sum, dept) => sum + (dept.consumption || 0), 0)
+    : 0;
+  const departmentPercentages = departmentData.length > 0 
+    ? departmentData.map(dept => ({
+        building: dept.name || 'Unknown',
+        energy: dept.consumption || 0,
+        percentage: totalEnergy > 0 ? Math.round((dept.consumption / totalEnergy) * 100) : 0,
+        efficiency: dept.efficiency || 0,
+        color: dept.color || '#4FD1C7'
+      }))
+    : [];
 
   // Generate pie chart data
   const pieData = departmentPercentages.map(item => item.percentage);
